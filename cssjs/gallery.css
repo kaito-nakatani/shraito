@@ -1,42 +1,6 @@
 :root {
-    --galwidth: 100px;
-}
-
-.hex-cell {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-.ddhex-cell {
-    overflow: hidden;
-    grid-column-end: span 2;
-    /* margin: calc(-1*var(--hl)) 0; */
-    transform: scale(.95);
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
-}
-.hex-cell img {
-    /* width: var(--galwidth); */
-    width: 90%;
-}
-
-.hex-grid__list {
-    --amount : 5;
-    display: grid;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(var(--amount), 1fr, 2fr) 1fr;
-}
-
-.hex-grid__item {
-    position: relative;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 2;
-    height: 0;
-    padding-bottom: 100%;
-    width: var(--galwidth);
+    --imgwidth: 300px;
+    --imgheight: 340px;
 }
 
 /* varsha hexagons */
@@ -48,12 +12,12 @@
 .hex-row {
     display: flex;
     justify-content: center;
-    margin-top: -30px; /* Adjust this value to change the vertical overlap */
+    margin-top: -60px; /* Adjust this value to change the vertical overlap */
 }
 .hex {
     width: 300px;
     height: 340px;
-    margin: 0 5px;
+    margin: 0 10px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     overflow: hidden;
 }

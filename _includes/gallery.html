@@ -1,19 +1,17 @@
 <link rel="stylesheet" href="{{ "/cssjs/gallery.css" | relative_url }}" />
 
-{% assign image_files = site.static_files | where_exp: "item", "item.path contains '/assets/gallery'" %} 
+<div style="height:80px"></div>
 
+{% assign image_files = site.static_files | where_exp: "item", "item.path contains '/assets/gallery'" %} 
 {% assign i = 0 %}
-{% assign num_imgs = "4, 5" | split: ", " %}
+{% assign num_imgs = include.gridnums | default : "4,5" | split: "," %}
 <div class="hex-container">
     {% for row in num_imgs %}
     <div class="hex-row">
-        a
         {% for col in (1..row) %}
         <div class="hex">
-        b
             <img src="{{image_files[i].path}}" />
             {% assign i = i | plus : 1 %}
-            {{ i }}
         </div>
         {% endfor %}
     </div>
