@@ -1,5 +1,78 @@
 <link rel="stylesheet" href="{{ "/cssjs/gallery.css" | relative_url }}" />
 
+<div id="hexGrid" class="hex-container"></div>
+
+<script>
+    const images = [
+        "/assets/gallery/IMG-20240527-WA0011.jpg",
+        "/assets/gallery/IMG-20240528-WA0020.jpg",
+        "/assets/gallery/IMG-20240607-WA0000.jpg",
+        "/assets/gallery/IMG-20240630-WA0001.jpg",
+        "/assets/gallery/IMG-20240903-WA0002.jpg",
+        "/assets/gallery/IMG-20240527-WA0011.jpg", // Repeated to fill 12 slots
+        "/assets/gallery/IMG-20240528-WA0020.jpg",
+        "/assets/gallery/IMG-20240607-WA0000.jpg",
+        "/assets/gallery/IMG-20240630-WA0001.jpg",
+        "/assets/gallery/IMG-20240903-WA0002.jpg",
+        "/assets/gallery/IMG-20240527-WA0011.jpg",
+        "/assets/gallery/IMG-20240630-WA0001.jpg",
+        "/assets/gallery/IMG-20240903-WA0002.jpg",
+        "/assets/gallery/IMG-20240527-WA0011.jpg",
+        "/assets/gallery/IMG-20240630-WA0001.jpg",
+        "/assets/gallery/IMG-20240903-WA0002.jpg",
+        "/assets/gallery/IMG-20240527-WA0011.jpg",
+        "/assets/gallery/IMG-20240528-WA0020.jpg"
+    ];
+
+    const hexGrid = document.getElementById('hexGrid');
+
+    const num_imgs = [4, 5];
+
+    for (let row = 0; row < num_imgs.length; row++) {
+        const hexRow = document.createElement('div');
+        hexRow.className = 'hex-row';
+
+        for (let col = 0; col < num_imgs[row]; col++) {
+            const index = row * 6 + col;
+            const hex = document.createElement('div');
+            hex.className = 'hex';
+            
+            const img = document.createElement('img');
+            img.src = images[index];
+            img.alt = `Graduation picture ${index + 1}`;
+            
+            hex.appendChild(img);
+            hexRow.appendChild(hex);
+        }
+
+        hexGrid.appendChild(hexRow);
+    }
+</script>
+
+<!-- <div class="hex-container">
+    <div class="hex-row">
+        <div class="hex">
+            <img src="/assets/gallery/IMG-20240527-WA0011.jpg" alt="Graduation picture">
+        </div>
+        <div class="hex">
+            <img src="/assets/gallery/IMG-20240528-WA0020.jpg" alt="Graduation picture">
+        </div>
+    </div>
+    <div class="hex-row">
+        <div class="hex">
+            <img src="/assets/gallery/IMG-20240607-WA0000.jpg" alt="Graduation picture">
+        </div>
+        <div class="hex">
+            <img src="/assets/gallery/IMG-20240630-WA0001.jpg" alt="Graduation picture">
+        </div>
+        <div class="hex">
+            <img src="/assets/gallery/IMG-20240903-WA0002.jpg" alt="Graduation picture">
+        </div>
+    </div>
+</div> -->
+
+<!-- <link rel="stylesheet" href="{{ "/cssjs/gallery.css" | relative_url }}" />
+
 <ul class="hex-grid__list">
 {% assign image_files = site.static_files %} 
 {% for image in image_files %}
@@ -11,4 +84,6 @@
 </li>
     {% endif %}
 {% endfor %}
-</ul>
+</ul> -->
+
+
