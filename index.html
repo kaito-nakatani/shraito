@@ -1,0 +1,37 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<h1> Voli </h1>
+
+{% include gallery.html %}
+
+
+<div class="block">
+<div class="sideways"><h1> Events </h1></div>
+{% for evt in site.evts %}
+<h2>{{ evt.name }}</h2>
+{{ evt.date |  date: "%-d %B %Y"}}
+{{ evt.time }}
+{{ evt.content }}
+{% endfor %}
+</div>
+
+<div class="block">
+<div class="sideways"><h1>Travel Info</h1></div>
+<ul>
+  <li> Bangalore has one airport (BLR). </li>
+  <li> [TODO] Sim card information  </li>
+  <li> [TODO] Currency Info </li>
+  <li> **Visa.** Most people can apply for an
+    <a href="https://indianvisaonline.gov.in/evisa/tvoa.html">e-visa</a>,
+    which can be obtained at most 30 days before travel. 
+    Make sure apply using the official Indian Government's website (ending with .in), and not a third party, as Google might suggest!
+
+  <li> Travel spreadsheet </li>
+  <li> Vaccines: [TODO] </li>
+</ul>
+</div>

@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{{ "/cssjs/gallery.css" | relative_url }}" />
+
+<ul class="hex-grid__list">
+{% assign image_files = site.static_files %} 
+{% for image in image_files %}
+    {% if image.path contains "/assets/gallery/" %}
+<li class="hex-grid__item">
+<div class="hex-cell">
+    <img src="{{ image.path }}" alt="{{ image.name }}" />
+</div>
+</li>
+    {% endif %}
+{% endfor %}
+</ul>
