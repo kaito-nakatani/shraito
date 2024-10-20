@@ -1,0 +1,11 @@
+
+<navbar>
+{% for tab in site.tabs %}
+<li class="nav-item {% if tab.url == page.url%}current-tab{% endif %}">
+    <a href="{{tab.url}}" >
+        {{tab.title}}
+    </a>
+</li>
+{% endfor %}
+</navbar>
+

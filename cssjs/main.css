@@ -13,3 +13,28 @@
     padding-left: 10px;
     position:relative;
 }
+
+.evt-details {
+    margin-left: 10px;
+    font-size: smaller;
+    color: gray;
+}
+
+.nav-item {
+    display: inline-block;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom:10px;
+    background-color: lightgrey;
+}
+.nav-item a {
+    text-decoration : none;
+}
+
+.nav-item.current-tab {
+    font-size: larger;
+    background-color: slategray;
+    color:color-mix(in srgb, slategray 20%, blue)
+}
+.nav-item:not(.current-tab) {
+}
