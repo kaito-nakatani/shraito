@@ -1,6 +1,7 @@
 ---
 title: Travel Info
 layout: tab
+leftblock: Travel Info
 ---
   - Bangalore has one airport (BLR). 
   - Travel spreadsheet 

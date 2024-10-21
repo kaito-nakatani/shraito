@@ -1,5 +1,6 @@
 
 <navbar>
+<li class="nav-item"><a href="/">home</a></li>
 {% for tab in site.tabs %}
 <li class="nav-item {% if tab.url == page.url%}current-tab{% endif %}">
     <a href="{{tab.url}}" >

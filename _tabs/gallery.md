@@ -3,4 +3,4 @@ title: Gallery
 layout: tab
 ---
 
-{% include gallery.html %}
+{% include gallery.html gridnums="3,4,3,4"%}

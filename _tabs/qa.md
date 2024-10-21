@@ -1,6 +1,7 @@
 ---
 title: QA
 layout: tab
+leftblock: Q & A
 ---
 
  - Gifts? No.
