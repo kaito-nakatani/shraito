@@ -7,10 +7,8 @@
 <div class="hex-container">
     {% for row in num_imgs %}
     <div class="hex-row">
-        a
         {% for col in (1..row) %}
         <div class="hex">
-        b
             <img src="{{image_files[i].path}}" />
             {% assign i = i | plus : 1 %}
             {{ i }}
