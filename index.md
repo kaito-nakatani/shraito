@@ -3,12 +3,16 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+custom_css:
+    - rain
+custom_js:
+    - rain
 ---
 {% include navbar.html %}
 
 
 <div class="center">
-<h1 class="main-title">Voli</h1>
+<h1 class="main-title"><span class="varsha">V</span><span class="oli">oli</span></h1>
 </div>
 
 Varsha Kishore
@@ -37,7 +41,7 @@ We hope you can join us!
 
 
 <div class="center">
-<div class="nav-item">
+<div class="nav-item rsvp">
     <a href="form"> RSVP </a>
 </div>
 </div>

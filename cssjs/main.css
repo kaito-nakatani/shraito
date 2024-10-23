@@ -1,5 +1,10 @@
 /* replacement for default styling, which I have now removed */
 
+:root{
+    --vcolor:rgb(20, 54, 54);
+    --ocolor:rgb(144, 28, 88);
+}
+
 *:target { background: yellow; }
 navbar {
     text-align:center;
@@ -68,8 +73,11 @@ body {
     border-radius: 5px;
     padding:10px;
     margin-bottom:10px;
-    background-color: rgb(244, 218, 232);
-    border: 2px solid rgb(228, 207, 218);
+    /* background-color: rgb(244, 218, 232);
+    border: 2px solid rgb(228, 207, 218); */
+    background-color: color-mix(in srgb, var(--ocolor) 20%, white);
+    border: 2px solid color-mix(in srgb, var(--ocolor) 25%, white);
+
     transition: font-size .2s, background-color .15s;
 }
 
@@ -78,6 +86,26 @@ body {
 }
 .nav-item a {
     text-decoration : none;
+    color: var(--vcolor)
+}
+
+.rsvp {
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: font-size .2s, background-color .15s;
+
+    padding: 20px;
+    font-size: 20pt;
+    background-color:var(--vcolor);
+    /* color:white; */
+    margin-top: 100px;
+}
+.rsvp a {
+    color: white;
+}
+.rsvp:hover {
+    font-size:30pt;
 }
 
 .nav-item.current-tab {
@@ -98,11 +126,25 @@ body {
 
 .marquee {
     position: relative;
-    /* animation: marquee 10s linear infinite; */
+    animation: marquee 20s linear infinite;
     width: 100%;
 }
 
-@keyframes marquee1 {
+@keyframes marquee {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
 }
+
+span.varsha {
+    color: var(--vcolor)
+        /* color-mix(teal 80%, black); */
+    /* font-size: 100pt; */
+    /* margin-right:-5px; */
+}
+
+span.oli {
+    /* color: rgb(224, 117, 172); */
+    /* margin-left: -5px; */
+    color: var(--ocolor);
+}
+

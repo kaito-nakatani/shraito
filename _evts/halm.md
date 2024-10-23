@@ -1,5 +1,5 @@
 ---
-name: Prewedding rituals - Mehendi + Haldi
+name: "Prewedding Rituals:  Mehendi & Haldi"
 date: 16 Jan 2025
 timerange: 5:30pm -- ??
 ical: "[TODO CAL LINK]()"
