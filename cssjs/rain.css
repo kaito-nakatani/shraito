@@ -1,3 +1,9 @@
+:root {
+  --depth : 0;
+  /* --rainfall-floor : calc(var(--depth) + 83)%; */
+  --rainfall-floor : 85%;
+}
+
 .rain-pane {
     position: absolute;
     left: 0;
@@ -8,12 +14,15 @@
 }
 
 .raindrop {
+    --depth: 1;
     position: absolute;
     bottom: 100%;
     height: 120px;
     width: 5px;
     pointer-events: none;
     animation: drop 2s linear infinite;
+    /* opacity: calc(.2 + .3/(1+var(--depth))); */
+    opacity: calc(.3 + .7 / (1 + var(--depth)));
     /* transition: left .2s; */
     /* , top .2s; */
 }
@@ -31,20 +40,22 @@
     }
     75% {
         /* transform: translateY(90%); */
-        top: 85%;
+        top: var(--rainfall-floor);
     }
     100% {
         /* transform: translateY(90%); */
-        top: 85%;
+        top: var(--rainfall-floor);
     }
 }
   
 .stem {
-    width: 1px;
+    /* width: 1px; */
+    width: calc(1px + 2px / (1 + var(--depth)));
     height: 60%;
+    /* height: calc(40% + 30% / (1 + var(--depth))); */
     /* margin-left: 7px; */
     /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(31, 2, 61, 0.329)); */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(31, 2, 61, 0.329));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(4, 36, 79, 0.517));
     /* background:gray; */
     animation: stem 2s linear infinite;
     animation-delay: inherit;
@@ -101,7 +112,8 @@
     }
     100% {
       opacity: 0;
-      transform: scale(3);
+      /* transform: scale(3); */
+      transform: scale(calc(1 + 3 / (1 + var(--depth))));
     }
 }
   

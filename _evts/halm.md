@@ -3,6 +3,8 @@ name: "Prewedding Rituals:  Mehendi & Haldi"
 date: 16 Jan 2025
 timerange: 5:30pm -- ??
 ical: "[TODO CAL LINK]()"
+accent: "blue"
+leftblock: "Rituals"
 ---
 The **[haldi](https://en.wikipedia.org/wiki/Turmeric)** ceremony is a cleansing ritual where family and friends come together to apply haldi (turmeric paste) on the bride and groom's face and body, because haldi is known to possesss antioxidant and anti-inflammatory properties.
 

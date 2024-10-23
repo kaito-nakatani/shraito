@@ -3,7 +3,7 @@ console.log("rain.js starting!");
 // Parameters:
 let n_drops = 100;
 let push_start = $('.hex-container').offset().top;
-let push_end = $('.hex-container').height() + push_start;
+let push_end = $('.hex-container').height()*0.5 + push_start;
 let base_fall_rate = 7;
 
 // let init_velo = 10; // pixels per 100ms
@@ -56,6 +56,7 @@ function RainDrop() {
     this.vy = 0;
     this.mass = 0.8 + 0.4*Math.random();
     this.animated = true;
+    this.depth = 6*Math.random();
 
     let delay = (1-Math.pow(Math.random(), 4))* 5 + Math.random();
     // let delay = Math.random()*.1;
@@ -66,12 +67,17 @@ function RainDrop() {
 
     animation_props = {
         'animation-delay' : `${delay}s`,
-        'animation-duration' : `${1 + Math.random()}s`
+        'animation-duration' : `${1 + Math.random()*this.depth/8}s`
     };
     // splat.css(animation_props);
     // stem.css(animation_props);
     e.css(animation_props);
-    e.css('--x-init', this.x)
+    e.css({
+        '--x-init' : this.x,
+        '--depth' : this.depth,
+        '--rainfall-floor' : Math.floor(89-this.depth)+'%'
+    });
+    // e.css('--rainfall-floor', Math.floor(83+this.depth)+'%')
 
     e.append(stem,splat);
     this.element = e;
@@ -97,7 +103,8 @@ function tick_rain() {
         y = parseInt(drop.element.css('top')); // somehow this is in pixels
         h = drop.element.innerHeight();
 
-        if(drop.animated && y+h >= push_start && y+h <= push_end
+        // if(false){
+        if(drop.animated && y >= push_start && y <= push_end
             ) {
             // console.log(drop);
             /*drop.element.css('animation-play-state', 'paused');
@@ -110,18 +117,21 @@ function tick_rain() {
             tgt = push_target(drop.x*rain_width/100);
             // console.log(tgt);
             if(tgt) {
-                drop.x = tgt[0]*100/rain_width;
-                drop.y = (tgt[1]-h)*100/rain_height;
+                xto = tgt[0]*100/rain_width;
+                drop.vx += (xto - drop.x) / 10;
+                drop.x = xto;
+                // the below does nothing; not setting top.
+                // drop.y = (tgt[1] + h)*100/rain_height;
             }
             // drop.element.css
         } 
-        
+        // }
         
         drop.vx += (Math.random()*2 -1)*0.05;
         drop.vx *= 0.9;
 
         if (y+h < push_start)
-            drop.vx += (wind/drop.mass - drop.vx) / 8;
+            drop.vx += (wind/(drop.mass*(1 + drop.depth))  - drop.vx) / 8;
         // else
 
         drop.x += drop.vx;

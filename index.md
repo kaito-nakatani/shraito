@@ -31,7 +31,7 @@ We hope you can join us!
 
 <!-- <div class="gallery-spacer"></div> -->
 <div class="fullpagewidth">
-<div class="marquee">
+<div class="marquee" style="--hex-spacing:50px; --img-width:150px;">
 {% include gallery.html gridnums="8" %}
 </div>
 </div>
