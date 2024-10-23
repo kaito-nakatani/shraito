@@ -3,6 +3,7 @@ title: Events
 layout: tab
 leftblock: Schedule
 ---
+(Feel free to where anything you'd like for all of the events. The attire listed below is just a suggestion in case you are lookign for inspiration.)
 
 {% for evt in site.evts %}
 <h2> {{ evt.name }}</h2>
