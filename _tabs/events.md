@@ -18,9 +18,14 @@ layout: default
 </h1></div>
 
 <h2> {{ evt.name }}</h2>
+<span class="timing">
 {{ evt.date |  date: "%-d %B %Y"}}
 @ {{ evt.timerange }}
-<a href="{{ evt.ical }}"> [ical] </a>
+<span class="cal-links">
+    <a href="{{ evt.ical }}"> [cal] </a>
+</span>
+</span>
+<div class="attire">Attire: {{ evt.attire }}</div>
 <div class="evt-details">
 {{ evt.content }}
 </div>

@@ -5,7 +5,6 @@ timerange: 6pm
 ical: "[TODO CAL LINK]()"
 accent: "#ABA"
 leftblock: "\\Bigg"
+attire : Indian / Indowestern /  Western
 ---
 Celebrate our wedding with a live band!
-
-Attire: Indian/ Indowestern/ Western

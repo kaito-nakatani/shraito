@@ -11,6 +11,8 @@
     height: 100%;
     pointer-events: none;
     overflow:hidden;
+    z-index: -1;
+    background: linear-gradient(45deg, );
 }
 
 .raindrop {
@@ -50,9 +52,9 @@
   
 .stem {
     /* width: 1px; */
-    width: calc(1px + 2px / (1 + var(--depth)));
-    height: 60%;
-    /* height: calc(40% + 30% / (1 + var(--depth))); */
+    width: calc(1px + 0px / (1 + var(--depth)));
+    /* height: 60%; */
+    height: calc(50% + 20% / (1 + var(--depth)));
     /* margin-left: 7px; */
     /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(31, 2, 61, 0.329)); */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(4, 36, 79, 0.517));

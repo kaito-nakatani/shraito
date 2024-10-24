@@ -51,6 +51,25 @@ body {
     position:relative;
 }
 
+.block h2 {
+    margin-bottom: 0px;
+    /* text-align: center; */
+}
+.block .timing {
+    margin-left: 50px;
+    /* display: inline-block; */
+    /* margin-bottom: 1ex; */
+}
+.block .attire {
+    margin-left: 60px;
+    display: block;
+    margin-bottom: 2ex;
+    font-size: smaller;
+}
+.block .cal-links{
+    float: right;
+}
+
 .evt-details {
     margin-left: 10px;
     font-size: smaller;

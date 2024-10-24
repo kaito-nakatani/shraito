@@ -7,7 +7,6 @@ ical: "[TODO CAL LINK]()"
 accent: "teal"
 leftblock: "Reception"
 hide: true
+attire: Cocktail dress (Indian or Western)
 ---
 Reception with toasts and dancing! **Arrive on time.**
-
-Attire: Cocktail dresses (Indian or Western)

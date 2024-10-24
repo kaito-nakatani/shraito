@@ -1,10 +1,11 @@
 console.log("rain.js starting!");
 
 // Parameters:
-let n_drops = 100;
+let n_drops = 200;
 let push_start = $('.hex-container').offset().top;
 let push_end = $('.hex-container').height()*0.5 + push_start;
 let base_fall_rate = 7;
+let interact_hex = false;
 
 // let init_velo = 10; // pixels per 100ms
 // let accel = 0.2;
@@ -33,7 +34,7 @@ function push_target(x_coord ){
         rect = _$hexes[i].getBoundingClientRect();
         // console.log(i, rect);
         w = rect.width;
-        if(x_coord < rect.x) return undefined;
+        // if(x_coord < rect.x) return undefined;
         if(x_coord >= rect.x && x_coord <= rect.x + w/2) {
             // console.log(i,"LEFT");
             // return -1;
@@ -103,7 +104,7 @@ function tick_rain() {
         y = parseInt(drop.element.css('top')); // somehow this is in pixels
         h = drop.element.innerHeight();
 
-        // if(false){
+        if(interact_hex){
         if(drop.animated && y >= push_start && y <= push_end
             ) {
             // console.log(drop);
@@ -125,10 +126,10 @@ function tick_rain() {
             }
             // drop.element.css
         } 
-        // }
+        }
         
         drop.vx += (Math.random()*2 -1)*0.05;
-        drop.vx *= 0.9;
+        drop.vx *= 0.96;
 
         if (y+h < push_start)
             drop.vx += (wind/(drop.mass*(1 + drop.depth))  - drop.vx) / 8;
@@ -163,9 +164,11 @@ $(function(){
         let drop = new RainDrop();
         $rain_pane.append(drop.element);
         drops.push(drop);
-        drop.element.on("animationiteration", {drop : drop}, drop_reset);
+        if(interact_hex)
+            drop.element.on("animationiteration", {drop : drop}, drop_reset);
     }
-    window.setInterval(tick_rain, 50);
+    if(interact_hex)
+        window.setInterval(tick_rain, 50);
 });
 
 console.log("RAIN.js finished!");
