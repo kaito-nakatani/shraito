@@ -41,7 +41,7 @@ collections:
   tabs:
     output: true
     order:
-      - events.md
+      - events.html
       - travel-info.md
       - qa.md
       - gallery.md

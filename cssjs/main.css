@@ -46,8 +46,8 @@ body {
 .block {
     margin-top: 30px;
     /* border-left: 5px solid #EAE; */
-    border-left: 5px solid var(--accent);
-    padding-left: 10px;
+    border-left: 8px solid var(--accent);
+    padding-left: 20px;
     position:relative;
 }
 
@@ -98,6 +98,7 @@ body {
     border-radius: 5px;
     padding:10px;
     margin-bottom:10px;
+    vertical-align: middle;
     /* background-color: rgb(244, 218, 232);
     border: 2px solid rgb(228, 207, 218); */
     background-color: color-mix(in srgb, var(--ocolor) 20%, white);
@@ -105,14 +106,18 @@ body {
 
     transition: font-size .2s, background-color .15s;
 }
-
 .nav-item:hover{
     font-size:larger;
+}
+.nav-item.current-tab {
+    font-size: larger;
+    background-color: color-mix(in srgb, white 20%, rgb(195, 60, 138));
 }
 .nav-item a {
     text-decoration : none;
     color: var(--vcolor)
 }
+
 
 .rsvp {
     display: inline-block;
@@ -133,12 +138,7 @@ body {
     font-size:30pt;
 }
 
-.nav-item.current-tab {
-    font-size: larger;
-    background-color: color-mix(in srgb, white 20%, rgb(195, 60, 138));
-}
-.nav-item:not(.current-tab) {
-}
+
 
 .fullpagewidth {
     text-align: center;
@@ -172,4 +172,5 @@ span.oli {
     /* margin-left: -5px; */
     color: var(--ocolor);
 }
+
 

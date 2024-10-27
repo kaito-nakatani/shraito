@@ -1,8 +1,14 @@
 
 <navbar>
+<ul>
 <!-- <li class="nav-home"><a href="/">Voli</a></li> -->
 <!-- <li class="nav-home"><a href="/"></a></li> -->
-<li class="nav-item"><a href="/">@</a></li>
+<li class="nav-item" > <!-- {% if page.url == '/' %}current-tab{% endif %} -->
+    <a href="/">
+        <!-- <div style="background-image: url('/assets/cloud.png'); width:10px; height:18px;"></div> -->
+        <img src="/assets/cloud.png" height="30px" style="margin:-10px -0px; "/>
+    </a>
+</li>
 {% for tab in site.tabs %}
 <li class="nav-item {% if tab.url == page.url%}current-tab{% endif %}">
     <a href="{{tab.url}}" >
@@ -10,5 +16,6 @@
     </a>
 </li>
 {% endfor %}
+</ul>
 </navbar>
 

@@ -6,5 +6,6 @@ ical: "[TODO CAL LINK]()"
 accent: "#ABA"
 leftblock: "\\Bigg"
 attire : Indian / Indowestern /  Western
+access_level : 1
 ---
 Celebrate our wedding with a live band!

@@ -8,5 +8,6 @@ accent: "teal"
 leftblock: "Reception"
 hide: true
 attire: Cocktail dress (Indian or Western)
+access_level : 3
 ---
 Reception with toasts and dancing! **Arrive on time.**
