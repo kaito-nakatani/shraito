@@ -1,0 +1,55 @@
+---
+title: Events
+layout: default
+custom_js:
+    - passwd
+custom_css:
+    - protect
+---
+
+{% include navbar.html %}
+
+<div class="center">
+<h1 onclick="document.getElementById('unlock-controls').style.display = 'block';"> {{page.title}} </h1>
+</div>
+
+<div class="center" id="unlock-controls">
+    <div>
+    <label for="passwd"><b>password:</b></label>
+    <input type="text" id="passwd" name="">
+    </div>
+    <div>
+    <input type=checkbox id="cookie-permit" selected></input>
+    <label for="cookie-permit">save password in a 
+            <a href="https://en.wikipedia.org/wiki/HTTP_cookie">cookie</a>
+            that expires after the wedding?</label>
+    </div>
+
+    <button id="unlock-btn" onclick="unlock();"> unlock event details </button>
+</div>
+
+<div class=block data-access-level=0>
+(Feel free to where anything you'd like for all of the events. The attire listed below is just a suggestion in case you are looking for inspiration.)
+</div>
+
+{% for evt in site.evts %}
+<div class="block hidden" style="--accent:{{evt.accent}}"
+    data-access-level={{evt.access_level}}>
+<div class="sideways"><h1>
+    {{ evt.leftblock }}
+</h1></div>
+
+<h2> {{ evt.name }}</h2>
+<span class="timing">
+{{ evt.date |  date: "%-d %B %Y"}}
+@ {{ evt.timerange }}
+<span class="cal-links">
+    <a href="{{ evt.ical }}"> [cal] </a>
+</span>
+</span>
+<div class="attire">Attire: {{ evt.attire }}</div>
+<div class="evt-details">
+{{ evt.content }}
+</div>
+</div>
+{% endfor %}

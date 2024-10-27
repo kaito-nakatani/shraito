@@ -6,6 +6,7 @@ ical: "[TODO CAL LINK]()"
 accent: "blue"
 leftblock: "Rituals"
 attire: Anything floral or colorful
+access_level : 2
 ---
 The **[haldi](https://en.wikipedia.org/wiki/Turmeric)** ceremony is a cleansing ritual where family and friends come together to apply haldi (turmeric paste) on the bride and groom's face and body, because haldi is known to possesss antioxidant and anti-inflammatory properties.
 
