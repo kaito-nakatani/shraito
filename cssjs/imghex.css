@@ -1,0 +1,61 @@
+:root {
+    --imgwidth: 300px;
+    --imgheight: 340px;
+    --hex-spacing: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* varsha hexagons */
+.hex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 640px; */
+    /* width: 100%; */
+    /* opacity: 50%; */
+}
+.hex-row {
+    display: flex;
+    justify-content: center;
+    /* margin-top: -65px; Adjust this value to change the vertical overlap */
+    margin-top: calc(0px - var(--imgheight) / 4 + var(--hex-spacing) / 0.8 ); 
+}
+.hex, .hex:before {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hex {
+    width: var(--imgwidth);
+    height: var(--imgheight);
+    /* margin: 0 10px; */
+    margin: 0 var(--hex-spacing);
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.hex:before {
+    content: '';
+    width: calc(var(--imgwidth) + 6px);
+    height: calc(var(--imgheight) + 6px);
+    background: #000;
+    /* display: ; */
+    position: relative;
+    top: 1px;
+    left: 1px;
+  }
+
+  .hex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.gallery-spacer {
+    height: calc(var(--imgheight) / 4 + var(--hex-spacing) + 10px);
+}
+.small-spacer {
+    height: 35px;
+}
