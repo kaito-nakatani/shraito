@@ -1,0 +1,38 @@
+.hex:first-child, .hex:last-child {
+    filter:grayscale(.5) contrast(.5);
+    opacity:0.2;
+    scale: 0.8;
+}
+
+.hex:hover:not(:first-child):not(:last-child){
+    scale: 130%;
+    z-index: 4;
+}
+
+.control {
+    position: fixed;
+    /* top: calc(50% + 246px /2 ); */
+    top: calc(50% - 80px / 2);
+    height: 80px;
+}
+
+.control button {
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 70pt;
+}
+.control button:hover {
+    color:red;
+    text-decoration: dotted;
+    font-size: 72pt;
+}
+
+.control-left {
+    /* float : left; */
+    left: 50px;
+}
+.control-right { 
+    /* float: right; */
+    right: 50px;
+}

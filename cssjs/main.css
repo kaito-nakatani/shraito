@@ -173,4 +173,12 @@ span.oli {
     color: var(--ocolor);
 }
 
-
+span.establishment {
+    /* font-weight: 500; */
+    font-weight: bold;
+    /* color: color-mix(in srgb, var(--vcolor) 50%, red 40%); */
+    color: color-mix(in srgb, var(--accent) 50%, red 20%);
+}
+span.establishment::after {
+    content: " — "
+}

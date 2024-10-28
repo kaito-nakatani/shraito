@@ -1,5 +1,6 @@
 ---
-title: QA
+title: Questions and Answers
+title_short: QA
 layout: tab
 leftblock: Q & A
 custom_css:
@@ -37,12 +38,12 @@ There are attire recommendations below each event on the events page. These are 
 You should also keep an eye out for informally oganized shopping trips before the wedding.  
 
 **How can I get around Bangalore?**  
-Getting around Bangalore is not too hard and most rides within the city cost between ₹200-500 ($2.50-$6). We recommend either of the following:
-- *Uber / Ola* (Ride-Hailing Apps): Both apps work just like Uber does internationally. 
+Getting around Bangalore is not too hard and most rides within the city cost between ₹200 and ₹500 (which is $2.50-$6). We recommend either of the following:
+- *Uber / Ola* (Ride-Hailing Apps): Both apps work just like Uber and Lyft do in the US. 
 - *Auto-Rickshaws* These are iconic yellow and black three-wheelers. You can usually hail these down on the street but you would then have to communicate with the driver (usually in Kannada) to tell the driver where you are going and to negotiate a price. An easier alternative is to book autos through the Uber/Ola app.  
 
 **Any tips for travelling to India?**  
-Yes, please take a look at the Travel Info page. 
+Yes, please take a look at our [Travel Info](/tabs/travel-info.html) page. 
 
 **What are some local attractions and recommendations?**  
 Please take a look at the recommendations page.
