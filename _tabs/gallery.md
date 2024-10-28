@@ -2,10 +2,13 @@
 title: Gallery
 layout: tab
 custom_js:
-    - photoswap
+    - gallery
+custom_css:
+    - gallery
+    - imghex
 ---
 
-{% include gallery.html 
-    gridnums="2,3,2" 
+{% include hexphotos.html 
+    gridnums="4,5,4" 
     save_image_names_js="img_names" 
 %}

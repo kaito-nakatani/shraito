@@ -5,6 +5,7 @@
 layout: default
 custom_css:
     - rain
+    - imghex
 custom_js:
     - rain
 ---
@@ -20,7 +21,7 @@ custom_js:
 <!-- <div class="gallery-spacer"></div> -->
 <div class="fullpagewidth">
 <div class="" style="--hex-spacing:5px; --imgwidth:200px; --imgheight:230px;">
-{% include gallery.html gridnums="7" %} <!--6,3-->
+{% include hexphotos.html gridnums="7" %} <!--6,3-->
 </div>
 </div>
 <!-- <div class="small-spacer"></div> -->
