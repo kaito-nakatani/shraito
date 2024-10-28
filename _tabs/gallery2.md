@@ -1,19 +1,18 @@
 ---
-title_short: Gallery
-title: Gallery
+title_short: G2
+title: Gallery Version 2
 layout: tab
 custom_js:
     - gallery
 custom_css:
     - imghex
-    - gallery
 ---
 
 
 <!--     gridnums="4,5,4,5,4,5" -->
 
-{% include hexphotos.html
-    gridnums="4,5,4"
+{% include hexphotos.html 
+    gridnums="3,4,3,4,3,4,3,4"
     save_image_names_js="img_names" 
 %}
 
