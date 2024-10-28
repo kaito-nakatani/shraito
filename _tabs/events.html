@@ -52,14 +52,30 @@ custom_css:
 <span class="timing">
 {{ evt.date |  date: "%-d %B %Y"}}
 @ {{ evt.timerange }}
-<span class="cal-links">
+<!-- <span class="cal-links">
     <a href="{{ evt.ical }}"> [cal] </a>
-</span>
-<div class="add-to-calendar">
+</span> -->
+<div class="calendar-dropdown">
+    <button onclick="toggleDropdown()" class="main-button">
+      <span class="icon">🗓️</span> &nbsp;&nbsp;Add to Calendar
+    </button>
+    <div id="dropdown-menu" class="dropdown-menu">
+      <button onclick="addToGoogleCalendar()">Google
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Google_2015_logo.svg" alt="Google" class="icon"> Google -->
+      </button>
+      <button onclick="addToAppleCalendar()">Apple
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="icon"> Apple -->
+      </button>
+      <button onclick="addToOutlookCalendar()">Outlook
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg" alt="Outlook" class="icon"> Outlook -->
+      </button>
+    </div>
+  </div>
+<!-- <div class="add-to-calendar">
     <button onclick="addToGoogleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}')">Add to Google Calendar</button>
-    <button onclick="addToAppleCalendar()">Add to Apple Calendar</button>
-    <button onclick="addToOutlookCalendar()">Add to Outlook Calendar</button>
-</div>  
+    <button onclick="addToAppleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}')">Add to Apple Calendar</button>
+    <button onclick="addToOutlookCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}')">Add to Outlook Calendar</button>
+</div>   -->
 </span>
 <div class="attire">Attire: {{ evt.attire }}</div>
 <div class="evt-details">

@@ -89,3 +89,14 @@ function addToOutlookCalendar(eventTitle, eventLocation, startDate, endDate, eve
   window.open(outlookURL, "_blank");
 }
 
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown-menu");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+  
+  // Close dropdown if clicked outside
+  window.onclick = function(event) {
+    if (!event.target.matches('.main-button')) {
+      document.getElementById("dropdown-menu").style.display = "none";
+    }
+  }
