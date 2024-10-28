@@ -4,7 +4,7 @@ date: 17 Jan 2025
 timerange: 6pm
 ical: "[TODO CAL LINK]()"
 accent: "#ABA"
-leftblock: "\\Bigg"
+leftblock: "Reception"
 attire : Indian / Indowestern /  Western
 access_level : 1
 title: "Meet and Greet (Voli)"
