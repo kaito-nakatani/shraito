@@ -13,15 +13,20 @@ window.scrollTo({
     behavior: "smooth",
 });
 
+$('.control').on('mousedown', function(){ 
+    $(".hex").addClass('in-flux');
+})
+
 function shift(n) {
     console.log("shift", n);
-    $(".hex img").css('filter', "blur(10px);")
     $(".hex").each(function(i,elt) {
         prev_idx = parseInt($(elt).attr("data-imgidx"));
         $(elt).attr("data-imgidx", prev_idx+1);
         $(elt).find("img").attr("src", img_names[prev_idx+n])
-    })   
-    $(".hex img").css('filter', "blur(10px);")
+    }) 
+    setTimeout(function(){
+        $(".hex").removeClass('in-flux');
+    },200);
     // $(".hex").css('filter', "none");
 }
   
