@@ -2,7 +2,7 @@
 title: Events
 layout: default
 custom_js:
-    - passwd
+    - events
 custom_css:
     - protect
 ---
@@ -47,6 +47,11 @@ custom_css:
 <span class="cal-links">
     <a href="{{ evt.ical }}"> [cal] </a>
 </span>
+<div class="add-to-calendar">
+    <button onclick="addToGoogleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}')">Add to Google Calendar</button>
+    <button onclick="addToAppleCalendar()">Add to Apple Calendar</button>
+    <button onclick="addToOutlookCalendar()">Add to Outlook Calendar</button>
+</div>  
 </span>
 <div class="attire">Attire: {{ evt.attire }}</div>
 <div class="evt-details">

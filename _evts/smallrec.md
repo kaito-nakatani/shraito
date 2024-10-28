@@ -9,5 +9,9 @@ leftblock: "Reception"
 hide: true
 attire: Cocktail dress (Indian or Western)
 access_level : 3
+title: "Reception (Voli)"
+location: "The Tamarind Tree"
+start: "20240116T113000Z"
+end: "20240116T163000Z"
 ---
 Reception with toasts and dancing! **Arrive on time.**

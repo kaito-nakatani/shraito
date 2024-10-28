@@ -7,6 +7,10 @@ ical: "[TODO CAL LINK]()"
 leftblock: Wedding
 attire: Traditional indian clothes (saris, lehengas, kurtas)
 access_level : 1
+title: "Wedding (Voli)"
+location: "The Tamarind Tree"
+start: "20240116T020000Z"
+end: "20240116T083000Z"
 ---
 
 The South Indian wedding ceremony will include many rituals like 

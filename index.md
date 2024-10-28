@@ -43,7 +43,7 @@ We hope you can join us!
 
 <div class="center">
 <div class="nav-item rsvp">
-    <a href="form"> RSVP </a>
+    <a href="https://forms.gle/1KobqjmUYpwjUKuJ7"> RSVP </a>
 </div>
 </div>
 
