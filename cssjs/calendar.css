@@ -1,0 +1,38 @@
+.calendar-dropdown {
+    position: relative;
+    float: right;
+  }
+  
+.main-button {
+padding: 10px 10px;
+color: black;
+border: 1px solid rgb(161, 161, 161);
+border-radius: 25px;
+cursor: pointer;
+background-color: transparent;
+}
+
+.dropdown-menu {
+display: none; /* Hidden by default */
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #ffffff;
+border: 1px solid #ddd;
+box-shadow: 0 8px 16px rgba(134, 134, 134, 0.2);
+border-radius: 5px;
+z-index: 1;
+}
+
+.dropdown-menu button {
+padding: 10px;
+width: 100%;
+background: none;
+border: 0.25px solid rgb(161, 161, 161);
+cursor: pointer;
+text-align: center;
+}
+
+.dropdown-menu button:hover {
+background-color: #f1f1f1;
+}
