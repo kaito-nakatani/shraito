@@ -7,6 +7,10 @@ accent: "blue"
 leftblock: "Rituals"
 attire: Anything floral or colorful
 access_level : 2
+title: "Haldi/Mehendi (Voli)"
+location: "The Tamarind Tree"
+start: "20240116T120000Z"
+end: "20240116T143000Z"
 ---
 The **[haldi](https://en.wikipedia.org/wiki/Turmeric)** ceremony is a cleansing ritual where family and friends come together to apply haldi (turmeric paste) on the bride and groom's face and body, because haldi is known to possesss antioxidant and anti-inflammatory properties.
 
