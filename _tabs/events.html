@@ -6,6 +6,7 @@ custom_js:
     - events
 custom_css:
     - protect
+    - calendar
 ---
 
 {% include navbar.html %}
@@ -60,14 +61,11 @@ custom_css:
       <span class="icon">🗓️</span> &nbsp;&nbsp;Add to Calendar
     </button>
     <div id="dropdown-menu" class="dropdown-menu">
-      <button onclick="addToGoogleCalendar()">Google
-        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Google_2015_logo.svg" alt="Google" class="icon"> Google -->
+      <button onclick="addToGoogleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}', '{{ evt.desc }}')">Google
       </button>
-      <button onclick="addToAppleCalendar()">Apple
-        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="icon"> Apple -->
+      <button onclick="addToAppleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}', '{{ evt.desc }}')">Apple
       </button>
-      <button onclick="addToOutlookCalendar()">Outlook
-        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg" alt="Outlook" class="icon"> Outlook -->
+      <button onclick="addToOutlookCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}', '{{ evt.desc }}')">Outlook
       </button>
     </div>
   </div>

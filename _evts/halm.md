@@ -1,5 +1,5 @@
 ---
-name: "Prewedding Rituals:  Mehendi & Haldi"
+name: "Pre-wedding Rituals:  Mehendi & Haldi"
 date: 16 Jan 2025
 timerange: 5:30pm -- ??
 ical: "[TODO CAL LINK]()"
@@ -8,9 +8,10 @@ leftblock: "Rituals"
 attire: Anything floral or colorful
 access_level : 2
 title: "Haldi/Mehendi (Voli)"
-location: "The Tamarind Tree"
-start: "20240116T120000Z"
-end: "20240116T143000Z"
+location: "The Tamarind Tree, 88, Avalahalli Kanakapura Rd, Royal Park Residency Layout, JP Nagar 9th Phase, J. P. Nagar, Bengaluru, Karnataka 560108, India"
+start: "20250116T120000Z"
+end: "20250116T143000Z"
+desc: "Haldi is a ceremony where friends/family apply haldi (turmeric paste) on the bride and groom's face and body. Mehendi is a ceremony where henna is used to create body art."
 ---
 The **[haldi](https://en.wikipedia.org/wiki/Turmeric)** ceremony is a cleansing ritual where family and friends come together to apply haldi (turmeric paste) on the bride and groom's face and body, because haldi is known to possesss antioxidant and anti-inflammatory properties.
 

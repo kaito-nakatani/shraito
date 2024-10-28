@@ -8,9 +8,10 @@ leftblock: Wedding
 attire: Traditional indian clothes (saris, lehengas, kurtas)
 access_level : 1
 title: "Wedding (Voli)"
-location: "The Tamarind Tree"
-start: "20240116T020000Z"
-end: "20240116T083000Z"
+location: "The Tamarind Tree, 88, Avalahalli Kanakapura Rd, Royal Park Residency Layout, JP Nagar 9th Phase, J. P. Nagar, Bengaluru, Karnataka 560108, India"
+start: "20250116T020000Z"
+end: "20250116T083000Z"
+desc: "Traditional wedding ceremony."
 ---
 
 The South Indian wedding ceremony will include many rituals like 

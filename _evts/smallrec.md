@@ -10,9 +10,10 @@ hide: true
 attire: Cocktail dress (Indian or Western)
 access_level : 3
 title: "Reception (Voli)"
-location: "The Tamarind Tree"
-start: "20240116T113000Z"
-end: "20240116T163000Z"
+location: "The Tamarind Tree, 88, Avalahalli Kanakapura Rd, Royal Park Residency Layout, JP Nagar 9th Phase, J. P. Nagar, Bengaluru, Karnataka 560108, India"
+start: "20250116T113000Z"
+end: "20250116T163000Z"
+desc: "Reception with toasts and dancing!"
 ---
 Reception with toasts and dancing! **Arrive on time.**  
 (This event is invite-only; not all guests are invited.)
