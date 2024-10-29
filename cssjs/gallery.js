@@ -5,9 +5,22 @@ function new_random_img(){
 
 $(".hex").each(function(i,elt) {
     $(elt).attr("data-imgidx", i);
-})
+});
 
-window.scrollTo({
+$('.hex').click(function(event) {
+    // $(this).toggleClass('active');
+    $('#img-display').show();
+    $('#img-display').addClass('active');
+    $('#img-display img').attr('src', img_names[$(this).attr('data-imgidx')]);
+});
+
+$('#img-display').click(function() {
+    $('#img-display').removeClass('active');
+});
+
+/*
+// old gallery (--visor) code
+ window.scrollTo({
     top: $('.hex-row')[1].getBoundingClientRect().top+window.innerHeight/2,
     left: 0,
     behavior: "smooth",
@@ -29,12 +42,16 @@ function shift(n) {
     },200);
     // $(".hex").css('filter', "none");
 }
+*/
   
-/*$('.hex img').each(function(i,heximg){
+/*
+// flickering code
+$('.hex img').each(function(i,heximg){
     setInterval(function(){
         // console.log(heximg);
         // $(heximg).css('border', '1px solid red');
         // $(heximg).css('border', '1px solid red');
         $(heximg).attr('src', new_random_img());
     }, 1000+2000*Math.random());
-});*/
+});
+*/

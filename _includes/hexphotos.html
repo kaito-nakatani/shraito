@@ -12,7 +12,7 @@
 {% if include.save_image_names_js %}
 <script type="text/javascript">
     let {{include.save_image_names_js}} = [
-        {% for imgfile in image_files %}'{{imgfile.path}}',{% endfor %} ];
+        {% for imgfile in image_files %}'{{ imgfile.path | relative_url }}',{% endfor %} ];
 </script>
 {% endif %}
 
@@ -28,7 +28,7 @@
     <div class="hex-row">
         {% for col in (1..row) %}
         <div class="hex">
-            <img src="{{image_files[i].path}}" />
+            <img src="{{image_files[i].path | relative_url }}" />
             {% assign i = i | plus : 1 %}
         </div>
         {% endfor %}

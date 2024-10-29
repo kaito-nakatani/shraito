@@ -42,6 +42,7 @@ custom_css:
 (Feel free to where anything you'd like for all of the events. The attire listed below is just a suggestion in case you are looking for inspiration.)
 </div>
 
+{% assign i = 0 %}
 {% for evt in site.evts %}
 <div class="block hidden" style="--accent:{{evt.accent}}"
     data-access-level={{evt.access_level}}>
@@ -57,10 +58,10 @@ custom_css:
     <a href="{{ evt.ical }}"> [cal] </a>
 </span> -->
 <div class="calendar-dropdown">
-    <button onclick="toggleDropdown()" class="main-button">
+    <button onclick="toggleDropdown({{i}})" class="main-button">
       <span class="icon">🗓️</span> &nbsp;&nbsp;Add to Calendar
     </button>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div id="dropdown-menu-{{i}}" class="dropdown-menu">
       <button onclick="addToGoogleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}', '{{ evt.desc }}')">Google
       </button>
       <button onclick="addToAppleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}', '{{ evt.desc }}')">Apple
@@ -80,4 +81,5 @@ custom_css:
 {{ evt.content }}
 </div>
 </div>
+{% assign i = i | plus:1 %}
 {% endfor %}

@@ -1,12 +1,34 @@
+.hex:hover {
+    scale: 130%;
+    z-index: 4;
+}
+
+#img-display {
+    position: relative;
+    width: inherit;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+
+    /* margin:auto; */
+    /* width: 60%; */
+}
+
+#img-display.active{
+    position: fixed;
+    width: 100%;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+}
+
+.hex.active {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+}
+
+
+/* old gallery
+
 .hex:first-child, .hex:last-child {
     filter:grayscale(.5) contrast(.5);
     opacity:0.2;
     scale: 0.8;
-}
-
-.hex:hover:not(:first-child):not(:last-child){
-    scale: 130%;
-    z-index: 4;
 }
 
 .in-flux {
@@ -15,11 +37,9 @@
 
 .control {
     position: fixed;
-    /* top: calc(50% + 246px /2 ); */
     top: calc(50% - 80px / 2);
     height: 80px;
 }
-
 .control button {
     height: 100%;
     border: none;
@@ -33,10 +53,9 @@
 }
 
 .control-left {
-    /* float : left; */
     left: 50px;
 }
 .control-right { 
-    /* float: right; */
     right: 50px;
 }
+*/

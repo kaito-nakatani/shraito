@@ -6,6 +6,7 @@ let push_start = $('.hex-container').offset().top;
 let push_end = $('.hex-container').height()*0.5 + push_start;
 let base_fall_rate = 7;
 let interact_hex = false;
+// let interact_hex = true;
 
 // let init_velo = 10; // pixels per 100ms
 // let accel = 0.2;

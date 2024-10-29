@@ -89,14 +89,17 @@ function addToOutlookCalendar(eventTitle, eventLocation, startDate, endDate, eve
   window.open(outlookURL, "_blank");
 }
 
-function toggleDropdown() {
-    const dropdown = document.getElementById("dropdown-menu");
+function toggleDropdown(i) {
+    // const dropdown = $(".dropdown-menu")[parseInt(i)];
+    const dropdown = document.getElementById("dropdown-menu-"+i);
+    console.log(dropdown);
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
   }
   
   // Close dropdown if clicked outside
   window.onclick = function(event) {
     if (!event.target.matches('.main-button')) {
-      document.getElementById("dropdown-menu").style.display = "none";
+      // document.getElementById("dropdown-menu").style.display = "none";
+      $('.dropdown-menu').hide();
     }
   }

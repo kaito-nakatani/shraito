@@ -10,16 +10,14 @@ custom_css:
 ---
 
 
-<!--     gridnums="4,5,4,5,4,5" -->
+<!--  gridnums="4,5,4,5,4,5" -->
+<!-- gridnums="3,4,3,4,3,4,3,4" -->
 
-{% include hexphotos.html
-    gridnums="4,5,4"
+{% include hexphotos.html 
+    gridnums="2,3,2,3,2,3,2,3"
     save_image_names_js="img_names" 
 %}
 
-<div class="control control-left">
-<button class="navchev" onclick="shift(-1);"> « </button>
-</div>
-<div class="control control-right">
-<button class="navchev" onclick="shift(1);"> » </button>
+<div id="img-display">
+    <img src="" />
 </div>
