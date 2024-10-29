@@ -25,7 +25,8 @@ body {
 }
 
 .center { text-align: center;}
-.main-title { margin : 50px; font-size: 72pt; }
+/* .main-title { margin : 50px; font-size: 72pt; } */
+.main-title { margin : 30px; font-size: 72pt; }
 .wrapper {
     max-width: 640px;
     margin: 0 auto;
@@ -182,4 +183,22 @@ span.establishment {
 }
 span.establishment::after {
     content: " — "
+}
+
+@media only screen and (max-width: 768px) {
+    .sideways {
+        display:none;
+    }
+    .block ul {
+        padding-left: 1em;
+    }
+    .wrapper {
+        padding: 3rem 10px;
+    }
+    .block .timing {
+        margin-left : 20px;
+    }
+    .block .attire {
+        margin-left : 30px;
+    }
 }

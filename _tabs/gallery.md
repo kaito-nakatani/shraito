@@ -14,10 +14,16 @@ custom_css:
 <!-- gridnums="3,4,3,4,3,4,3,4" -->
 
 {% include hexphotos.html 
-    gridnums="2,3,2,3,2,3,2,3"
+    gridnums="2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2"
     save_image_names_js="img_names" 
 %}
 
 <div id="img-display">
     <img src="" />
 </div>
+
+<!-- <div class="center">
+<button onclick="reroll()">
+    reroll
+</button>
+</div> -->

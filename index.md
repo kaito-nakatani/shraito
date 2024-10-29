@@ -33,7 +33,6 @@ We hope you can join us!
 
 
 
-
 <!-- <div class="gallery-spacer"></div> -->
 <div class="fullpagewidth">
 <div class="" style="--hex-spacing:5px; --imgwidth:200px; --imgheight:230px;">
@@ -43,21 +42,11 @@ We hope you can join us!
 <!-- <div class="small-spacer"></div> -->
 
 <!-- Varsha and Oli met at Cornell... -->
-
-
+{:.center}
 Varsha Kishore
 and 
 Oli(ver) Richardson
 are getting married to one another.
-
-Varsha and Oli met in Grad School at Cornell. 
-They have spent six years together (including the pandemic) and have discovered:
-       	       Varsha exploits; Oli explores
-Varsha reliably executes; Oli sometimes has crazy ideas
-Varsha likes content; Oli likes style
-They complement one another and are excited to commit to a lifetime of partnership. 
-
-
 The ceremony will be 
 in 
 [Bangalore, India](https://maps.app.goo.gl/XyncfmUAKSynTgSL7)
@@ -65,6 +54,25 @@ at
 [the Tamarind Tree](https://www.thetamarindtree.in/)
 on January 16th, 2024.
 We hope you can join us!
+
+
+
+<hr style="max-width:80%;">
+
+
+Varsha and Oli met in graduate school at Cornell. 
+They have spent six years together (including the pandemic) and have discovered:
+
+{:.center}
+<span class="varsha">Varsha exploits</span>; 
+    <span class="oli">Oli explores</span>  
+<span class="varsha">Varsha reliably executes</span>;
+    <span class="oli">Oli sometimes has crazy ideas</span>  
+<span class="varsha">Varsha likes content</span>; 
+    <span class="oli">Oli likes style</span>  
+
+They complement one another very well, and are excited to commit to a lifetime of partnership! 
+
 
 <!-- 
 <div class="center">
