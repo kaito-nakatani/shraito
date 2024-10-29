@@ -21,10 +21,10 @@ https://github.com/riggraz/no-style-please/blob/master/_includes/head.html.-->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/cssjs/main.css" />
+    <link rel="stylesheet" href="/{{ site.baseurl }}cssjs/main.css" />
     {% if page.custom_css %}
     {% for sheet in page.custom_css %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/cssjs/{{sheet}}.css" />
+    <link rel="stylesheet" href="/{{ site.baseurl }}cssjs/{{sheet}}.css" />
     {% endfor %}
     {% endif %}
   </head>
