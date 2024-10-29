@@ -17,6 +17,22 @@ custom_js:
 </div>
 
 
+<!-- 
+Varsha Kishore
+and 
+Oli(ver) Richardson
+are getting married to one another.
+The ceremony will be 
+in 
+[Bangalore, India](https://maps.app.goo.gl/XyncfmUAKSynTgSL7)
+at 
+[the Tamarind Tree](https://www.thetamarindtree.in/)
+on January 16th, 2024.
+We hope you can join us!
+-->
+
+
+
 
 <!-- <div class="gallery-spacer"></div> -->
 <div class="fullpagewidth">
@@ -33,18 +49,27 @@ Varsha Kishore
 and 
 Oli(ver) Richardson
 are getting married to one another.
-<!--  -->
+
+Varsha and Oli met in Grad School at Cornell. 
+They have spent six years together (including the pandemic) and have discovered:
+       	       Varsha exploits; Oli explores
+Varsha reliably executes; Oli sometimes has crazy ideas
+Varsha likes content; Oli likes style
+They complement one another and are excited to commit to a lifetime of partnership. 
+
+
 The ceremony will be 
 in 
-[Bangalore, India](https://maps.app.goo.gl/XyncfmUAKSynTgSL8)
+[Bangalore, India](https://maps.app.goo.gl/XyncfmUAKSynTgSL7)
 at 
 [the Tamarind Tree](https://www.thetamarindtree.in/)
-on January 17th, 2024.
+on January 16th, 2024.
 We hope you can join us!
 
+<!-- 
 <div class="center">
 <div class="nav-item rsvp">
     <a href="https://forms.gle/1KobqjmUYpwjUKuJ7"> RSVP </a>
 </div>
-</div>
+</div> -->
 

@@ -120,22 +120,23 @@ body {
 
 
 .rsvp {
+    margin-left:15px;
     display: inline-block;
     border-radius: 5px;
     border: 2px solid black;
     transition: font-size .2s, background-color .15s;
 
-    padding: 20px;
-    font-size: 20pt;
+    /* padding: 20px; */
+    font-size: 15pt;
     background-color:var(--vcolor);
     /* color:white; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 .rsvp a {
     color: white;
 }
 .rsvp:hover {
-    font-size:30pt;
+    font-size:20pt;
 }
 
 
