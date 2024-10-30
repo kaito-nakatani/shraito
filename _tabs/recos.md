@@ -5,12 +5,12 @@ layout: tab
 leftblock: Recomendations
 ---
 **Food**  
-Bangalore has a lot of good food, especially soouth indian food. 
+Bangalore has a lot of good food, especially South Indian food. 
 *Bangalore also has the best dosas in India* <sup>[Kishore et. al., 2024]</sup>.
 Here are a few recommendations:
 - <span class="establishment">Vidyarthi Bhavan</span> Historic restaurant known for crispy dosas. You usually get a token and wait 20-30min for a table.
 - <span class="establishment">MTR (Mavalli Tiffin Room)</span>  Iconic restaurant known for serving authentic South Indian food. Try their masala dosa, filter coffee and lunch meals.  
-- <span class="establishment">Brahmins Coffee Bar</span> order Idli with chutney.
+- <span class="establishment">Brahmins Coffee Bar</span> order Idli with chutney and filter coffee.
 - <span class="establishment">V V Puram</span> street with food with multiple vendors. It is definately an experience!
 - <span class="establishment">Kappa chakka kandhari</span>  Food from Kerala. Try their cloud pudding. 
 

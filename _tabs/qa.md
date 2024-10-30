@@ -8,7 +8,7 @@ custom_css:
 ---
 
 **Does travel to India require a visa?**  
-Yes, for visitors from most countries.
+Yes, for visitors from most countries. More information can be found on the [Travel Info](/tabs/travel-info.html) page.
 
 
 **What gifts would you like? Do you have a registry?**  
@@ -29,7 +29,7 @@ Yes, there is parking available at the venue ([Tamarind Tree](https://www.thetam
 Please let us know of any dietary restrictions or allergies when you RSVP. We'll try our best to accommodate all dietary needs. 
 
 **Is there a dress code? Can I shop for Indian clothes?**  
-There are attire recommendations below each event on the events page. These are certainly not required and are just suggestions. If you are interested in purchasing Indian clothes here are two streets in Bangalore where there are multiple shops that you can check out, such as:
+There are attire recommendations below each event on the [Events](/tabs/events.html) page. These are certainly not required and are just suggestions. If you are interested in purchasing Indian clothes, here are two streets in Bangalore where there are multiple shops that you can check out:
 
 {:.slim}
 - Commercial Street, and
@@ -40,11 +40,11 @@ You should also keep an eye out for informally oganized shopping trips before th
 **How can I get around Bangalore?**  
 Getting around Bangalore is not too hard and most rides within the city cost between ₹100 and ₹500 (which is $1-$6). Here are some options:
 - *Uber / Ola* (Ride-Hailing Apps): Both apps work just like Uber and Lyft do in the US. 
-- *Auto-Rickshaws* These are iconic yellow and black three-wheelers. You can usually hail these down on the street but you would then have to communicate with the driver (usually in Kannada) to tell the driver where you are going and to negotiate a price. An easier alternative is to book autos through the Uber/Ola app.  
-- Metro: Some places in Bangalore are accessible via [Metro](https://english.bmrc.co.in/). The metro is fairly new and therefore does not cover the whole city yet.
+- *Auto-Rickshaws*: These are iconic yellow and black three-wheelers. You can usually hail these down on the street but you would then have to communicate with the driver (usually in Kannada) to tell the driver where you are going and to negotiate a price. An easier alternative is to book autos through the Uber/Ola app.  
+- *Metro*: Some places in Bangalore are accessible via [Metro](https://english.bmrc.co.in/). The metro is fairly new and therefore does not cover the whole city yet.
 
 **Any tips for travelling to India?**  
 Yes, please take a look at our [Travel Info](/tabs/travel-info.html) page. 
 
 **What are some local attractions and recommendations?**  
-Please take a look at the recommendations page.
+Please take a look at the [Recommendations](/tabs/recos.html) page.
