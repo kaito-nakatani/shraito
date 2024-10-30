@@ -57,7 +57,7 @@ We hope you can join us!
 
 
 
-<hr style="max-width:80%;">
+<hr style="max-width:50%;margin: 30px auto;">
 
 
 Varsha and Oli met in graduate school at Cornell. 

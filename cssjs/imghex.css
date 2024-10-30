@@ -24,7 +24,7 @@ html {
     /* transition: scale .3s ease-in-out,  z-index .3s cubic-bezier(0,1,1,0); */
     transition: all .3s ease-in-out;
     margin: 0 var(--hex-spacing);
-    transition-delay: 0.5s;
+    /* transition-delay: 0.5s; */
 }
 .hex-row {
     display: flex;

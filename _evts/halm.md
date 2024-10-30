@@ -3,7 +3,7 @@ name: "Pre-wedding Rituals:  Mehendi & Haldi"
 date: 16 Jan 2025
 timerange: 5:30pm -- ??
 ical: "[TODO CAL LINK]()"
-accent: "blue"
+accent: "#a28"
 leftblock: "Rituals"
 attire: Anything floral or colorful
 access_level : 2

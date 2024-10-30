@@ -23,7 +23,7 @@ Bangalore in January should be cool and pleasant days with daytime temperatures 
 *Despite the appearance of our website's landing page, it is unlikely to rain in January.*
 
 **Is there parking for the ceremony and reception?**  
-Yes, there is parking availanle at the venue (Tamarind Tree).
+Yes, there is parking available at the venue ([Tamarind Tree](https://www.thetamarindtree.in/)).
 
 **What if I have dietary restrictions?**  
 Please let us know of any dietary restrictions or allergies when you RSVP. We'll try our best to accommodate all dietary needs. 

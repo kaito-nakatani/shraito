@@ -1,4 +1,4 @@
-default_src = 'assets/select_photos/'
+default_src = 'assets/big/'
 default_tgt = 'assets/small/'
 default_size = (600,600)
 

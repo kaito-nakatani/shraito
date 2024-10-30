@@ -119,6 +119,14 @@ body {
     color: var(--vcolor)
 }
 
+navbar br {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    navbar br {
+        display: block;
+    }
+}
 
 .rsvp {
     margin-left:15px;
