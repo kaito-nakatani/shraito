@@ -2,7 +2,7 @@
 title_short: Recommendations
 title: Recommendations in Bangalore
 layout: tab
-leftblock: Recomendations
+leftblock: Recommendations
 ---
 **Food**  
 Bangalore has a lot of good food, especially South Indian food. 
