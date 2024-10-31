@@ -43,7 +43,8 @@ custom_css:
 </div>
 
 {% assign i = 0 %}
-{% for evt in site.evts %}
+{% assign evts_sorted = site.evts | sort : "start" %}
+{% for evt in evts_sorted %}
 <div class="block hidden" style="--accent:{{evt.accent}}"
     data-access-level={{evt.access_level}}>
 <div class="sideways"><h1>

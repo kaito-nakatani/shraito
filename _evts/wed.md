@@ -4,6 +4,7 @@ name: Main Wedding Ceremony
 date: 17 Jan 2025
 timerange: 7:30am -- 2:00pm
 leftblock: Wedding
+accent: red
 attire: Traditional indian clothes (saris, lehengas, kurtas)
 access_level : 1
 title: "Wedding (Voli)"

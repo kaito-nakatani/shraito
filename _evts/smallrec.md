@@ -3,7 +3,7 @@
 name: (Private) Small Reception
 date: 18 Jan 2025
 timerange: 5:00pm -- 10:00pm
-accent: "teal"
+accent: "#be95be"
 leftblock: "Reception"
 hide: true
 attire: Cocktail dress (Indian or Western)

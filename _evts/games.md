@@ -2,7 +2,7 @@
 name: Games and Brunch
 date: 18 Jan 2025
 timerange: 11:00am -- 2:00pm
-accent: "#c8a"
+accent: "black"
 leftblock: "Games"
 attire : Anything comfy
 access_level : 3

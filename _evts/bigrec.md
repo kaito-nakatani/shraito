@@ -2,7 +2,7 @@
 name: Meet and Greet
 date: 17 Jan 2025
 timerange: 6:00pm -- 9:00pm
-accent: "#ABA"
+accent: "#3daee1"
 leftblock: "Reception"
 attire : Indian / Indowestern /  Western
 access_level : 1
