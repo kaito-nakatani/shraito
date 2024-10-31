@@ -2,7 +2,7 @@
 name: "Pre-wedding Rituals:  Mehendi & Haldi"
 date: 16 Jan 2025
 timerange: 5:30pm -- 8:00pm
-accent: "#a28"
+accent: "#f7a223"
 leftblock: "Rituals"
 attire: Anything floral or colorful
 access_level : 2

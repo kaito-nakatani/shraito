@@ -59,15 +59,34 @@ $('#img-display, body').on('keyup', function(evt) {
         delta = 1;
 
     if( delta != 0) {
-        let imgidx = parseInt($('#img-display').attr("data-imgidx")) + delta;
-        // console.log($(this).attr("data-imgidx"));
-        if(imgidx >= 0 && imgidx < img_names.length){
-            $('#img-display img').attr('src', img_names_big(imgidx));
-            $('#img-display').attr('data-imgidx', imgidx);
-            let offset = $(`.hex[data-imgidx=${imgidx}]`).offset();
-            if(offset) window.scrollTo(0, offset.top);
+        move_img_display(delta);
+    }
+});
+
+function move_img_display(delta) {
+    let imgidx = parseInt($('#img-display').attr("data-imgidx")) + delta;
+    // console.log($(this).attr("data-imgidx"));
+    if(imgidx >= 0 && imgidx < img_names.length){
+        $('#img-display img').attr('src', img_names_big(imgidx));
+        $('#img-display').attr('data-imgidx', imgidx);
+
+        let $hex = $(`.hex[data-imgidx=${imgidx}]`);
+        let offset = $hex.offset();
+        if(offset && $hex.is(":visible")) {
+            window.scrollTo(0, offset.top);
         }
     }
+}
+
+var touchdown = undefined;
+$("#img-display").on('touchstart', function(evt){
+    let t0 = evt.originalEvent.touches[0];
+    touchdown = [t0.clientX, t0.clientY];
+});
+$("#img-display").on('touchend', function(evt){
+    let t0 = evt.originalEvent.changedTouches[0];
+    let dx = t0.clientX - touchdown[0];
+    move_img_display( Math.sign(dx) * Math.floor(Math.sqrt(Math.abs(dx))/10));
 });
 
 /*

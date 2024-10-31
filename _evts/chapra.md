@@ -2,7 +2,8 @@
 name: "Chapram Puja"
 date: 16 Jan 2025
 timerange: 7:30pm -- 2:00pm
-accent: "#a28"
+accent: "#1d5522" 
+# "#75ba75"
 leftblock: "Rituals"
 attire: Anything floral or colorful
 access_level : 3
