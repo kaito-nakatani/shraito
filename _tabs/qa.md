@@ -8,7 +8,7 @@ custom_css:
 ---
 
 **Does travel to India require a visa?**  
-Yes, for visitors from most countries. More information can be found on the [Travel Info](/tabs/travel-info.html) page.
+Yes, for visitors from most countries. More information can be found on the [Travel Info](/{{ site.baseurl }}tabs/travel-info.html) page.
 
 
 **What gifts would you like? Do you have a registry?**  
@@ -16,7 +16,7 @@ We have decided to implement a no gift policy. We are just excited about celebra
 
 
 **What are good hotels in Bangalore?**  
-For guests from out of town, accomodation will be provided on 16th, 17th and 18th. Rooms will be available in the afternoon on the 16th and need to be vacated in morning of the 19th. Late chekout is unfortunately not available because the venue has another event on the 19th. If you are planning on being in Banglaore fro additional dates before and after the wedding, here are a few hotels close to Varsha's house that you can check out:
+For guests from out of town, accommodation will be provided on 16th, 17th and 18th. Rooms will be available in the afternoon on the 16th and need to be vacated in morning of the 19th. Late checkout is unfortunately not available because the venue has another event on the 19th. If you are planning on being in bangalore for additional dates before and after the wedding, here are a few hotels close to Varsha's house that you can take a look at:
 
 {:.slim}
 - [Hotel Greenpark](https://hotelgreenpark.com/bengaluru/) (about $110/night)
@@ -36,13 +36,13 @@ Yes, there is parking available at the venue ([Tamarind Tree](https://www.thetam
 Please let us know of any dietary restrictions or allergies when you RSVP. We'll try our best to accommodate all dietary needs. 
 
 **Is there a dress code? Can I shop for Indian clothes?**  
-There are attire recommendations below each event on the [Events](/tabs/events.html) page. These are certainly not required and are just suggestions. If you are interested in purchasing Indian clothes, here are two streets in Bangalore where there are multiple shops that you can check out:
+There are attire recommendations below each event on the [Events](/{{ site.baseurl }}tabs/events.html) page. These are certainly not required and are just suggestions. If you are interested in purchasing Indian clothes, here are two streets in Bangalore where there are multiple shops that you can check out:
 
 {:.slim}
 - Commercial Street, and
 - Jaynagar 4th Block.
 
-You should also keep an eye out for informally oganized shopping trips before the wedding.  
+You should also keep an eye out for informally organized shopping trips before the wedding.  
 
 **How can I get around Bangalore?**  
 Getting around Bangalore is not too hard and most rides within the city cost between ₹100 and ₹500 (which is $1-$6). Here are some options:
@@ -51,7 +51,7 @@ Getting around Bangalore is not too hard and most rides within the city cost bet
 - *Metro*: Some places in Bangalore are accessible via [Metro](https://english.bmrc.co.in/). The metro is fairly new and therefore does not cover the whole city yet.
 
 **Any tips for travelling to India?**  
-Yes, please take a look at our [Travel Info](/tabs/travel-info.html) page. 
+Yes, please take a look at our [Travel Info](/{{ site.baseurl }}tabs/travel-info.html) page. 
 
 **What are some local attractions and recommendations?**  
-Please take a look at the [Recommendations](/tabs/recos.html) page.
+Please take a look at the [Recommendations](/{{ site.baseurl }}tabs/recos.html) page.

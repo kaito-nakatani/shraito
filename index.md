@@ -49,7 +49,7 @@ Oli(ver) Richardson
 are getting married to one another.
 The ceremony will be 
 in 
-[Bangalore, India](https://maps.app.goo.gl/XyncfmUAKSynTgSL7)
+[Bangalore, India](https://maps.app.goo.gl/DRykhnkgKmyNoWvF8)
 at 
 [the Tamarind Tree](https://www.thetamarindtree.in/)
 on January 16th, 2024.

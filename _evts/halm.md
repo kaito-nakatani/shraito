@@ -12,7 +12,7 @@ start: "20250116T120000Z"
 end: "20250116T143000Z"
 desc: "Haldi is a ceremony where friends/family apply haldi (turmeric paste) on the bride and groom's face and body. Mehendi is a ceremony where henna is used to create body art."
 ---
-**[Haldi](https://en.wikipedia.org/wiki/Turmeric)** is a cleansing ritual where family and friends come together to apply haldi (turmeric paste) on the bride and groom's face and body, because it is known to possesss antioxidant and anti-inflammatory properties.
+**[Haldi](https://en.wikipedia.org/wiki/Turmeric)** is a cleansing ritual where family and friends come together to apply haldi (turmeric paste) on the bride and groom's face and body, because it is known to possess antioxidant and anti-inflammatory properties.
 
 **[Mehndi](https://en.wikipedia.org/wiki/Mehndi)**—or henna—is an ancient form of body art, found in India, Egypt, North Africa, East Africa and the Middle East. Professional mehendi artists will be on-site to create beautiful patterns for all our guests!
 

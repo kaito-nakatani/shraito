@@ -2,7 +2,7 @@
 # name: Small Reception
 name: (Private) Small Reception
 date: 18 Jan 2025
-timerange: 5pm
+timerange: 5:00pm -- 10:00pm
 accent: "teal"
 leftblock: "Reception"
 hide: true

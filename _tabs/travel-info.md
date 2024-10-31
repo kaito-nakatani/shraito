@@ -9,7 +9,7 @@ leftblock: Travel Information
     which can be obtained at most 30 days before travel. 
     Make sure to **apply using the official Indian Government's website (ending with .in)**, and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website. 
 
-- <span class="establishment">Airport</span> Bangalore has one airport (BLR). This is most likey where you will be flying to/from. If plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that's like Uber). The airport should have signs directing you to where the Uber/Lyft pickup spot is.
+- <span class="establishment">Airport</span> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that's like Uber). The airport should have signs directing you to where the Uber/Lyft pickup spot is.
 
 - <span class="establishment">Airport WiFi</span> 
 WiFi in Indian airports is a bit annoying: in order to connect to airport wifi, you will need to provide a verification code sent by SMS to a phone number. If you don't have a working phone connection in India and need to use the airport WiFi, go to the information desk, or ask the airport staff. 
