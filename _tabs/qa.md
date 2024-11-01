@@ -20,7 +20,7 @@ For guests from out of town, accommodation will be provided on 16th, 17th and 18
 
 {:.slim}
 - [Hotel Greenpark](https://hotelgreenpark.com/bengaluru/) (about $110/night)
-- [Lilac Hotel](https://lilachotels.com/) - 3rd Block Jaynagar and 5th Block Jaynagar (about $70/night)
+- [Lilac Hotel](https://lilachotels.com/) - 3rd Block Jayanagar and 5th Block Jayanagar (about $70/night)
 - [Fountain Tree By TGI](https://www.tgihotels.com/fountain-tree-jp-nagar-bangalore/) (about $50/night)
 
 Depending on what kind of rooms you are looking for, you will be able to find less/more expensive hotels. Ask Varsha if you have any specific questions.

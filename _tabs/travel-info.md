@@ -20,7 +20,7 @@ leftblock: Travel Information
     Make sure to **apply using the official Indian Government's website (ending with .in)**, and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website. 
 
 - <span class="establishment">Airport</span> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses.
-To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that's like Uber). The airport should have signs directing you to where the Uber/Lyft pickup spot is.
+To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that's like Uber). The airport should have signs directing you to where the Uber/Ola pickup spot is.
 
 
 - <span class="establishment">Vaccines</span> The [CDC page](https://wwwnc.cdc.gov/travel/destinations/traveler/none/india) has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! 
@@ -42,8 +42,5 @@ For more details about cards without foreign transaction fees, consult your bank
   Physical money can be useful in some situations (e.g., at roadside shops), and so it may be worth exchanging for local currency.  Currency can be exchanged at the airport or in the city.  The airport is convenient, but may not have the most generous exchange rate.
 
 - <span class="establishment">Phone Plans and SIM Cards</span> Most carriers offer some sort of an international roaming plan for India. Yet these plans can be relatively expensive; it is likely to be cheaper to get a local SIM in India (a country in which data is notoriously affordable).
-A local SIM may be purchased in the airport, but activation may require an SMS verification code.
-*Note that, to use a local sim, your phone cannot be carrier-locked.* 
-**If you would like us to arrange a SIM card for you, let us know on the RSVP form.**
-
+A local SIM may be purchased in the airport. *Note that, to use a local sim, your phone cannot be carrier-locked.* You might also consider getting an eSIM like this one: [ByteSIM](https://bytesim.com/products/esim-india?gad_source=1&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUt64x9dDqVGQpBMwWFxWQVRjnke6mcM_lDySPaOpWMs9d8qo0W1gwAaApbKEALw_wcB&sku=18066838164459257049580715). **If your phone is unlocked and you would like us to arrange a physical local SIM card for you, let us know on the RSVP form.** We will hand over the SIM to you at your hotel in Bangalore. You might want to purchase a one day [ByteSIM](https://bytesim.com/products/esim-india?gad_source=1&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUt64x9dDqVGQpBMwWFxWQVRjnke6mcM_lDySPaOpWMs9d8qo0W1gwAaApbKEALw_wcB&sku=18066838164459257049580715) to have internet as soon as you land.
 </div>
