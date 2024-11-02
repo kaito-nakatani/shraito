@@ -15,6 +15,10 @@ $("#passwd").on('keyup', function(event) {
 document.getElementById('passwd').focus();
 unlock(getAccessCookie());
 
+function hidewrongpass() {
+  $('#wrongpass').css('opacity', '0%');
+}
+
 function unlock(level) {
     if(!level) {
         level = access[$('#passwd').val()];
@@ -30,8 +34,10 @@ function unlock(level) {
             $('#unlock-controls').hide();
         }
     }
-    else {
+    else { // nothing in access map
         level = -1;
+        $('#wrongpass').css('opacity', '100%');
+        setTimeout(hidewrongpass, 1000);
     }
 
     if(document.getElementById('cookie-permit').checked) {

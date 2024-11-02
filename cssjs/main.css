@@ -59,7 +59,7 @@ body {
 }
 
 .block h2 {
-    margin-bottom: 0px;
+    margin-bottom: 1ex;
     /* text-align: center; */
 }
 .block .timing {
@@ -70,8 +70,9 @@ body {
 .block .attire {
     margin-left: 60px;
     display: block;
-    margin-bottom: 2ex;
+    margin-bottom: 3ex;
     font-size: smaller;
+    color: color-mix(in srgb, var(--accent) 60%, black 30%)
 }
 .block .cal-links{
     float: right;
@@ -79,7 +80,7 @@ body {
 
 .evt-details {
     margin-left: 10px;
-    font-size: smaller;
+    font-size: 12pt;
     color: gray;
 }
 .evt-details p {
@@ -154,6 +155,9 @@ navbar br {
     font-size:20pt;
 }
 
+a {
+    color: inherit;
+}
 
 
 .fullpagewidth {

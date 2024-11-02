@@ -14,8 +14,9 @@ parser.add_argument('--size', type=int, nargs=2, default=default_size)
 args = parser.parse_args()
 
 import os
-from PIL import Image
+from PIL import Image, ImageOps
 for fn in os.listdir(args.src):
     im = Image.open(os.path.join(args.src, fn))
-    im.thumbnail(args.size)
-    im.save(os.path.join(args.tgt, fn), "jpeg")
+    im_fixed = ImageOps.exif_transpose(im);
+    im_fixed.thumbnail(args.size)
+    im_fixed.save(os.path.join(args.tgt, fn), "jpeg")

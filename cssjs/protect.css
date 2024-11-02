@@ -12,6 +12,15 @@
     position: absolute;
 }
 
+#wrongpass {
+    margin-left: 20px;
+    margin-right: -200px;
+    color: red;
+    font-weight: bold;
+    opacity: 0%;
+    transition: opacity 0.4s;
+}
+
 #unlock-btn {
     /* float:right;
     margin-right: 150px; */

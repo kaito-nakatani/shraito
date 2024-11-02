@@ -16,7 +16,7 @@ custom_css:
 </div>
 
 <div class="center" id="unlock-controls">
-    <p>
+    <p style="margin-bottom:35px;">
         Event details and timings are only available for guests. 
         If you cannot find the password that came with your link to this website
         (or are not yet a guest but would like to become one), 
@@ -27,6 +27,7 @@ custom_css:
     <div>
     <label for="passwd"><b>password:</b></label>
     <input type="text" id="passwd" name="">
+    <span id="wrongpass">Incorrect Password!</span>
     </div>
     <div>
     <input type=checkbox id="cookie-permit" selected></input>
@@ -51,13 +52,8 @@ custom_css:
     {{ evt.leftblock }}
 </h1></div>
 
+
 <h2> {{ evt.name }}</h2>
-<span class="timing">
-{{ evt.date |  date: "%-d %B %Y"}}
-@ {{ evt.timerange }}
-<!-- <span class="cal-links">
-    <a href="{{ evt.ical }}"> [cal] </a>
-</span> -->
 <div class="calendar-dropdown">
     <button onclick="toggleDropdown({{i}})" class="main-button">
       <span class="icon">🗓️</span> &nbsp;&nbsp;Add to Calendar
@@ -71,12 +67,19 @@ custom_css:
       </button>
     </div>
   </div>
+<div class="timing">
+{{ evt.date |  date: "%-d %B %Y"}}
+@ {{ evt.timerange }}
+<!-- <span class="cal-links">
+    <a href="{{ evt.ical }}"> [cal] </a>
+</span> -->
+
 <!-- <div class="add-to-calendar">
     <button onclick="addToGoogleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}')">Add to Google Calendar</button>
     <button onclick="addToAppleCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}')">Add to Apple Calendar</button>
     <button onclick="addToOutlookCalendar('{{ evt.title }}', '{{ evt.location }}', '{{ evt.start }}', '{{ evt.end }}')">Add to Outlook Calendar</button>
 </div>   -->
-</span>
+</div>
 <div class="attire">Attire: {{ evt.attire }}</div>
 <div class="evt-details">
 {{ evt.content }}

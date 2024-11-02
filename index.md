@@ -60,18 +60,21 @@ We hope you can join us!
 <hr style="max-width:50%;margin: 30px auto;">
 
 
-Varsha and Oli met in graduate school at Cornell. 
-They have spent six years together (including the pandemic) and have discovered:
-
 {:.center}
-<span class="varsha">Varsha exploits</span>; 
-    <span class="oli">Oli explores</span>  
+<!-- <span class="varsha">Varsha exploits</span>; 
+    <span class="oli">Oli explores</span>   -->
 <span class="varsha">Varsha reliably executes</span>;
-    <span class="oli">Oli sometimes has crazy ideas</span>  
+    <span class="oli">Oli sometimes has brilliant ideas</span>.  
+<span class="varsha">Varsha finds the best things</span>; 
+    <span class="oli">Oli finds the most unique ones</span>.  
 <span class="varsha">Varsha likes content</span>; 
-    <span class="oli">Oli likes style</span>  
+    <span class="oli">Oli likes style</span>.
 
-They complement one another very well, and are excited to commit to a lifetime of partnership! 
+After growing up on opposite sides of the earth, 
+    Varsha and Oli met in graduate school at Cornell. 
+They are remarkably similar people with very different strengths.
+In their six years together, they have become an excellent team. 
+They complement one another well, and are excited to commit to a lifetime of partnership! 
 
 
 <!-- 
