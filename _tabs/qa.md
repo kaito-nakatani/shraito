@@ -23,7 +23,7 @@ For guests from out of town, accommodation will be provided on 16th, 17th and 18
 - [Lilac Hotel](https://lilachotels.com/) - 3rd Block Jayanagar and 5th Block Jayanagar (about $70/night)
 - [Fountain Tree By TGI](https://www.tgihotels.com/fountain-tree-jp-nagar-bangalore/) (about $50/night)
 
-Depending on what kind of rooms you are looking for, you will be able to find less/more expensive hotels. Ask Varsha if you have any specific questions.
+Depending on what kind of rooms you are looking for, you will be able to find less/more expensive hotels. The options listed above are fairly basic hotels and are good options if you are going to be out all day exploring the city. If you want to stay in a nice resort/hotel, there are fancier options. Ask Varsha if you have any specific questions.
 
 **What will the weather be like?**  
 Bangalore in January should be cool and pleasant days with daytime temperatures around 27°C (80°F) and evening temperatures around 15°C (59°F).  

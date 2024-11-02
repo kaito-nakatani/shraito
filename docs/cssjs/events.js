@@ -13,13 +13,13 @@ $("#passwd").on('keyup', function(event) {
 
 
 document.getElementById('passwd').focus();
-unlock(getAccessCookie());
+unlock(getAccessCookie(), false);
 
 function hidewrongpass() {
   $('#wrongpass').css('opacity', '0%');
 }
 
-function unlock(level) {
+function unlock(level, wrongpass_message=true) {
     if(!level) {
         level = access[$('#passwd').val()];
     }
@@ -36,8 +36,11 @@ function unlock(level) {
     }
     else { // nothing in access map
         level = -1;
-        $('#wrongpass').css('opacity', '100%');
-        setTimeout(hidewrongpass, 1000);
+        if(wrongpass_message) {
+          $('#wrongpass').css('opacity', '100%');
+          setTimeout(hidewrongpass, 2000);
+          $('#passwd').val(''); // Clear the password fielddsa
+        }
     }
 
     if(document.getElementById('cookie-permit').checked) {
