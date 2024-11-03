@@ -156,17 +156,19 @@ navbar br {
 }
 
 a {
-    color: inherit;
+    /* color: color-mix(in srgb, inherit 80%, initial 0%); */
+    /* color: inherit; */
 }
 
 
 .fullpagewidth {
     text-align: center;
     position: relative;
-    /* left: calc(50% - 50vw); */
-    left: calc(50% - 49vw);
+    left: calc(50% - 50vw);
+    width: 100vw;
+    /* left: calc(50% - 49vw); 
+    width: 98vw; */
     overflow: hidden;
-    width: 98vw;
 }
 
 .marquee {

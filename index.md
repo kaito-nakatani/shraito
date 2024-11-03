@@ -1,14 +1,16 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 custom_css:
     - rain
     - imghex
 custom_js:
     - rain
+rain: true
 ---
+
+
 {% include navbar.html %}
 
 
@@ -32,15 +34,6 @@ We hope you can join us!
 -->
 
 
-
-<!-- <div class="gallery-spacer"></div> -->
-<div class="fullpagewidth">
-<div class="" style="--hex-spacing:5px; --imgwidth:200px; --imgheight:230px;">
-{% include hexphotos.html gridnums="7" %} <!--6,3-->
-</div>
-</div>
-<!-- <div class="small-spacer"></div> -->
-
 <!-- Varsha and Oli met at Cornell... -->
 {:.center}
 Varsha Kishore
@@ -57,7 +50,16 @@ We hope you can join us!
 
 
 
-<hr style="max-width:50%;margin: 30px auto;">
+<!-- <div class="gallery-spacer"></div> -->
+<div class="fullpagewidth">
+<div class="" style="--hex-spacing:5px; --imgwidth:200px; --imgheight:230px;">
+{% include hexphotos.html gridnums="7" %} <!--6,3-->
+</div>
+</div>
+<!-- <div class="small-spacer"></div> -->
+
+
+<!-- <hr style="max-width:50%;margin: 30px auto;"> -->
 
 
 {:.center}
@@ -73,8 +75,9 @@ We hope you can join us!
 After growing up on opposite sides of the earth, 
     Varsha and Oli met in graduate school at Cornell. 
 They are remarkably similar people with very different strengths.
-In their six years together, they have become an excellent team. 
-They complement one another well, and are excited to commit to a lifetime of partnership! 
+They have become an excellent team
+    in their six years together,
+    and are excited to commit to a lifetime of partnership! 
 
 
 <!-- 

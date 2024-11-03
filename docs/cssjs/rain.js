@@ -1,7 +1,7 @@
 console.log("rain.js starting!");
 
 // Parameters:
-let n_drops = 200;
+let n_drops = 100;
 let push_start = $('.hex-container').offset().top;
 let push_end = $('.hex-container').height()*0.5 + push_start;
 let base_fall_rate = 7;
@@ -158,6 +158,7 @@ function drop_reset(evt) {
     evt.stopPropagation();
 }
 
+let rain_timer = undefined;
 // Ok, go!
 $(function(){
     $rain_pane = $('.rain-pane');
@@ -169,7 +170,20 @@ $(function(){
             drop.element.on("animationiteration", {drop : drop}, drop_reset);
     }
     if(interact_hex)
-        window.setInterval(tick_rain, 50);
+        rain_timer = setInterval(tick_rain, 50);
 });
 
 console.log("RAIN.js finished!");
+
+function toggleRainInteraction() {
+    $('#interact-toggle').toggleClass("active");
+    interact_hex = !interact_hex;
+    if( interact_hex ) {
+        rain_timer = setInterval(tick_rain, 50);
+    } else {
+        clearInterval(rain_timer)
+
+        for( const drop of drops )
+            drop.element.css('rotate', '0deg');
+    }
+}

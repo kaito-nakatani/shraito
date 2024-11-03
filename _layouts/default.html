@@ -2,7 +2,17 @@
 <html lang="{{ page.lang | default: "en" }}">
   {%- include head.html -%}
   <body>
-    <div class="rain-pane"></div>
+    {% if page.rain %}
+    <div class="rain-pane">
+      <div class="rain-controls">
+        <button id="interact-toggle" onclick="toggleRainInteraction()">
+          <!-- <img src="{{ site.baseurl }}assets/thunderbolt.png" height=80></img> -->
+          🗲
+        </button>
+      </div>  
+    </div>
+    {% endif %}
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
