@@ -57,7 +57,7 @@ in
 [Bangalore, India](https://maps.app.goo.gl/DRykhnkgKmyNoWvF8)
 at 
 [the Tamarind Tree](https://www.thetamarindtree.in/)
-on January 16th, 2024.
+on January 17th, 2025.
 We hope you can join us!
 
 <hr style="max-width:50%;margin: 20px auto;">
