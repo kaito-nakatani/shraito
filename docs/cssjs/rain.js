@@ -180,10 +180,17 @@ function toggleRainInteraction() {
     interact_hex = !interact_hex;
     if( interact_hex ) {
         rain_timer = setInterval(tick_rain, 50);
+        for( const drop of drops ) {
+            drop.element.on("animationiteration", {drop : drop}, drop_reset);
+        }
+        
     } else {
-        clearInterval(rain_timer)
+        clearInterval(rain_timer);
 
-        for( const drop of drops )
+        for( const drop of drops ) {
             drop.element.css('rotate', '0deg');
+            drop.element.css('left', drop.x_init+'%');
+            drop.element.off("animationiteration");
+        }
     }
 }

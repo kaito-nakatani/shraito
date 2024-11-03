@@ -5,6 +5,7 @@ layout: default
 custom_css:
     - rain
     - imghex
+    - landing
 custom_js:
     - rain
 rain: true

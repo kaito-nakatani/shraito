@@ -21,7 +21,8 @@ body {
     font-size: 13pt;
     line-height: 1.4;
     margin: 0;
-    min-height: 100%;
+    /* min-height: 100%; */
+    position:relative;
 }
 
 .center { text-align: center;}
@@ -107,6 +108,7 @@ body {
     padding:10px;
     margin-bottom:10px;
     vertical-align: middle;
+    pointer-events: auto;
     /* background-color: rgb(244, 218, 232);
     border: 2px solid rgb(228, 207, 218); */
     background-color: color-mix(in srgb, var(--ocolor) 20%, white);
@@ -159,7 +161,6 @@ a {
     /* color: color-mix(in srgb, inherit 80%, initial 0%); */
     /* color: inherit; */
 }
-
 
 .fullpagewidth {
     text-align: center;
