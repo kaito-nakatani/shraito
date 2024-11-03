@@ -7,7 +7,7 @@
     /* pointer-events: auto; */
     font-size: 40pt;
     border: none;
-    opacity: 80%;
+    opacity: 50%;
     filter: grayscale(1);
     background-color: transparent;
     color:gray;
@@ -23,9 +23,12 @@
     /* .hex-wrapper:nth-child(2) {
         display: none;
     } */
-     /* .fullpagewidth {
-        pointer-events: none;
-     } */
+    .fullpagewidth {
+        /* pointer-events: none; */
+    }
+    #interact-toggle {
+        display: none;
+    }
     .hex-wrapper {
         --imgwidth : calc(33vw - 2* var(--hex-spacing));
         --imgheight: 37vw;
