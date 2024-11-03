@@ -7,12 +7,15 @@
     /* pointer-events: auto; */
     font-size: 40pt;
     border: none;
+    opacity: 80%;
+    filter: grayscale(1);
     background-color: transparent;
     color:gray;
   }
   #interact-toggle.active{
     /* filter: */
     color: gold;
+    filter: none;
     transform: scaleX(-1);
   }
   
@@ -20,9 +23,9 @@
     /* .hex-wrapper:nth-child(2) {
         display: none;
     } */
-     .fullpagewidth {
+     /* .fullpagewidth {
         pointer-events: none;
-     }
+     } */
     .hex-wrapper {
         --imgwidth : calc(33vw - 2* var(--hex-spacing));
         --imgheight: 37vw;
