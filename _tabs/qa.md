@@ -10,13 +10,18 @@ custom_css:
 **Does travel to India require a visa?**  
 Yes, for visitors from most countries. More information can be found on the [Travel Info](/{{ site.baseurl }}tabs/travel-info.html) page.
 
-
 **What gifts would you like? Do you have a registry?**  
 We have decided to implement a no gift policy. We are just excited about celebrating with all of you!
 
+**What will the weather be like?**  
+Bangalore in January should be cool and pleasant days with daytime temperatures around 27°C (80°F) and evening temperatures around 15°C (59°F).  
+*Despite the appearance of our website's landing page, it is unlikely to rain in January.*
+
+**Is Bangalore and Bengaluru the same city?** 
+Yes, the city was officially renamed from Bangalore to Bengaluru in 2014, though both names are still commonly used. 
 
 **What are good hotels in Bangalore?**  
-For guests from out of town, accommodation will be provided on 16th, 17th and 18th. Rooms will be available in the afternoon on the 16th and need to be vacated in morning of the 19th. Late checkout is unfortunately not available because the venue has another event on the 19th. If you are planning on being in bangalore for additional dates before and after the wedding, here are a few hotels close to Varsha's house that you can take a look at:
+For guests from out of town, accommodation will be provided on 16th, 17th and 18th. Rooms will be available in the afternoon on the 16th and need to be vacated in the morning of the 19th. Late checkout is unfortunately not available because the venue has another event on the 19th. If you are planning on being in bangalore for additional dates before and after the wedding, here are a few hotels close to Varsha's house that you can take a look at:
 
 {:.slim}
 - [Hotel Greenpark](https://hotelgreenpark.com/bengaluru/) (about $110/night)
@@ -24,10 +29,6 @@ For guests from out of town, accommodation will be provided on 16th, 17th and 18
 - [Fountain Tree By TGI](https://www.tgihotels.com/fountain-tree-jp-nagar-bangalore/) (about $50/night)
 
 Depending on what kind of rooms you are looking for, you will be able to find less/more expensive hotels. The options listed above are fairly basic hotels and are good options if you are going to be out all day exploring the city. If you want to stay in a nice resort/hotel, there are fancier options. Ask Varsha if you have any specific questions.
-
-**What will the weather be like?**  
-Bangalore in January should be cool and pleasant days with daytime temperatures around 27°C (80°F) and evening temperatures around 15°C (59°F).  
-*Despite the appearance of our website's landing page, it is unlikely to rain in January.*
 
 **Is there parking for the ceremony and reception?**  
 Yes, there is parking available at the venue ([Tamarind Tree](https://www.thetamarindtree.in/)).
