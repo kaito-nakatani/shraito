@@ -14,7 +14,7 @@ custom_css:
 <!-- gridnums="3,4,3,4,3,4,3,4" -->
 
 {% include hexphotos.html 
-    gridnums="2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3"
+    gridnums="2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3"
     save_image_names_js="img_names" 
 %}
 
