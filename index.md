@@ -34,6 +34,18 @@ We hope you can join us!
 -->
 
 
+
+
+<!-- <div class="gallery-spacer"></div> -->
+<div class="fullpagewidth">
+<div class="" style="--hex-spacing:5px; --imgwidth:200px; --imgheight:230px;">
+{% include hexphotos.html gridnums="7" %} <!--6,3-->
+</div>
+</div>
+<!-- <div class="small-spacer"></div> -->
+
+
+
 <!-- Varsha and Oli met at Cornell... -->
 {:.center}
 Varsha Kishore
@@ -48,19 +60,7 @@ at
 on January 16th, 2024.
 We hope you can join us!
 
-
-
-<!-- <div class="gallery-spacer"></div> -->
-<div class="fullpagewidth">
-<div class="" style="--hex-spacing:5px; --imgwidth:200px; --imgheight:230px;">
-{% include hexphotos.html gridnums="7" %} <!--6,3-->
-</div>
-</div>
-<!-- <div class="small-spacer"></div> -->
-
-
-<!-- <hr style="max-width:50%;margin: 30px auto;"> -->
-
+<hr style="max-width:50%;margin: 20px auto;">
 
 {:.center}
 <!-- <span class="varsha">Varsha exploits</span>; 
