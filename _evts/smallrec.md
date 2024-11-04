@@ -15,4 +15,4 @@ end: "20250118T163000Z"
 desc: "Reception with toasts and dancing!"
 ---
 Reception with toasts and dancing! **Arrive on time.**  
-(This event is invite-only; not all guests are invited.)
+(This event is invite-only; not all guests are invited. But you are!)

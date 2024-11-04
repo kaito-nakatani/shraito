@@ -13,5 +13,6 @@ end: "20250118T083000Z"
 desc: "Join us for games and friendly competition. There will also be tasty brunch!"
 ---
 Join us for games and friendly competition. There will also be tasty brunch!  
-(This event is invite-only; not all guests are invited.)
+(This event is invite-only; not all guests are invited.
+If you can see this, you are invited!)
 
