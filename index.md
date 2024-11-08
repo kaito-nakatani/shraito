@@ -66,12 +66,12 @@ We hope you can join us!
 {:.center}
 <!-- <span class="varsha">Varsha exploits</span>; 
     <span class="oli">Oli explores</span>   -->
-<span class="varsha">Varsha reliably executes</span>;
+<span class="varsha">Varsha reliably makes things work</span>;
     <span class="oli">Oli sometimes has brilliant ideas</span>.  
 <span class="varsha">Varsha finds the best things</span>; 
     <span class="oli">Oli finds the most unique ones</span>.  
 <span class="varsha">Varsha likes content</span>; 
-    <span class="oli">Oli likes style</span>.
+    <span class="oli">Oli likes form</span>.
 
 After growing up on opposite sides of the earth, 
     Varsha and Oli met in graduate school at Cornell. 
