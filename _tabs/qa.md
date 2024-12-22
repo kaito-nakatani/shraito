@@ -47,7 +47,7 @@ You should also keep an eye out for informally organized shopping trips before t
 
 **How can I get around Bangalore?**  
 Getting around Bangalore is not too hard and most rides within the city cost between ₹100 and ₹500 (which is $1-$6). Here are some options:
-- *Uber / Ola* (Ride-Hailing Apps): Both apps work just like Uber and Lyft do in the US. 
+- *Uber / Ola / Rapido* (Ride-Hailing Apps): All three apps work just like Uber and Lyft do in the US. 
 - *Auto-Rickshaws*: These are iconic yellow and black three-wheelers. You can usually hail these down on the street but you would then have to communicate with the driver (usually in Kannada) to tell the driver where you are going and to negotiate a price. An easier alternative is to book autos through the Uber/Ola app.  
 - *Metro*: Some places in Bangalore are accessible via [Metro](https://english.bmrc.co.in/). The metro is fairly new and therefore does not cover the whole city yet.
 
