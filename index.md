@@ -49,7 +49,7 @@ We hope you can join us!
 
 <!-- Varsha and Oli met at Cornell... -->
 {:.center}
-Varsha Kishore
+Shreya Kishore
 and 
 Oli(ver) Richardson
 are getting married to one another.
