@@ -954,3 +954,238 @@ span.oli {
         gap: 15px;
     }
 }
+
+/* Main Page Photo Showcase - Bigger Photos Like Reference */
+.main-photo-showcase {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.main-photo-showcase .hex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-photo-showcase .hex-wrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(255, 183, 197, 0.3);
+    border: 3px solid rgba(255, 183, 197, 0.4);
+    transition: all 0.4s ease;
+}
+
+.main-photo-showcase .hex-wrapper:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 50px rgba(255, 183, 197, 0.4);
+    border-color: rgba(255, 183, 197, 0.6);
+}
+
+.main-photo-showcase .hex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.main-photo-showcase .hex:hover img {
+    filter: brightness(1.1) saturate(1.1);
+}
+
+/* Event Block Styling - Like Reference Design */
+.event-block {
+    display: flex;
+    background: rgba(255, 245, 250, 0.9);
+    border: 2px solid rgba(255, 183, 197, 0.2);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(255, 183, 197, 0.15);
+    transition: all 0.3s ease;
+    min-height: 200px;
+}
+
+.event-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 35px rgba(255, 183, 197, 0.25);
+    border-color: rgba(255, 183, 197, 0.4);
+}
+
+.evt-leftblock {
+    background: linear-gradient(135deg, 
+        rgba(255, 183, 197, 0.4) 0%, 
+        rgba(227, 170, 181, 0.4) 100%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    max-width: 140px;
+    padding: 20px 15px;
+    border-right: 3px solid rgba(255, 183, 197, 0.3);
+    position: relative;
+}
+
+.leftblock-content {
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.leftblock-content p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--ocolor);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.3);
+    line-height: 1.2;
+}
+
+.evt-rightblock {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.evt-rightblock h2 {
+    color: var(--ocolor);
+    margin: 0 0 20px 0;
+    font-size: 1.9em;
+    text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.2);
+    font-weight: 600;
+}
+
+.evt-details {
+    flex: 1;
+}
+
+.timing {
+    background: rgba(255, 235, 245, 0.7);
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--cherry-blossom);
+    font-size: 1.05em;
+}
+
+.attire {
+    background: rgba(240, 248, 255, 0.7);
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--lotus-teal);
+    font-size: 1.05em;
+}
+
+.evt-content {
+    margin: 20px 0;
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+.calendar-actions {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.add-to-calendar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, 
+        rgba(66, 133, 244, 0.9) 0%, 
+        rgba(52, 168, 83, 0.9) 100%);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.add-to-calendar-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(66, 133, 244, 0.4);
+    background: linear-gradient(135deg, 
+        rgba(66, 133, 244, 1) 0%, 
+        rgba(52, 168, 83, 1) 100%);
+    text-decoration: none;
+    color: white;
+}
+
+.calendar-icon {
+    font-size: 1.2em;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .main-photo-showcase .hex-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .event-block {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .evt-leftblock {
+        writing-mode: initial;
+        text-orientation: initial;
+        min-width: auto;
+        max-width: none;
+        padding: 20px;
+        text-align: center;
+        border-right: none;
+        border-bottom: 3px solid rgba(255, 183, 197, 0.3);
+    }
+    
+    .leftblock-content {
+        transform: none;
+    }
+    
+    .evt-rightblock {
+        padding: 20px;
+    }
+    
+    .evt-rightblock h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-photo-showcase .hex-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .evt-rightblock {
+        padding: 15px;
+    }
+    
+    .timing, .attire {
+        padding: 12px 15px;
+    }
+    
+    .add-to-calendar-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

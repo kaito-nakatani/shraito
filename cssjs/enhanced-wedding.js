@@ -1,7 +1,7 @@
 // Wedding Countdown Timer - CORRECTED DATE
 function initializeCountdown() {
-    // Set wedding date to February 3rd, 2025 (CORRECTED FROM 2026)
-    const weddingDate = new Date('2025-02-03T10:00:00+05:30').getTime();
+    // Set wedding date to February 3rd, 2026
+    const weddingDate = new Date('2026-02-03T10:00:00+05:30').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();

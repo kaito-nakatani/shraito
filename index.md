@@ -16,18 +16,21 @@ rain: false
 
 <div class="main-content-enhanced">
     <div class="main-title">
-        <span class="shreya">Shreya</span> <span class="shreya">&</span> <span class="kaito">Kaito</span>
+        <span class="shreya">Shreya</span> <span class="oli">&</span> <span class="kaito">Kaito</span>
     </div>
     
-    {% include hexphotos.html gridnums="7" %}
+    <!-- Main Page Photo Section - Bigger Photos Like Reference -->
+    <div class="main-photo-showcase">
+        {% include hexphotos.html gridnums="1" section="select_photos" %}
+    </div>
     
     <div class="wedding-announcement">
         <div class="center-content">
-            <strong>Shreya Kishore</strong> and <strong>Kaito Nakatani</strong> are getting married!
+            <p><strong>Shreya Kishore</strong> and <strong>Kaito Nakatani</strong> are getting married!</p>
             
             <p>The ceremony will be in <a href="https://maps.app.goo.gl/DRykhnkgKmyNoWvF8">Bangalore, India</a>
             at <a href="https://www.mirayagreens.com/">the Miraya Greens</a>
-            on <strong>February 3rd, 2026</strong>.</p>
+            on <strong>February 3rd, 2026 at 3:00 PM IST</strong>.</p>
             
             <p>We hope you can join us!</p>
         </div>
@@ -37,6 +40,10 @@ rain: false
     
     <div class="couple-description">
         <div class="center-content">
+            <p>Shreya reliably makes things work; Kaito sometimes has brilliant ideas.<br>
+            Shreya finds the best things; Kaito finds the most unique ones.<br>
+            Shreya likes content; Kaito likes form.</p>
+            
             <p>After growing up on opposite sides of the earth, Shreya and Kaito met in graduate school.
             They are remarkably similar people with very different strengths.
             They have become an excellent team in their years together,
@@ -44,4 +51,3 @@ rain: false
         </div>
     </div>
 </div>
-

@@ -5,6 +5,7 @@ layout: default
 custom_css:
   - calendar
   - enhanced-styles
+  - events-sidebar
 ---
 
 {% include navbar.html %}
@@ -20,9 +21,11 @@ custom_css:
 {% assign evts_sorted = site.evts | sort : "start" %}
 {% for evt in evts_sorted %}
 
-<div class="block-{{i}}">
+<div class="event-block block-{{i}}">
     <div class="evt-leftblock">
-        <p>{{ evt.leftblock }}</p>
+        <div class="leftblock-content">
+            <p>{{ evt.leftblock }}</p>
+        </div>
     </div>
     
     <div class="evt-rightblock">
