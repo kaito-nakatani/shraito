@@ -2,21 +2,21 @@
 layout: default
 custom_css:
   - main
-  - rain
   - imghex
   - landing
   - enhanced-styles
+  - cherry-storm
 custom_js:
-  - rain
   - enhanced-wedding
-rain: true
+  - cherry-storm
+rain: false
 ---
 
 {% include navbar.html %}
 
 <div class="main-content-enhanced">
     <div class="main-title">
-        <span class="varsha">Shreya</span> <span class="oli">&</span> <span class="varsha">Kaito</span>
+        <span class="shreya">Shreya</span> <span class="oli">&</span> <span class="kaito">Kaito</span>
     </div>
     
     {% include hexphotos.html gridnums="7" %}

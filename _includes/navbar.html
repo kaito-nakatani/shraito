@@ -1,12 +1,11 @@
 <navbar class="enhanced-navbar">
 <div class="nav-home">
     <a href="{{ '/' | relative_url }}">
-        <span class="shreya">Shreya </span> <span class="kaito">&</span> <span class="shreya">Kaito</span>
+        <span class="shreya">Shreya</span> <span class="oli">&</span> <span class="kaito">Kaito</span>
     </a>
 </div>
 
 <div class="nav-tabs">
-
 {% assign i = 0 %}
 {% for tab in site.tabs %}
 {% unless tab.hide %}
@@ -19,9 +18,5 @@
 {% assign i = i | plus: 1 %}
 {% endunless %}
 {% endfor %}
-
-<div class="nav-item rsvp">
-    <a href="{{ '/tabs/rsvp.html' | relative_url }}">RSVP</a>
-</div>
 </div>
 </navbar>
