@@ -1,7 +1,7 @@
-// Wedding Countdown Timer
+// Wedding Countdown Timer - CORRECTED DATE
 function initializeCountdown() {
-    // Set wedding date to February 3rd, 2026 (CORRECTED DATE)
-    const weddingDate = new Date('2026-02-03T10:00:00+05:30').getTime();
+    // Set wedding date to February 3rd, 2025 (CORRECTED FROM 2026)
+    const weddingDate = new Date('2025-02-03T10:00:00+05:30').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();
@@ -19,7 +19,7 @@ function initializeCountdown() {
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         } else {
             // Wedding day has arrived!
-            document.querySelector('.countdown-container h3').textContent = '🎉 Wedding Day is Here! 🎉';
+            document.querySelector('.countdown-container-fixed h4').textContent = '🎉 Wedding Day is Here! 🎉';
             document.querySelector('.countdown-timer').innerHTML = '<div class="wedding-day-message">Congratulations!</div>';
         }
     }
@@ -28,14 +28,34 @@ function initializeCountdown() {
     setInterval(updateCountdown, 1000);
 }
 
-// Update Notification System
+// Enhanced Update Notification System with Actual Content
 function initializeUpdateNotification() {
     const notification = document.getElementById('updateNotification');
+    const updateText = document.getElementById('updateText');
     const lastVisit = localStorage.getItem('lastVisit');
     const currentTime = new Date().getTime();
     
-    // Show notification if it's been more than 24 hours since last visit
+    // Define recent updates with timestamps
+    const recentUpdates = [
+        {
+            date: '2025-07-27',
+            content: 'Wedding date corrected to February 3rd, 2025'
+        },
+        {
+            date: '2025-07-26',
+            content: 'New venue update: ceremony at Miraya Greens'
+        },
+        {
+            date: '2025-07-25',
+            content: 'Enhanced website styling and cherry blossom animations'
+        }
+    ];
+    
+    // Show notification with the latest update
     if (!lastVisit || (currentTime - parseInt(lastVisit)) > 24 * 60 * 60 * 1000) {
+        const latestUpdate = recentUpdates[0];
+        updateText.textContent = `Update: ${latestUpdate.content}`;
+        
         setTimeout(() => {
             notification.style.display = 'flex';
         }, 2000);
@@ -53,33 +73,10 @@ function dismissNotification() {
     }, 500);
 }
 
-// Enhanced Gallery Functions (for hex to grid conversion)
-function initializeEnhancedGallery() {
-    const hexContainer = document.querySelector('.hex-container');
-    if (hexContainer) {
-        // Apply modern grid styling
-        hexContainer.classList.add('modern-gallery-grid');
-        
-        // Add loading animation to images
-        const images = hexContainer.querySelectorAll('img');
-        images.forEach((img, index) => {
-            img.style.opacity = '0';
-            img.style.transform = 'scale(0.9)';
-            
-            setTimeout(() => {
-                img.style.transition = 'all 0.3s ease';
-                img.style.opacity = '1';
-                img.style.transform = 'scale(1)';
-            }, index * 100);
-        });
-    }
-}
-
 // Initialize all enhancements when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeCountdown();
     initializeUpdateNotification();
-    initializeEnhancedGallery();
     
     // Add CSS animation for slideOut
     const style = document.createElement('style');

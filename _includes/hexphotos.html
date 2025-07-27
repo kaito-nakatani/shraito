@@ -42,3 +42,21 @@
 {% unless include.nospacers %} 
 <div class="small-spacer"></div>
 {% endunless %}
+
+{% if include.section %}
+  {% assign photo_path = '/assets/photos/' | append: include.section | append: '/' %}
+{% else %}
+  {% assign photo_path = '/assets/photos/' %}
+{% endif %}
+
+<div class="hex-container">
+  {% for grid_num in include.gridnums %}
+    <div class="hex-wrapper">
+      <div class="hex">
+        <img src="{{ photo_path | append: 'photo' | append: forloop.index | append: '.jpg' | relative_url }}" 
+             alt="Photo {{ forloop.index }}">
+      </div>
+    </div>
+  {% endfor %}
+</div>
+

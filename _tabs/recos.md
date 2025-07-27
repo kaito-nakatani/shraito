@@ -1,38 +1,82 @@
 ---
-title_short: Recommendations
 title: Recommendations in Bangalore
+title_short: Recommendations
 layout: tab
 leftblock: Recommendations
+custom_css:
+  - qa
+  - enhanced-styles
+custom_js:
+  - qa-collapsible
 ---
-<!-- **Food**   -->
-## Food
-Bangalore has a lot of good food, especially South Indian food. 
-*Bangalore also has the best dosas in India* <sup>[Kishore et. al., 2024]</sup>.
-Here are a few recommendations:
-- <span class="establishment">Vidyarthi Bhavan</span> Historic restaurant known for crispy dosas. You usually get a token and wait 20-30min for a table.
-- <span class="establishment">MTR (Mavalli Tiffin Room)</span>  Iconic restaurant known for serving authentic South Indian food. Try their masala dosa, filter coffee and lunch meals.  
-- <span class="establishment">Brahmins Coffee Bar</span> Order idli with chutney and filter coffee.
-- <span class="establishment">V V Puram</span> Street food with multiple vendors. It is definitely an experience!
-- <span class="establishment">Kappa Chakka Kandhari</span>  Food from Kerala. Try their cloud pudding. 
 
-<!-- **Microbreweries** -->
-## Microbreweries
-There is a new thriving microbrewery scene in Bangalore. Oia and Brahma Brews are two recommendations; use Google to find more!
+<div class="qa-container">
+    <div class="qa-item">
+        <div class="qa-question" onclick="toggleAnswer(this)">
+            <span class="qa-icon">+</span>
+            <strong>🍽️ Food Recommendations</strong>
+        </div>
+        <div class="qa-answer">
+            <p>Bangalore has a lot of good food, especially South Indian food. Bangalore also has the best dosas in India [Kishore et. al., 2024]. Here are a few recommendations:</p>
+            <ul>
+                <li><strong>Vidyarthi Bhavan</strong> — Historic restaurant known for crispy dosas. You usually get a token and wait 20-30min for a table.</li>
+                <li><strong>MTR (Mavalli Tiffin Room)</strong> — Iconic restaurant known for serving authentic South Indian food. Try their masala dosa, filter coffee and lunch meals.</li>
+                <li><strong>Brahmins Coffee Bar</strong> — Order idli with chutney and filter coffee.</li>
+                <li><strong>V V Puram</strong> — Street food with multiple vendors. It is definitely an experience!</li>
+                <li><strong>Kappa Chakka Kandhari</strong> — Food from Kerala. Try their cloud pudding.</li>
+            </ul>
+        </div>
+    </div>
 
-<!-- **Gardens & Parks**   -->
-## Gardens & Parks
-Bangalore is also often called the 'Garden City of India.' Here are a couple parks that you might want to visit:
-- <span class="establishment">Cubbon Park</span> The city's green lung with walking trails and historic buildings (like the state central library).
-- <span class="establishment">[Lalbagh Botanical Garden](https://lalbaghbotanicalgarden.in/)</span> A 240-acre park with India's largest collection of tropical plants.
+    <div class="qa-item">
+        <div class="qa-question" onclick="toggleAnswer(this)">
+            <span class="qa-icon">+</span>
+            <strong>🍺 Microbreweries</strong>
+        </div>
+        <div class="qa-answer">
+            <p>There is a new thriving microbrewery scene in Bangalore. Oia and Brahma Brews are two recommendations; use Google to find more!</p>
+        </div>
+    </div>
 
-<!-- **Tourist-y Sites**   -->
-## Tourist-y Sites
-Bangalore is not especially tourist-y, but here are few sites you can checkout:
-- <span class="establishment">Vidhana Soudha</span> The largest state legislative building in India, stands as an imposing example of neo-Dravidian architecture with its massive granite facade and carvings.
-- <span class="establishment">Nandi Hills</span> An ancient hill fortress just outside Bangalore that has good sunrise views and a short hike.
-- <span class="establishment">Bannerghatta National Park</span> See wildlife and go on safaris.
+    <div class="qa-item">
+        <div class="qa-question" onclick="toggleAnswer(this)">
+            <span class="qa-icon">+</span>
+            <strong>🌳 Gardens & Parks</strong>
+        </div>
+        <div class="qa-answer">
+            <p>Bangalore is also often called the 'Garden City of India.' Here are a couple parks that you might want to visit:</p>
+            <ul>
+                <li><strong>Cubbon Park</strong> — The city's green lung with walking trails and historic buildings (like the state central library).</li>
+                <li><strong>Lalbagh Botanical Garden</strong> — A 240-acre park with India's largest collection of tropical plants.</li>
+            </ul>
+        </div>
+    </div>
 
-<!-- **Temples**   -->
-## Temples
-- <span class="establishment">Bull Temple</span> A 16th-century temple featuring a massive granite bull statue.
-- <span class="establishment">Iskcon Temple</span> A modern Krishna temple perched on a hilltop.
+    <div class="qa-item">
+        <div class="qa-question" onclick="toggleAnswer(this)">
+            <span class="qa-icon">+</span>
+            <strong>🏛️ Tourist Sites</strong>
+        </div>
+        <div class="qa-answer">
+            <p>Bangalore is not especially tourist-y, but here are few sites you can checkout:</p>
+            <ul>
+                <li><strong>Vidhana Soudha</strong> — The largest state legislative building in India, stands as an imposing example of neo-Dravidian architecture with its massive granite facade and carvings.</li>
+                <li><strong>Nandi Hills</strong> — An ancient hill fortress just outside Bangalore that has good sunrise views and a short hike.</li>
+                <li><strong>Bannerghatta National Park</strong> — See wildlife and go on safaris.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-question" onclick="toggleAnswer(this)">
+            <span class="qa-icon">+</span>
+            <strong>🕉️ Temples</strong>
+        </div>
+        <div class="qa-answer">
+            <ul>
+                <li><strong>Bull Temple</strong> — A 16th-century temple featuring a massive granite bull statue.</li>
+                <li><strong>Iskcon Temple</strong> — A modern Krishna temple perched on a hilltop.</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -19,7 +19,7 @@
     <!-- Update notification system -->
     <div class="update-notification" id="updateNotification" style="display: none;">
       <span class="notification-bell">🔔</span>
-      <span class="notification-text">New updates available</span>
+      <span class="notification-text" id="updateText">New updates available</span>
       <button class="dismiss-notification" onclick="dismissNotification()">×</button>
     </div>
 
@@ -27,25 +27,27 @@
       {{ content }}
     </div>
 
-    <!-- Wedding countdown timer -->
-    <div class="countdown-container">
-      <h3>🌸 Wedding Countdown 🪷</h3>
-      <div class="countdown-timer">
-        <div class="countdown-item">
-          <span class="countdown-number" id="days">--</span>
-          <span class="countdown-label">Days</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="hours">--</span>
-          <span class="countdown-label">Hours</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="minutes">--</span>
-          <span class="countdown-label">Minutes</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="seconds">--</span>
-          <span class="countdown-label">Seconds</span>
+    <!-- Fixed Wedding countdown timer - NO LONGER BLOCKING -->
+    <div class="countdown-container-fixed">
+      <div class="countdown-content">
+        <h4>🌸 Wedding Countdown 🪷</h4>
+        <div class="countdown-timer">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days">--</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">--</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">--</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">--</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
         </div>
       </div>
     </div>

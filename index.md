@@ -16,26 +16,32 @@ rain: false
 
 <div class="main-content-enhanced">
     <div class="main-title">
-        <span class="shreya">Shreya</span> <span class="oli">&</span> <span class="kaito">Kaito</span>
+        <span class="shreya">Shreya</span> <span class="shreya">&</span> <span class="kaito">Kaito</span>
     </div>
     
     {% include hexphotos.html gridnums="7" %}
     
     <div class="wedding-announcement">
-        {:.center}
-        **Shreya Kishore** and **Kaito Nakatani** are getting married!
-        
-        The ceremony will be in [Bangalore, India](https://maps.app.goo.gl/DRykhnkgKmyNoWvF8)
-        at [the Miraya Greens](https://www.mirayagreens.com/)
-        on **February 3rd, 2026**.
-        
-        We hope you can join us!
+        <div class="center-content">
+            <strong>Shreya Kishore</strong> and <strong>Kaito Nakatani</strong> are getting married!
+            
+            <p>The ceremony will be in <a href="https://maps.app.goo.gl/DRykhnkgKmyNoWvF8">Bangalore, India</a>
+            at <a href="https://www.mirayagreens.com/">the Miraya Greens</a>
+            on <strong>February 3rd, 2026</strong>.</p>
+            
+            <p>We hope you can join us!</p>
+        </div>
     </div>
     
-    ---
+    <hr>
     
     <div class="couple-description">
-        {:.center}        
-        Back story placeholder
+        <div class="center-content">
+            <p>After growing up on opposite sides of the earth, Shreya and Kaito met in graduate school.
+            They are remarkably similar people with very different strengths.
+            They have become an excellent team in their years together,
+            and are excited to commit to a lifetime of partnership!</p>
+        </div>
     </div>
 </div>
+
