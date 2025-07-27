@@ -26,8 +26,8 @@ rain: false
         **Shreya Kishore** and **Kaito Nakatani** are getting married!
         
         The ceremony will be in [Bangalore, India](https://maps.app.goo.gl/DRykhnkgKmyNoWvF8)
-        at [the Tamarind Tree](https://www.thetamarindtree.in/)
-        on **February 3rd, 2025**.
+        at [the Miraya Greens](https://www.mirayagreens.com/)
+        on **February 3rd, 2026**.
         
         We hope you can join us!
     </div>
@@ -35,14 +35,7 @@ rain: false
     ---
     
     <div class="couple-description">
-        {:.center}
-        Shreya reliably makes things work; Kaito sometimes has brilliant ideas.
-        Shreya finds the best things; Kaito finds the most unique ones.
-        Shreya likes content; Kaito likes form.
-        
-        After growing up on opposite sides of the earth, Shreya and Kaito met in graduate school.
-        They are remarkably similar people with very different strengths.
-        They have become an excellent team in their years together,
-        and are excited to commit to a lifetime of partnership!
+        {:.center}        
+        Back story placeholder
     </div>
 </div>

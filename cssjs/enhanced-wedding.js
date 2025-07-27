@@ -1,7 +1,7 @@
 // Wedding Countdown Timer
 function initializeCountdown() {
-    // Set wedding date to February 3rd, 2026 at 3:00 PM IST
-    const weddingDate = new Date('2026-02-03T15:00:00+05:30').getTime();
+    // Set wedding date to February 3rd, 2026 (CORRECTED DATE)
+    const weddingDate = new Date('2026-02-03T10:00:00+05:30').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();
@@ -19,7 +19,7 @@ function initializeCountdown() {
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         } else {
             // Wedding day has arrived!
-            document.querySelector('.countdown-container h3').textContent = 'Wedding Day is Here! 🎉';
+            document.querySelector('.countdown-container h3').textContent = '🎉 Wedding Day is Here! 🎉';
             document.querySelector('.countdown-timer').innerHTML = '<div class="wedding-day-message">Congratulations!</div>';
         }
     }
@@ -53,44 +53,26 @@ function dismissNotification() {
     }, 500);
 }
 
-// Enhanced Gallery Functions
+// Enhanced Gallery Functions (for hex to grid conversion)
 function initializeEnhancedGallery() {
-    const galleryContainer = document.querySelector('.gallery-container');
-    if (galleryContainer) {
-        galleryContainer.classList.add('enhanced-gallery');
+    const hexContainer = document.querySelector('.hex-container');
+    if (hexContainer) {
+        // Apply modern grid styling
+        hexContainer.classList.add('modern-gallery-grid');
         
-        // Add loading animation
-        const images = galleryContainer.querySelectorAll('img');
+        // Add loading animation to images
+        const images = hexContainer.querySelectorAll('img');
         images.forEach((img, index) => {
             img.style.opacity = '0';
-            img.style.transform = 'translateY(20px)';
+            img.style.transform = 'scale(0.9)';
             
-            img.onload = () => {
-                setTimeout(() => {
-                    img.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                    img.style.opacity = '1';
-                    img.style.transform = 'translateY(0)';
-                }, index * 100);
-            };
+            setTimeout(() => {
+                img.style.transition = 'all 0.3s ease';
+                img.style.opacity = '1';
+                img.style.transform = 'scale(1)';
+            }, index * 100);
         });
     }
-}
-
-// Smooth Scroll Enhancement
-function enhanceScrolling() {
-    // Add smooth scrolling to anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
 }
 
 // Initialize all enhancements when DOM is loaded
@@ -98,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCountdown();
     initializeUpdateNotification();
     initializeEnhancedGallery();
-    enhanceScrolling();
     
     // Add CSS animation for slideOut
     const style = document.createElement('style');
@@ -116,20 +97,3 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
-
-// Tab switching enhancements
-function enhanceTabSwitching() {
-    const tabs = document.querySelectorAll('.nav-item.tab a');
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function(e) {
-            // Add loading state
-            this.style.opacity = '0.7';
-            setTimeout(() => {
-                this.style.opacity = '1';
-            }, 200);
-        });
-    });
-}
-
-// Call tab enhancement after DOM loads
-document.addEventListener('DOMContentLoaded', enhanceTabSwitching);

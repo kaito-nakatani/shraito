@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-{%- include head.html -%}
+  {%- include head.html -%}
 
-<!-- Cultural background patterns -->
-<div class="cultural-bg cherry-blossom"></div>
-<div class="cultural-bg lotus-pattern"></div>
+  <body>
+    <!-- Cultural background patterns -->
+    <div class="cultural-bg cherry-blossom"></div>
+    <div class="cultural-bg lotus-pattern"></div>
 
-<!-- Cherry Blossom Storm Container -->
-<div class="cherry-storm" id="cherryStorm"></div>
+    <!-- Cherry Blossom Storm Container -->
+    <div class="cherry-storm" id="cherryStorm"></div>
 
-{% if page.rain %}
-<div class="rain-pane"></div>
-<link rel="stylesheet" href="{{ '/cssjs/rain.css' | relative_url }}">
-<script src="{{ '/cssjs/rain.js' | relative_url }}"></script>
-{% endif %}
+    {% if page.rain %}
+    <div class="rain-pane"></div>
+    <link rel="stylesheet" href="{{ '/cssjs/rain.css' | relative_url }}">
+    <script src="{{ '/cssjs/rain.js' | relative_url }}"></script>
+    {% endif %}
 
-<body>
-<!-- Update notification system -->
-<div class="update-notification" id="updateNotification" style="display: none;">
-    <span class="notification-bell">🔔</span>
-    <span class="notification-text">New updates available</span>
-    <button class="dismiss-notification" onclick="dismissNotification()">×</button>
-</div>
-
-<div class="wrapper">
-{{ content }}
-</div>
-
-<!-- Wedding countdown timer -->
-<div class="countdown>Wedding Countdown</h3>
-    <div class="countdown-timer">
-        <div class="countdown-item">
-            <span class="countdown-number" id="days">--</span>
-            <span class="countdown-label">Days</span>
-        </div>
-        <div class="countdown-item">
-            <span class="countdown-number" id="hours">--</span>
-            <span class="countdown-label">Hours</span>
-        </div>
-        <div class="countdown-item">
-            <span class="countdown-number" id="minutes">--</span>
-            <span class="countdown-label">Minutes</span>
-        </div>
-        <div class="countdown-item">
-            <span class="countdown-number" id="seconds">--</span>
-            <span class="countdown-label">Seconds</span>
-        </div>
+    <!-- Update notification system -->
+    <div class="update-notification" id="updateNotification" style="display: none;">
+      <span class="notification-bell">🔔</span>
+      <span class="notification-text">New updates available</span>
+      <button class="dismiss-notification" onclick="dismissNotification()">×</button>
     </div>
-</div>
 
-<!-- Enhanced JavaScript loading -->
-<script src="{{ '/cssjs/enhanced-wedding.js' | relative_url }}"></script>
-<script src="{{ '/cssjs/cherry-storm.js' | relative_url }}"></script>
+    <div class="wrapper">
+      {{ content }}
+    </div>
 
-{% if page.custom_js %}
-{% for js_file in page.custom_js %}
-<script src="{{ '/cssjs/' | append: js_file | append: '.js' | relative_url }}"></script>
-{% endfor %}  
-{% endif %}
+    <!-- Wedding countdown timer -->
+    <div class="countdown-container">
+      <h3>🌸 Wedding Countdown 🪷</h3>
+      <div class="countdown-timer">
+        <div class="countdown-item">
+          <span class="countdown-number" id="days">--</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="hours">--</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="minutes">--</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="seconds">--</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+    </div>
 
-</body>
+    <!-- Enhanced JavaScript loading -->
+    <script src="{{ '/cssjs/enhanced-wedding.js' | relative_url }}"></script>
+    <script src="{{ '/cssjs/cherry-storm.js' | relative_url }}"></script>
+    {% if page.custom_js %}
+      {% for js_file in page.custom_js %}
+      <script src="{{ '/cssjs/' | append: js_file | append: '.js' | relative_url }}"></script>
+      {% endfor %}  
+    {% endif %}
+  </body>
 </html>
