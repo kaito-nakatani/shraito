@@ -189,14 +189,14 @@ a {
     100% { transform: translate(-100%, 0); }
 }
 
-span.varsha {
+span.shreya {
     color: var(--vcolor)
         /* color-mix(teal 80%, black); */
     /* font-size: 100pt; */
     /* margin-right:-5px; */
 }
 
-span.oli {
+span.kaito {
     /* color: rgb(224, 117, 172); */
     /* margin-left: -5px; */
     color: var(--ocolor);
@@ -228,4 +228,38 @@ span.establishment::after {
     .block .attire {
         margin-left : 30px;
     }
+}
+
+/* Enhanced root variables for cultural theming */
+:root {
+    --vcolor: rgb(20, 54, 54);
+    --ocolor: rgb(144, 28, 88);
+    --accent: #EAE;
+    --color-surface: rgba(255, 255, 255, 0.9);
+    --color-teal-500-rgb: 20, 54, 54;
+    --color-red-400-rgb: 144, 28, 88;
+    
+    /* New cultural colors */
+    --cherry-blossom: #ffb3d9;
+    --lotus-teal: #00cccc;
+    --gold-accent: #ffd700;
+}
+
+/* Enhanced body styling */
+body {
+    background: linear-gradient(135deg, 
+        rgba(255, 179, 217, 0.03) 0%, 
+        rgba(0, 204, 204, 0.03) 100%);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Enhanced navbar styling */
+.enhanced-navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }

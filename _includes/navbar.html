@@ -1,33 +1,27 @@
-
-<navbar class="fullpagewidth">
-<ul>
-<!-- <li class="nav-home"><a href="/">Voli</a></li> -->
-<!-- <li class="nav-home"><a href="/"></a></li> -->
-<li class="nav-item" > <!-- {% if page.url == '/' %}current-tab{% endif %} -->
-    <a href="/{{site.baseurl}}">
-        <!-- <div style="background-image: url('/assets/cloud.png'); width:10px; height:18px;"></div> -->
-        <img src="/{{site.baseurl}}assets/cloud.png" height="30px" style="margin:-10px -0px; "/>
+<navbar class="enhanced-navbar">
+<div class="nav-home">
+    <a href="{{ '/' | relative_url }}">
+        <span class="shreya">Shreya </span> <span class="kaito">&</span> <span class="shreya">Kaito</span>
     </a>
-</li>
+</div>
+
+<div class="nav-tabs">
+
 {% assign i = 0 %}
 {% for tab in site.tabs %}
 {% unless tab.hide %}
     {% if i == 3 %}
-        <br>
+    <br>
     {% endif %}
-<li class="nav-item {% if tab.url == page.url%}current-tab{% endif %}">
-    <a href="{{ tab.url | relative_url }}" >
-        {{tab.title_short}}
-    </a>
-</li>
+    <div class="nav-item tab {% if page.url == tab.url %}current-tab{% endif %}">
+        <a href="{{ tab.url | relative_url }}">{{tab.title_short}}</a>
+    </div>
 {% assign i = i | plus: 1 %}
 {% endunless %}
 {% endfor %}
-<br>
-<li class="nav-item rsvp">
-    <a href="https://forms.gle/1KobqjmUYpwjUKuJ7"> RSVP </a>
-</li>
 
-</ul>
+<div class="nav-item rsvp">
+    <a href="{{ '/tabs/rsvp.html' | relative_url }}">RSVP</a>
+</div>
+</div>
 </navbar>
-

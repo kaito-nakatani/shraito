@@ -189,14 +189,14 @@ a {
     100% { transform: translate(-100%, 0); }
 }
 
-span.varsha {
+span.shreya {
     color: var(--vcolor)
         /* color-mix(teal 80%, black); */
     /* font-size: 100pt; */
     /* margin-right:-5px; */
 }
 
-span.oli {
+span.kaito {
     /* color: rgb(224, 117, 172); */
     /* margin-left: -5px; */
     color: var(--ocolor);
