@@ -1,44 +1,147 @@
 ---
-title_short: Travel
-title: Travel Info
-layout: default
-leftblock: Travel Information
+title: Travel Information
+title_short: Travel Info
+layout: tab
+leftblock: Travel Info
+custom_css:
+  - qa
+  - enhanced-styles
+  - nested-accordion
+custom_js:
+  - qa-collapsible
+  - nested-accordion
 ---
 
-{% include navbar.html %}
+<div class="nested-accordion-container">
+    <!-- Section 1: Visa & Documentation -->
+    <div class="accordion-section">
+        <div class="section-header" onclick="toggleSection(this, 'visa-section')">
+            <span class="section-icon">+</span>
+            <strong>🛂 Visa & Documentation</strong>
+        </div>
+        <div class="section-content" id="visa-section">
+            
+            <!-- Subsection 1.1: Visa Requirements -->
+            <div class="subsection">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'visa-requirements')">
+                    <span class="subsection-icon">▶</span>
+                    <strong>Visa Requirements</strong>
+                </div>
+                <div class="subsection-content" id="visa-requirements">
+                    <p>Most visitors to India require a visa. Here are the main options:</p>
+                    <ul>
+                        <li><strong>e-Visa:</strong> Available for tourists from eligible countries. Can be applied online 4-120 days before arrival.</li>
+                        <li><strong>Tourist Visa:</strong> Traditional visa obtained from Indian consulates/embassies.</li>
+                        <li><strong>Visa on Arrival:</strong> Available for citizens of select countries at specific airports.</li>
+                    </ul>
+                    <p><strong>Processing Time:</strong> e-Visa typically takes 3-5 business days.</p>
+                </div>
+            </div>
 
-<div class="center">
-<h1> {{page.title}} </h1>
+            <!-- Subsection 1.2: Required Documents -->
+            <div class="subsection">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'required-docs')">
+                    <span class="subsection-icon">▶</span>
+                    <strong>Required Documents</strong>
+                </div>
+                <div class="subsection-content" id="required-docs">
+                    <ul>
+                        <li>Passport with at least 6 months validity</li>
+                        <li>Recent passport-sized photograph</li>
+                        <li>Completed visa application form</li>
+                        <li>Flight itinerary (return ticket)</li>
+                        <li>Hotel booking confirmation</li>
+                        <li>Proof of sufficient funds</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Subsection 1.3: Passport Tips -->
+            <div class="subsection">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'passport-tips')">
+                    <span class="subsection-icon">▶</span>
+                    <strong>Passport & Entry Tips</strong>
+                </div>
+                <div class="subsection-content" id="passport-tips">
+                    <p><strong>Important:</strong> Make sure to carry physical copies of all documents.</p>
+                    <ul>
+                        <li>Keep passport and visa copies separate from originals</li>
+                        <li>Have digital copies stored in cloud storage</li>
+                        <li>Indian immigration can be slow - allow extra time</li>
+                        <li>Keep cash for any airport fees (usually minimal)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Health & Safety -->
+    <div class="accordion-section">
+        <div class="section-header" onclick="toggleSection(this, 'health-section')">
+            <span class="section-icon">+</span>
+            <strong>🏥 Health & Safety</strong>
+        </div>
+        <div class="section-content" id="health-section">
+            
+            <!-- Subsection 2.1: Vaccinations -->
+            <div class="subsection">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'vaccinations')">
+                    <span class="subsection-icon">▶</span>
+                    <strong>Recommended Vaccinations</strong>
+                </div>
+                <div class="subsection-content" id="vaccinations">
+                    <p><strong>Consult your doctor 4-6 weeks before travel.</strong></p>
+                    <p><strong>Routine Vaccines:</strong> MMR, DPT, Polio, Influenza</p>
+                    <p><strong>Recommended for India:</strong></p>
+                    <ul>
+                        <li>Hepatitis A & B</li>
+                        <li>Typhoid</li>
+                        <li>Japanese Encephalitis (for extended stays)</li>
+                        <li>Rabies (if planning rural activities)</li>
+                    </ul>
+                    <p><strong>Malaria:</strong> Not common in Bangalore, but consult your doctor.</p>
+                </div>
+            </div>
+
+            <!-- Subsection 2.2: Health Precautions -->
+            <div class="subsection">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'health-precautions')">
+                    <span class="subsection-icon">▶</span>
+                    <strong>Health Precautions</strong>
+                </div>
+                <div class="subsection-content" id="health-precautions">
+                    <ul>
+                        <li><strong>Water:</strong> Drink only bottled or purified water</li>
+                        <li><strong>Food:</strong> Eat at reputable restaurants, avoid street food initially</li>
+                        <li><strong>Medications:</strong> Bring a small first-aid kit with basic medications</li>
+                        <li><strong>Insurance:</strong> Ensure you have comprehensive travel insurance</li>
+                        <li><strong>Sun Protection:</strong> Bangalore has strong UV; use sunscreen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Subsection 2.3: Emergency Contacts -->
+            <div class="subsection">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'emergency-contacts')">
+                    <span class="subsection-icon">▶</span>
+                    <strong>Emergency Contacts</strong>
+                </div>
+                <div class="subsection-content" id="emergency-contacts">
+                    <p><strong>Emergency Numbers in India:</strong></p>
+                    <ul>
+                        <li>Police: 100</li>
+                        <li>Fire: 101</li>
+                        <li>Ambulance: 108</li>
+                        <li>Tourist Helpline: 1363</li>
+                    </ul>
+                    <p><strong>Hospitals in Bangalore:</strong></p>
+                    <ul>
+                        <li>Manipal Hospital: +91 80 2502 4444</li>
+                        <li>Apollo Hospital: +91 80 2630 1066</li>
+                        <li>Fortis Hospital: +91 80 6621 4444</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-<div class="block" markdown="1" style="--accent:#3ac">
-<div class="sideways"><h1>In Advance</h1></div>
-- <span class="establishment">Visa</span> Most people can apply for an
-    <a href="https://indianvisaonline.gov.in/evisa/tvoa.html">e-visa</a>,
-    which can be obtained at most 30 days before travel. 
-    Make sure to **apply using the official Indian Government's website (ending with .in)**, and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website. 
-
-- <span class="establishment">Airport</span> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses.
-To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that's like Uber). The airport should have signs directing you to where the Uber/Ola pickup spot is.
-
-
-- <span class="establishment">Vaccines</span> The [CDC page](https://wwwnc.cdc.gov/travel/destinations/traveler/none/india) has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! 
-Universities often offer travel appointments to get vaccines and prescriptions for anti-malaria pills. Anti-malaria pills are especially recommended for travel to northern India. 
-<!-- Bangalore is actually  -->
-</div>
-<hr>
-<div markdown="1" class="block" style="--accent:#a3c">
-<div class="sideways"><h1>On Arrival</h1></div>
-- <span class="establishment">Airport WiFi</span> 
-WiFi in Indian airports is a bit annoying: in order to connect to airport wifi, you will need to provide a verification code sent by SMS to a phone number. If you don't have a working phone connection in India and need to use the airport WiFi, go to the information desk, or ask the airport staff. 
-The attendant at the information desk can either give you a one-time use code or use their own mobile device to receive your verification code. 
-
-- <span class="establishment">Currency</span> 
-The currency used in India is the rupee (₹ / INR).  
-India has extensive digital infrastructure, and so credit cards can be used to pay in most places.
-However, unless using an Indian credit card, this method of payment will typically incur a small currency exchange fee---unless your card offers the "no foreign transaction fee" benefit.
-For more details about cards without foreign transaction fees, consult your bank or credit card company.
-  Physical money can be useful in some situations (e.g., at roadside shops), and so it may be worth exchanging for local currency.  Currency can be exchanged at the airport or in the city.  The airport is convenient, but may not have the most generous exchange rate.
-
-- <span class="establishment">Phone Plans and SIM Cards</span> Most carriers offer some sort of an international roaming plan for India. Yet these plans can be relatively expensive; it is likely to be cheaper to get a local SIM in India (a country in which data is notoriously affordable). *Note that, to use a local sim, your phone cannot be carrier-locked.* **If your phone is unlocked and you would like us to arrange a physical local SIM card for you, let us know on the RSVP form.** A local SIM may also be purchased in the airport. If you don't want a physical SIM, there are eSIMs like this one: [ByteSIM](https://bytesim.com/products/esim-india?gad_source=1&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUt64x9dDqVGQpBMwWFxWQVRjnke6mcM_lDySPaOpWMs9d8qo0W1gwAaApbKEALw_wcB&sku=18066838164459257049580715). 

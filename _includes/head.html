@@ -12,10 +12,10 @@
 <title>{{ site.title }}</title>
 {%- endif -%}
 
-<!-- CSS in correct order -->
 <link rel="stylesheet" href="{{ '/cssjs/main.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/cssjs/enhanced-styles.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/cssjs/cherry-storm.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/cssjs/password-protection.css' | relative_url }}">
 
 {% if page.custom_css %}
 {% for sheet in page.custom_css %}

@@ -3,6 +3,9 @@
   {%- include head.html -%}
 
   <body>
+    <!-- Password Protection -->
+    {% include password-protection.html %}
+    
     <!-- Cultural background patterns -->
     <div class="cultural-bg cherry-blossom"></div>
     <div class="cultural-bg lotus-pattern"></div>
@@ -16,42 +19,48 @@
     <script src="{{ '/cssjs/rain.js' | relative_url }}"></script>
     {% endif %}
 
-    <!-- Update notification system -->
-    <div class="update-notification" id="updateNotification" style="display: none;">
-      <span class="notification-bell">🔔</span>
-      <span class="notification-text" id="updateText">New updates available</span>
-      <button class="dismiss-notification" onclick="dismissNotification()">×</button>
-    </div>
+    <!-- Main content (hidden until password entered) -->
+    <div id="main-content" style="display: none;">
+      <!-- Update notification system -->
+      <div class="update-notification" id="updateNotification" style="display: none;">
+        <span class="notification-bell">🔔</span>
+        <span class="notification-text" id="updateText">New updates available</span>
+        <button class="dismiss-notification" onclick="dismissNotification()">×</button>
+      </div>
 
-    <div class="wrapper">
-      {{ content }}
-    </div>
+      <div class="wrapper">
+        {{ content }}
+      </div>
 
-    <!-- Fixed Wedding countdown timer - NO LONGER BLOCKING -->
-    <div class="countdown-container-fixed">
-      <div class="countdown-content">
-        <h4>🌸 Wedding Countdown 🪷</h4>
-        <div class="countdown-timer">
-          <div class="countdown-item">
-            <span class="countdown-number" id="days">--</span>
-            <span class="countdown-label">Days</span>
-          </div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="hours">--</span>
-            <span class="countdown-label">Hours</span>
-          </div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="minutes">--</span>
-            <span class="countdown-label">Minutes</span>
-          </div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="seconds">--</span>
-            <span class="countdown-label">Seconds</span>
+      <!-- Fixed Wedding countdown timer -->
+      <div class="countdown-container-fixed">
+        <div class="countdown-content">
+          <h4>🌸 Wedding Countdown 🪷</h4>
+          <div class="countdown-timer">
+            <div class="countdown-item">
+              <span class="countdown-number" id="days">--</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="hours">--</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="minutes">--</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="seconds">--</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Password Protection Script -->
+    <script src="{{ '/cssjs/password-protection.js' | relative_url }}"></script>
+    
     <!-- Enhanced JavaScript loading -->
     <script src="{{ '/cssjs/enhanced-wedding.js' | relative_url }}"></script>
     <script src="{{ '/cssjs/cherry-storm.js' | relative_url }}"></script>

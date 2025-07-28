@@ -1,9 +1,9 @@
-// Cherry Blossom Storm Animation
+// Optimized Cherry Blossom Storm - Reduced Performance Impact
 class CherryStorm {
     constructor() {
         this.container = document.getElementById('cherryStorm');
         this.petals = [];
-        this.maxPetals = window.innerWidth < 768 ? 30 : 60; // Fewer petals on mobile
+        this.maxPetals = window.innerWidth < 768 ? 15 : 30; // REDUCED from 30/60
         this.isRunning = false;
         this.init();
     }
@@ -11,13 +11,18 @@ class CherryStorm {
     init() {
         if (!this.container) return;
         
+        // REDUCED creation frequency
         this.createPetals();
         this.start();
         
-        // Handle window resize
+        // Throttled resize handler
+        let resizeTimeout;
         window.addEventListener('resize', () => {
-            this.maxPetals = window.innerWidth < 768 ? 30 : 60;
-            this.adjustPetals();
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                this.maxPetals = window.innerWidth < 768 ? 15 : 30;
+                this.adjustPetals();
+            }, 250);
         });
     }
 
@@ -25,7 +30,7 @@ class CherryStorm {
         for (let i = 0; i < this.maxPetals; i++) {
             setTimeout(() => {
                 this.createPetal();
-            }, i * 200); // Stagger creation
+            }, i * 400); // INCREASED delay from 200ms to 400ms
         }
     }
 
@@ -33,64 +38,37 @@ class CherryStorm {
         const petal = document.createElement('div');
         petal.className = 'cherry-petal';
         
-        // Random size
-        const sizes = ['size-small', 'size-medium', 'size-large'];
-        petal.classList.add(sizes[Math.floor(Math.random() * sizes.length)]);
+        // Simplified size options - REMOVED complex variations
+        const sizes = ['size-medium'];
+        petal.classList.add(sizes[0]);
         
-        // Random animation type
-        if (Math.random() > 0.6) {
-            petal.classList.add('float');
-        }
+        // REMOVED float animation - only use basic fall
         
-        // Random starting position
         petal.style.left = Math.random() * 100 + 'vw';
         
-        // Random animation duration
-        const duration = 8 + Math.random() * 10; // 8-18 seconds
+        // SIMPLIFIED animation duration
+        const duration = 12 + Math.random() * 6; // 12-18 seconds (was 8-18)
         petal.style.animationDuration = duration + 's';
-        
-        // Random delay
-        petal.style.animationDelay = Math.random() * 5 + 's';
+        petal.style.animationDelay = Math.random() * 3 + 's';
         
         this.container.appendChild(petal);
         this.petals.push(petal);
         
-        // Remove petal after animation completes
+        // Clean up after animation
         setTimeout(() => {
-            if (petal.parentNode) {
+            if (petal.parentNode && this.isRunning) {
                 petal.parentNode.removeChild(petal);
                 const index = this.petals.indexOf(petal);
                 if (index > -1) {
                     this.petals.splice(index, 1);
                 }
                 
-                // Create new petal if still running
-                if (this.isRunning && this.petals.length < this.maxPetals) {
+                // Create new petal less frequently
+                if (this.petals.length < this.maxPetals && Math.random() > 0.3) {
                     this.createPetal();
                 }
             }
-        }, (duration + 5) * 1000);
-    }
-
-    adjustPetals() {
-        const currentCount = this.petals.length;
-        if (currentCount > this.maxPetals) {
-            // Remove excess petals
-            for (let i = this.maxPetals; i < currentCount; i++) {
-                const petal = this.petals[i];
-                if (petal && petal.parentNode) {
-                    petal.parentNode.removeChild(petal);
-                }
-            }
-            this.petals = this.petals.slice(0, this.maxPetals);
-        } else if (currentCount < this.maxPetals) {
-            // Add more petals
-            for (let i = currentCount; i < this.maxPetals; i++) {
-                setTimeout(() => {
-                    this.createPetal();
-                }, (i - currentCount) * 200);
-            }
-        }
+        }, (duration + 3) * 1000);
     }
 
     start() {
@@ -102,10 +80,16 @@ class CherryStorm {
     }
 }
 
-// Initialize cherry storm when DOM is loaded
+// Initialize with performance check
 document.addEventListener('DOMContentLoaded', function() {
-    const cherryStorm = new CherryStorm();
-    
-    // Store reference globally for debugging
-    window.cherryStorm = cherryStorm;
+    // Only run cherry storm on desktop and good connections
+    if (window.innerWidth > 768 && navigator.connection) {
+        const connection = navigator.connection;
+        if (connection.effectiveType === '4g' || connection.effectiveType === '3g') {
+            new CherryStorm();
+        }
+    } else if (window.innerWidth > 768) {
+        // Fallback for browsers without connection API
+        new CherryStorm();
+    }
 });

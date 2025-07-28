@@ -17,33 +17,48 @@
     pointer-events: none;
 }
 
+/* Darker Cherry Blossom Petals */
 .cherry-petal::before {
     content: '';
     position: absolute;
     width: 8px;
     height: 12px;
     background: radial-gradient(ellipse at center, 
-        rgba(255, 183, 197, 0.9) 0%, 
-        rgba(255, 197, 208, 0.8) 50%, 
-        rgba(227, 170, 181, 0.6) 100%);
+        rgba(231, 84, 128, 0.9) 0%,    /* Dark pink #E75480 */
+        rgba(199, 28, 132, 0.8) 50%,   /* Darker pink #C71C84 */
+        rgba(156, 79, 84, 0.7) 100%);  /* Dark rose #9C4F54 */
     border-radius: 50% 0 50% 50%;
     transform: rotate(45deg);
-    box-shadow: 0 0 3px rgba(255, 183, 197, 0.3);
+    box-shadow: 0 0 3px rgba(231, 84, 128, 0.4);
 }
 
 .cherry-petal.size-small::before {
     width: 6px;
     height: 9px;
-}
-
-.cherry-petal.size-medium::before {
-    width: 8px;
-    height: 12px;
+    background: radial-gradient(ellipse at center, 
+        rgba(220, 136, 177, 0.9) 0%,   /* #DC88B1 */
+        rgba(164, 77, 121, 0.8) 50%,   /* #A64D79 */
+        rgba(116, 27, 71, 0.7) 100%);  /* #741B47 */
 }
 
 .cherry-petal.size-large::before {
     width: 10px;
     height: 15px;
+    background: radial-gradient(ellipse at center, 
+        rgba(231, 84, 128, 0.95) 0%,   /* Darkest center */
+        rgba(187, 84, 231, 0.85) 50%,  /* Purple-pink */
+        rgba(156, 79, 84, 0.75) 100%); /* Dark rose edge */
+}
+
+.cultural-bg.cherry-blossom {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><circle cx="30" cy="30" r="2" fill="%23E75480" opacity="0.5"/><circle cx="32" cy="28" r="1.5" fill="%23C71C84" opacity="0.4"/><circle cx="28" cy="32" r="1.5" fill="%239C4F54" opacity="0.4"/><circle cx="70" cy="60" r="2" fill="%23E75480" opacity="0.5"/><circle cx="72" cy="58" r="1.5" fill="%23C71C84" opacity="0.4"/><circle cx="68" cy="62" r="1.5" fill="%239C4F54" opacity="0.4"/></g></svg>') repeat;
+    opacity: 0.04; /* Slightly increased opacity for darker appearance */
+    background-size: 150px 150px;
+}
+
+.cherry-petal.size-medium::before {
+    width: 8px;
+    height: 12px;
 }
 
 @keyframes fall {
