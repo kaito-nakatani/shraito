@@ -28,6 +28,60 @@ custom_js:
         </div>
     </div>
 
+<div class="qa-item">
+    <div class="qa-question" onclick="toggleAnswer(this)">
+        <span class="qa-icon">+</span>
+        <strong>🌏 Tourist Destinations Across India</strong>
+    </div>
+    <div class="qa-answer">
+        <p>India is a vast country with many famous destinations outside Bangalore. Here are some highlights by region:</p>
+        <ul>
+            <li><strong>Northern India</strong>
+                <ul>
+                    <li>Agra: Taj Mahal, Agra Fort, Fatehpur Sikri</li>
+                    <li>Delhi: Red Fort, Qutub Minar, Humayun's Tomb, markets</li>
+                    <li>Jaipur: Amer Fort, Hawa Mahal, City Palace</li>
+                    <li>Jodhpur: Mehrangarh Fort, blue houses, Umaid Bhawan Palace</li>
+                    <li>Udaipur: lakes, palaces</li>
+                    <li>Varanasi: ghats, temples, Ganges</li>
+                    <li>Amritsar: Golden Temple, Jallianwala Bagh</li>
+                    <li>Shimla, Manali, Mussoorie, Nainital: hill stations (high altitude, colder temperatures, pretty views)</li>
+                </ul>
+            </li>
+            <li><strong>Western India</strong>
+                <ul>
+                    <li>Mumbai: Gateway of India, Marine Drive, Elephanta Caves</li>
+                    <li>Goa: beaches, churches, nightlife</li>
+                    <li>Ajanta & Ellora Caves: UNESCO sites</li>
+                </ul>
+            </li>
+            <li><strong>Southern India</strong>
+                <ul>
+                    <li>Kerala: backwaters, Munnar, Kochi</li>
+                    <li>Hampi: Vijayanagara ruins</li>
+                    <li>Kodaikanal, Ooty: hill stations (high altitude, colder temperatures, pretty views)</li>
+                    <li>Rameswaram, Madurai: temples</li>
+                </ul>
+            </li>
+            <li><strong>Eastern & Northeastern India</strong>
+                <ul>
+                    <li>Darjeeling: tea gardens, toy train</li>
+                    <li>Gangtok, Sikkim: monasteries, mountains</li>
+                    <li>Cherrapunji, Meghalaya: living root bridges, waterfalls</li>
+                    <li>Kaziranga National Park, Assam: one-horned rhinoceros</li>
+                    <li>Imphal, Manipur: WWII history, polo</li>
+                </ul>
+            </li>
+            <li><strong>Islands & Coastal Destinations</strong>
+                <ul>
+                    <li>Andaman & Nicobar Islands: beaches, water sports, Cellular Jail</li>
+                    <li>Lakshadweep: Kavaratti, coral islands (like Maldives)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
     <div class="qa-item">
         <div class="qa-question" onclick="toggleAnswer(this)">
             <span class="qa-icon">+</span>

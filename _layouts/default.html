@@ -6,10 +6,9 @@
     <!-- Password Protection -->
     {% include password-protection.html %}
     
-    <!-- ENHANCED Cultural background patterns - FIXED Z-INDEX -->
+    <!-- Cultural background patterns -->
     <div class="cultural-bg cherry-blossom"></div>
     <div class="cultural-bg lotus-pattern"></div>
-    <div class="cultural-bg-overlay"></div>
 
     <!-- Cherry Blossom Storm Container -->
     <div class="cherry-storm" id="cherryStorm"></div>
@@ -59,8 +58,10 @@
       </div>
     </div>
 
-    <!-- JavaScript loading -->
+    <!-- Password Protection Script -->
     <script src="{{ '/cssjs/password-protection.js' | relative_url }}"></script>
+    
+    <!-- Enhanced JavaScript loading -->
     <script src="{{ '/cssjs/enhanced-wedding.js' | relative_url }}"></script>
     <script src="{{ '/cssjs/cherry-storm.js' | relative_url }}"></script>
     {% if page.custom_js %}
