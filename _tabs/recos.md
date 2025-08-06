@@ -79,4 +79,21 @@ custom_js:
             </ul>
         </div>
     </div>
+
+    <div class="qa-item">
+        <div class="qa-question" onclick="toggleAnswer(this)">
+            <span class="qa-icon">+</span>
+            <strong>🛍️ Clothes Shopping</strong>
+        </div>
+        <div class="qa-answer">
+            <p>For clothes shopping, 4th Block Jayanagar is a popular area in Bangalore with many options for ethnic and wedding wear. Here are some recommended shops:</p>
+            <ul>
+                <li><strong><a href="https://g.co/kgs/uZXfdRw" target="_blank">Aarushe</a></strong></li>
+                <li><strong><a href="https://g.co/kgs/Reihsv6" target="_blank">Dazzles - Studio</a></strong></li>
+                <li><strong><a href="https://g.co/kgs/Mas4zQm" target="_blank">Koskii</a></strong></li>
+                <li><strong><a href="https://g.co/kgs/nDtAYnY" target="_blank">Mayeeka</a></strong></li>
+                <li><strong>Manyavar</strong></li>
+            </ul>
+        </div>
+    </div>
 </div>
