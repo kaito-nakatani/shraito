@@ -28,7 +28,7 @@ custom_js:
                     <strong>Visa</strong>
                 </div>
                 <div class="subsection-content" id="visa">
-                    <p> Most people can apply for an e-visa, which can be obtained at most 30 days before travel. Make sure to apply using the official Indian Government’s website (ending with .in), and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website.
+                    <p> Most people can apply for an [e-visa](https://indianvisaonline.gov.in/evisa/tvoa.html), which can be obtained at most 30 days before travel. Make sure to apply using the official Indian Government’s website (ending with .in), and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website. </p>
                 </div>
             </div>
 
@@ -39,7 +39,7 @@ custom_js:
                     <strong>Airport</strong>
                 </div>
                 <div class="subsection-content" id="airport">
-                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that’s like Uber). The airport should have signs directing you to where the Uber/Ola pickup spot is.
+                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that’s like Uber). The airport should have signs directing you to where the Uber/Ola pickup spot is. </p>
                 </div>
             </div>
 
@@ -50,77 +50,48 @@ custom_js:
                     <strong> Vaccination </strong>
                 </div>
                 <div class="subsection-content" id="passport-tips">
-                    <p> The CDC page has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! Universities often offer travel appointments to get vaccines and prescriptions for anti-malaria pills. Anti-malaria pills are especially recommended for travel to northern India.
+                    <p> The CDC page has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! Universities often offer travel appointments to get vaccines and prescriptions for anti-malaria pills. Anti-malaria pills are especially recommended for travel to northern India. </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Section 2: Health & Safety -->
+    <!-- Section 2: On Arrival -->
+    <!-- Section 2: Arrival Logistics -->
     <div class="accordion-section">
-        <div class="section-header" onclick="toggleSection(this, 'health-section')">
+        <div class="section-header" onclick="toggleSection(this, 'arrival-section')">
             <span class="section-icon">+</span>
-            <strong>🏥 Health & Safety</strong>
+            <strong>🛬 Arrival Logistics</strong>
         </div>
-        <div class="section-content" id="health-section">
-            
-            <!-- Subsection 2.1: Vaccinations -->
+        <div class="section-content" id="arrival-section">
+            <!-- Subsection: Airport WiFi -->
             <div class="subsection">
-                <div class="subsection-header" onclick="toggleSubsection(this, 'vaccinations')">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'airport-wifi')">
                     <span class="subsection-icon">▶</span>
-                    <strong>Recommended Vaccinations</strong>
+                    <strong>Airport WiFi</strong>
                 </div>
-                <div class="subsection-content" id="vaccinations">
-                    <p><strong>Consult your doctor 4-6 weeks before travel.</strong></p>
-                    <p><strong>Routine Vaccines:</strong> MMR, DPT, Polio, Influenza</p>
-                    <p><strong>Recommended for India:</strong></p>
-                    <ul>
-                        <li>Hepatitis A & B</li>
-                        <li>Typhoid</li>
-                        <li>Japanese Encephalitis (for extended stays)</li>
-                        <li>Rabies (if planning rural activities)</li>
-                    </ul>
-                    <p><strong>Malaria:</strong> Not common in Bangalore, but consult your doctor.</p>
+                <div class="subsection-content" id="airport-wifi">
+                    <p>WiFi in Indian airports is a bit annoying: in order to connect to airport wifi, you will need to provide a verification code sent by SMS to a phone number. If you don’t have a working phone connection in India and need to use the airport WiFi, go to the information desk, or ask the airport staff. The attendant at the information desk can either give you a one-time use code or use their own mobile device to receive your verification code.</p>
                 </div>
             </div>
-
-            <!-- Subsection 2.2: Health Precautions -->
+            <!-- Subsection: Currency -->
             <div class="subsection">
-                <div class="subsection-header" onclick="toggleSubsection(this, 'health-precautions')">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'currency')">
                     <span class="subsection-icon">▶</span>
-                    <strong>Health Precautions</strong>
+                    <strong>Currency</strong>
                 </div>
-                <div class="subsection-content" id="health-precautions">
-                    <ul>
-                        <li><strong>Water:</strong> Drink only bottled or purified water</li>
-                        <li><strong>Food:</strong> Eat at reputable restaurants, avoid street food initially</li>
-                        <li><strong>Medications:</strong> Bring a small first-aid kit with basic medications</li>
-                        <li><strong>Insurance:</strong> Ensure you have comprehensive travel insurance</li>
-                        <li><strong>Sun Protection:</strong> Bangalore has strong UV; use sunscreen</li>
-                    </ul>
+                <div class="subsection-content" id="currency">
+                    <p>The currency used in India is the rupee (₹ / INR). India has extensive digital infrastructure, and so credit cards can be used to pay in most places. However, unless using an Indian credit card, this method of payment will typically incur a small currency exchange fee—unless your card offers the “no foreign transaction fee” benefit. For more details about cards without foreign transaction fees, consult your bank or credit card company. Physical money can be useful in some situations (e.g., at roadside shops), and so it may be worth exchanging for local currency. Currency can be exchanged at the airport or in the city. The airport is convenient, but may not have the most generous exchange rate.</p>
                 </div>
             </div>
-
-            <!-- Subsection 2.3: Emergency Contacts -->
+            <!-- Subsection: Phone Plans and SIM Cards -->
             <div class="subsection">
-                <div class="subsection-header" onclick="toggleSubsection(this, 'emergency-contacts')">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'phone-sim')">
                     <span class="subsection-icon">▶</span>
-                    <strong>Emergency Contacts</strong>
+                    <strong>Phone Plans and SIM Cards</strong>
                 </div>
-                <div class="subsection-content" id="emergency-contacts">
-                    <p><strong>Emergency Numbers in India:</strong></p>
-                    <ul>
-                        <li>Police: 100</li>
-                        <li>Fire: 101</li>
-                        <li>Ambulance: 108</li>
-                        <li>Tourist Helpline: 1363</li>
-                    </ul>
-                    <p><strong>Hospitals in Bangalore:</strong></p>
-                    <ul>
-                        <li>Manipal Hospital: +91 80 2502 4444</li>
-                        <li>Apollo Hospital: +91 80 2630 1066</li>
-                        <li>Fortis Hospital: +91 80 6621 4444</li>
-                    </ul>
+                <div class="subsection-content" id="phone-sim">
+                    <p>Most carriers offer some sort of an international roaming plan for India. Yet these plans can be relatively expensive; it is likely to be cheaper to get a local SIM in India (a country in which data is notoriously affordable). Note that, to use a local sim, your phone cannot be carrier-locked. If your phone is unlocked and you would like us to arrange a physical local SIM card for you, let us know on the RSVP form. A local SIM may also be purchased in the airport. If you don’t want a physical SIM, there are eSIMs like this one: <a href="https://bytesim.com/">ByteSIM</a>.</p>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ custom_js:
   - qa-collapsible
 ---
 
-<div class="qa-container">
+<div class="qa-container recommendations-container">
     <div class="qa-item">
         <div class="qa-question" onclick="toggleAnswer(this)">
             <span class="qa-icon">+</span>

@@ -1,27 +1,24 @@
-/* Enhanced Background with Cherry Blossom and Lotus Shadows */
+/* FIXED Background Patterns with Proper SVG */
 .cultural-bg.cherry-blossom {
-    background: 
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><circle cx="30" cy="30" r="2" fill="%23E75480" opacity="0.4"/><circle cx="32" cy="28" r="1.5" fill="%23C71C84" opacity="0.3"/><circle cx="28" cy="32" r="1.5" fill="%239C4F54" opacity="0.3"/><circle cx="70" cy="60" r="2" fill="%23E75480" opacity="0.4"/><circle cx="72" cy="58" r="1.5" fill="%23C71C84" opacity="0.3"/><circle cx="68" cy="62" r="1.5" fill="%239C4F54" opacity="0.3"/></g></svg>') repeat,
-        /* SHADOW LAYER */
-        radial-gradient(ellipse 300px 200px at 20% 30%, rgba(231, 84, 128, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse 400px 300px at 80% 70%, rgba(199, 28, 132, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse 350px 250px at 50% 50%, rgba(156, 79, 84, 0.04) 0%, transparent 50%);
-    opacity: 1;
-    background-size: 150px 150px, 800px 600px, 900px 700px, 700px 500px;
-    background-position: 0 0, 0 0, 100% 0, 50% 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><circle cx="30" cy="30" r="2" fill="%23E75480" opacity="0.6"/><circle cx="32" cy="28" r="1.5" fill="%23C71C84" opacity="0.5"/><circle cx="28" cy="32" r="1.5" fill="%239C4F54" opacity="0.5"/><circle cx="70" cy="60" r="2" fill="%23E75480" opacity="0.6"/><circle cx="72" cy="58" r="1.5" fill="%23C71C84" opacity="0.5"/><circle cx="68" cy="62" r="1.5" fill="%239C4F54" opacity="0.5"/><circle cx="50" cy="80" r="1.8" fill="%23E75480" opacity="0.4"/><circle cx="20" cy="70" r="1.2" fill="%23C71C84" opacity="0.6"/></g></svg>') repeat;
+    opacity: 0.08;
+    background-size: 150px 150px;
+    animation: gentleFloat 60s linear infinite;
 }
 
 .cultural-bg.lotus-pattern {
-    background: 
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><ellipse cx="25" cy="25" rx="4" ry="6" fill="%2300cccc" opacity="0.4" transform="rotate(45 25 25)"/><ellipse cx="25" cy="25" rx="6" ry="4" fill="%2300aaaa" opacity="0.3" transform="rotate(45 25 25)"/><ellipse cx="75" cy="75" rx="4" ry="6" fill="%2300cccc" opacity="0.4" transform="rotate(-45 75 75)"/><ellipse cx="75" cy="75" rx="6" ry="4" fill="%2300aaaa" opacity="0.3" transform="rotate(-45 75 75)"/></g></svg>') repeat,
-        /* SHADOW LAYER FOR LOTUS */
-        radial-gradient(ellipse 250px 400px at 30% 80%, rgba(0, 204, 204, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse 300px 200px at 70% 20%, rgba(0, 170, 170, 0.05) 0%, transparent 50%),
-        radial-gradient(ellipse 400px 300px at 10% 50%, rgba(0, 153, 153, 0.04) 0%, transparent 50%);
-    opacity: 1;
-    background-size: 200px 200px, 600px 800px, 700px 500px, 800px 600px;
-    background-position: 100px 100px, 0 100%, 100% 0, 0 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><ellipse cx="25" cy="25" rx="4" ry="6" fill="%2300cccc" opacity="0.5" transform="rotate(45 25 25)"/><ellipse cx="25" cy="25" rx="6" ry="4" fill="%2300aaaa" opacity="0.4" transform="rotate(45 25 25)"/><ellipse cx="75" cy="75" rx="4" ry="6" fill="%2300cccc" opacity="0.5" transform="rotate(-45 75 75)"/><ellipse cx="75" cy="75" rx="6" ry="4" fill="%2300aaaa" opacity="0.4" transform="rotate(-45 75 75)"/><ellipse cx="50" cy="10" rx="3" ry="5" fill="%2300cccc" opacity="0.4" transform="rotate(0 50 10)"/><ellipse cx="10" cy="90" rx="3.5" ry="5.5" fill="%2300aaaa" opacity="0.5" transform="rotate(30 10 90)"/></g></svg>') repeat;
+    opacity: 0.06;
+    background-size: 180px 180px;
+    animation: gentleFloat 80s linear infinite reverse;
 }
+
+/* Animation for background movement */
+@keyframes gentleFloat {
+    0% { background-position: 0 0; }
+    100% { background-position: 200px 200px; }
+}
+
 
 /* Enhanced body background with layered shadows */
 body {
@@ -216,10 +213,25 @@ body {
 
 /* Q&A Styles */
 .qa-container {
-    max-width: 800px;
+    max-width: 1100px; /* INCREASED from 800px */
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 40px;
+    width: 100%;
 }
+
+@media screen and (min-width: 1200px) {
+    .qa-container {
+        max-width: 1200px;
+        padding: 20px 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .qa-container {
+        padding: 20px 15px;
+    }
+}
+
 
 .qa-item {
     background: rgba(255, 245, 250, 0.8);
@@ -688,20 +700,17 @@ body {
     border-color: rgba(255, 183, 197, 0.4) !important;
 }
 
-/* Cherry Blossom Enhancement */
+/* Enhanced Cherry Blossom and Lotus Backgrounds */
 .cultural-bg.cherry-blossom {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><circle cx="30" cy="30" r="2" fill="%23ffb3d9" opacity="0.4"/><circle cx="32" cy="28" r="1.5" fill="%23ff99cc" opacity="0.3"/><circle cx="28" cy="32" r="1.5" fill="%23ff99cc" opacity="0.3"/><circle cx="70" cy="60" r="2" fill="%23ffb3d9" opacity="0.4"/><circle cx="72" cy="58" r="1.5" fill="%23ff99cc" opacity="0.3"/><circle cx="68" cy="62" r="1.5" fill="%23ff99cc" opacity="0.3"/></g></svg>') repeat !important;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><circle cx="30" cy="30" r="2" fill="%23E75480" opacity="0.6"/><circle cx="32" cy="28" r="1.5" fill="%23C71C84" opacity="0.5"/><circle cx="28" cy="32" r="1.5" fill="%239C4F54" opacity="0.5"/><circle cx="70" cy="60" r="2" fill="%23E75480" opacity="0.6"/><circle cx="72" cy="58" r="1.5" fill="%23C71C84" opacity="0.5"/><circle cx="68" cy="62" r="1.5" fill="%239C4F54" opacity="0.5"/><circle cx="50" cy="80" r="1.8" fill="%23E75480" opacity="0.4"/><circle cx="20" cy="70" r="1.2" fill="%23C71C84" opacity="0.6"/></g></svg>') repeat !important;
+    opacity: 0.08 !important;
+    background-size: 150px 150px !important;
 }
 
 .cultural-bg.lotus-pattern {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><ellipse cx="25" cy="25" rx="3" ry="5" fill="%2300cccc" opacity="0.3"/><ellipse cx="25" cy="25" rx="5" ry="3" fill="%2300aaaa" opacity="0.2"/><ellipse cx="75" cy="75" rx="3" ry="5" fill="%2300cccc" opacity="0.3"/><ellipse cx="75" cy="75" rx="5" ry="3" fill="%2300aaaa" opacity="0.2"/></g></svg>') repeat !important;
-}
-
-/* Fix for oli (ampersand) styling */
-span.oli {
-    color: var(--gold-accent);
-    text-shadow: 2px 2px 4px rgba(255, 183, 197, 0.3);
-    font-weight: 300;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><ellipse cx="25" cy="25" rx="4" ry="6" fill="%2300cccc" opacity="0.5" transform="rotate(45 25 25)"/><ellipse cx="25" cy="25" rx="6" ry="4" fill="%2300aaaa" opacity="0.4" transform="rotate(45 25 25)"/><ellipse cx="75" cy="75" rx="4" ry="6" fill="%2300cccc" opacity="0.5" transform="rotate(-45 75 75)"/><ellipse cx="75" cy="75" rx="6" ry="4" fill="%2300aaaa" opacity="0.4" transform="rotate(-45 75 75)"/><ellipse cx="50" cy="10" rx="3" ry="5" fill="%2300cccc" opacity="0.4" transform="rotate(0 50 10)"/><ellipse cx="10" cy="90" rx="3.5" ry="5.5" fill="%2300aaaa" opacity="0.5" transform="rotate(30 10 90)"/></g></svg>') repeat !important;
+    opacity: 0.06 !important;
+    background-size: 180px 180px !important;
 }
 
 /* Gallery Modern Grid Enhancement */
@@ -1321,3 +1330,79 @@ span.oli {
         font-size: 0.85em;
     }
 }
+
+/* Wider Nested Accordion for Travel Info */
+.nested-accordion-container {
+    max-width: 1100px; /* INCREASED from default */
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .nested-accordion-container {
+        max-width: 1200px;
+        padding: 20px 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nested-accordion-container {
+        padding: 20px 15px;
+    }
+}
+
+/* Adjust accordion sections for wider layout */
+.accordion-section,
+.qa-item {
+    margin-bottom: 20px;
+}
+
+.section-header,
+.qa-question {
+    padding: 25px 30px;
+    font-size: 1.15em;
+}
+
+.section-content,
+.qa-answer {
+    padding: 0 30px 25px 30px;
+    font-size: 1.05em;
+    line-height: 1.7;
+}
+
+.subsection-header {
+    padding: 20px 25px;
+    font-size: 1.08em;
+}
+
+.subsection-content {
+    padding: 0 25px 20px 50px;
+    font-size: 1.02em;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .section-header,
+    .qa-question {
+        padding: 20px 20px;
+        font-size: 1.1em;
+    }
+    
+    .section-content,
+    .qa-answer {
+        padding: 0 20px 20px 20px;
+        font-size: 1em;
+    }
+    
+    .subsection-header {
+        padding: 15px 20px;
+        font-size: 1.05em;
+    }
+    
+    .subsection-content {
+        padding: 0 20px 15px 35px;
+        font-size: 1em;
+    }
+}
+

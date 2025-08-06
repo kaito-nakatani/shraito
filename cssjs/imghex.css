@@ -1,68 +1,95 @@
 :root {
     --imgwidth: 300px;
-    --imgheight: 340px;
-    --hex-spacing: 10px;
+    --imgheight: 300px; /* Changed from 340px to square */
+    --hex-spacing: 15px;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* shreya hexagons */
+/* REMOVED HEXAGON - Modern rectangular/square images */
 .hex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* max-width: 640px; */
-    /* width: 100%; */
-    /* opacity: 50%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
+
 .hex-wrapper {
     position: relative;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    /* transition: scale .3s ease-in-out,  z-index .3s cubic-bezier(0,1,1,0); */
-    transition: all .3s ease-in-out;
-    margin: 0 var(--hex-spacing);
-    /* transition-delay: 0.5s; */
-}
-.hex-row {
-    display: flex;
-    justify-content: center;
-    /* margin-top: -65px; Adjust this value to change the vertical overlap */
-    margin-top: calc(0px - var(--imgheight) / 4 + var(--hex-spacing) / 0.8 ); 
-}
-.hex, .hex-pad {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-.hex {
-    width: var(--imgwidth);
-    height: var(--imgheight);
-    /* margin: 0 10px; */
+    border-radius: 20px;
     overflow: hidden;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    box-shadow: 0 8px 30px rgba(255, 183, 197, 0.2);
+    transition: all 0.4s ease;
+    background: rgba(255, 245, 250, 0.5);
+    border: 2px solid rgba(255, 183, 197, 0.2);
 }
-.hex-pad {
-    content: 'asdf';
-    width: calc(var(--imgwidth) + 2 * var(--hex-spacing));
-    height: calc(var(--imgheight) + 2 * var(--hex-spacing));
-    background: white;
-    position: absolute;
-    top: calc(0px - var(--hex-spacing));
-    left: calc(0px - var(--hex-spacing));
-  }
 
-  .hex img {
+.hex-wrapper:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255, 183, 197, 0.3);
+    border-color: rgba(255, 183, 197, 0.4);
+}
+
+.hex-row {
+    display: contents; /* Use CSS Grid instead of flex rows */
+}
+
+.hex {
+    width: 100%;
+    height: 280px; /* Fixed height for consistency */
+    overflow: hidden;
+    border-radius: 20px;
+    /* REMOVED: clip-path hexagon styling */
+}
+
+/* REMOVED .hex-pad completely - no longer needed */
+
+.hex img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    /* REMOVED: hexagon clipping */
+}
+
+.hex:hover img {
+    filter: brightness(1.1) saturate(1.1);
 }
 
 .gallery-spacer {
-    height: calc(var(--imgheight) / 4 + var(--hex-spacing) + 10px);
+    height: 20px; /* Reduced spacing */
 }
+
 .small-spacer {
-    height: 35px;
+    height: 15px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .hex-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .hex {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hex-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .hex {
+        height: 220px;
+    }
 }

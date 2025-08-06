@@ -1,6 +1,6 @@
 // Wedding Countdown Timer - CORRECTED DATE
 function initializeCountdown() {
-    // Set wedding date to February 3rd, 2026
+    // Set wedding date to February 3rd, 2026 (CORRECTED FROM 2026)
     const weddingDate = new Date('2026-02-03T10:00:00+05:30').getTime();
     
     function updateCountdown() {
@@ -38,16 +38,8 @@ function initializeUpdateNotification() {
     // Define recent updates with timestamps
     const recentUpdates = [
         {
-            date: '2025-07-27',
-            content: 'Wedding date corrected to February 3rd, 2025'
-        },
-        {
-            date: '2025-07-26',
-            content: 'New venue update: ceremony at Miraya Greens'
-        },
-        {
-            date: '2025-07-25',
-            content: 'Enhanced website styling and cherry blossom animations'
+            date: '2025-08-06',
+            content: 'The website is now live! 🎉',
         }
     ];
     
