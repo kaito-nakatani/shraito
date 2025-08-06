@@ -1,25 +1,31 @@
-// Password Protection System
+// Password Protection System - FIXED FOR ONE-TIME ENTRY
 (function() {
     'use strict';
     
     // Configuration
     const CORRECT_PASSWORD = 'Haverford';
     const SESSION_KEY = 'wedding_site_authenticated';
-    const SESSION_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+    const SESSION_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 DAYS in milliseconds (increased)
     
     // Check if user is already authenticated
     function isAuthenticated() {
         const authData = localStorage.getItem(SESSION_KEY);
         if (!authData) return false;
         
-        const { timestamp } = JSON.parse(authData);
-        const now = new Date().getTime();
-        
-        // Check if session is still valid
-        if (now - timestamp < SESSION_DURATION) {
-            return true;
-        } else {
-            // Session expired, remove from storage
+        try {
+            const { authenticated, timestamp } = JSON.parse(authData);
+            const now = new Date().getTime();
+            
+            // Check if session is still valid AND user was actually authenticated
+            if (authenticated && (now - timestamp) < SESSION_DURATION) {
+                return true;
+            } else {
+                // Session expired or invalid, remove from storage
+                localStorage.removeItem(SESSION_KEY);
+                return false;
+            }
+        } catch (e) {
+            // Corrupted data, remove it
             localStorage.removeItem(SESSION_KEY);
             return false;
         }
@@ -43,12 +49,14 @@
             overlay.classList.add('password-success');
             setTimeout(() => {
                 overlay.style.display = 'none';
+                overlay.remove(); // REMOVE FROM DOM to prevent re-showing
             }, 800);
         }
         
         if (mainContent) {
             setTimeout(() => {
                 mainContent.style.display = 'block';
+                mainContent.style.opacity = '1';
                 // Initialize other scripts after content is shown
                 if (typeof initializeCountdown === 'function') {
                     initializeCountdown();
@@ -99,10 +107,25 @@
     
     // Initialize password protection
     function initializePasswordProtection() {
-        // If already authenticated, show content immediately
+        // If already authenticated, show content immediately WITHOUT showing password form
         if (isAuthenticated()) {
-            showMainContent();
+            const overlay = document.getElementById('password-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+            }
+            
+            const mainContent = document.getElementById('main-content');
+            if (mainContent) {
+                mainContent.style.display = 'block';
+                mainContent.style.opacity = '1';
+            }
             return;
+        }
+        
+        // Only show password form if NOT authenticated
+        const overlay = document.getElementById('password-overlay');
+        if (overlay) {
+            overlay.style.display = 'flex';
         }
         
         // Set up form submission
@@ -132,11 +155,5 @@
     } else {
         initializePasswordProtection();
     }
-    
-    // Add password protection CSS to head
-    const style = document.createElement('link');
-    style.rel = 'stylesheet';
-    style.href = '/cssjs/password-protection.css';
-    document.head.appendChild(style);
     
 })();

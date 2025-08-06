@@ -21,55 +21,36 @@ custom_js:
         </div>
         <div class="section-content" id="visa-section">
             
-            <!-- Subsection 1.1: Visa Requirements -->
+            <!-- Subsection 1.1: Visa -->
             <div class="subsection">
-                <div class="subsection-header" onclick="toggleSubsection(this, 'visa-requirements')">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'visa')">
                     <span class="subsection-icon">▶</span>
-                    <strong>Visa Requirements</strong>
+                    <strong>Visa</strong>
                 </div>
-                <div class="subsection-content" id="visa-requirements">
-                    <p>Most visitors to India require a visa. Here are the main options:</p>
-                    <ul>
-                        <li><strong>e-Visa:</strong> Available for tourists from eligible countries. Can be applied online 4-120 days before arrival.</li>
-                        <li><strong>Tourist Visa:</strong> Traditional visa obtained from Indian consulates/embassies.</li>
-                        <li><strong>Visa on Arrival:</strong> Available for citizens of select countries at specific airports.</li>
-                    </ul>
-                    <p><strong>Processing Time:</strong> e-Visa typically takes 3-5 business days.</p>
+                <div class="subsection-content" id="visa">
+                    <p> Most people can apply for an e-visa, which can be obtained at most 30 days before travel. Make sure to apply using the official Indian Government’s website (ending with .in), and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website.
                 </div>
             </div>
 
-            <!-- Subsection 1.2: Required Documents -->
+            <!-- Subsection 1.2: Airport -->
             <div class="subsection">
-                <div class="subsection-header" onclick="toggleSubsection(this, 'required-docs')">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'airport')">
                     <span class="subsection-icon">▶</span>
-                    <strong>Required Documents</strong>
+                    <strong>Airport</strong>
                 </div>
-                <div class="subsection-content" id="required-docs">
-                    <ul>
-                        <li>Passport with at least 6 months validity</li>
-                        <li>Recent passport-sized photograph</li>
-                        <li>Completed visa application form</li>
-                        <li>Flight itinerary (return ticket)</li>
-                        <li>Hotel booking confirmation</li>
-                        <li>Proof of sufficient funds</li>
-                    </ul>
+                <div class="subsection-content" id="airport">
+                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that’s like Uber). The airport should have signs directing you to where the Uber/Ola pickup spot is.
                 </div>
             </div>
 
-            <!-- Subsection 1.3: Passport Tips -->
+            <!-- Subsection 1.3: Vaccination -->
             <div class="subsection">
-                <div class="subsection-header" onclick="toggleSubsection(this, 'passport-tips')">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'vaccination')">
                     <span class="subsection-icon">▶</span>
-                    <strong>Passport & Entry Tips</strong>
+                    <strong> Vaccination </strong>
                 </div>
                 <div class="subsection-content" id="passport-tips">
-                    <p><strong>Important:</strong> Make sure to carry physical copies of all documents.</p>
-                    <ul>
-                        <li>Keep passport and visa copies separate from originals</li>
-                        <li>Have digital copies stored in cloud storage</li>
-                        <li>Indian immigration can be slow - allow extra time</li>
-                        <li>Keep cash for any airport fees (usually minimal)</li>
-                    </ul>
+                    <p> The CDC page has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! Universities often offer travel appointments to get vaccines and prescriptions for anti-malaria pills. Anti-malaria pills are especially recommended for travel to northern India.
                 </div>
             </div>
         </div>

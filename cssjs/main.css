@@ -332,3 +332,67 @@ span.kaito {
     border: 1px solid rgba(255, 183, 197, 0.3) !important;
 }
 
+/* Make Website Wider on Desktop - RESPONSIVE ENHANCEMENT */
+.wrapper {
+    max-width: 1200px; /* INCREASED from 640px */
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    transition: max-width 0.3s ease;
+}
+
+/* Enhanced responsive breakpoints */
+@media only screen and (min-width: 1400px) {
+    .wrapper {
+        max-width: 1300px;
+        padding: 4rem 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1200px;
+        padding: 4rem 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .wrapper {
+        max-width: 900px;
+        padding: 4rem 2rem;
+    }
+    
+    .page-content {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Mobile remains the same for good usability */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 3rem 15px;
+    }
+}
+
+/* Enhanced navbar width on desktop */
+@media only screen and (min-width: 768px) {
+    .enhanced-navbar {
+        max-width: 1200px;
+        margin: 0 auto 40px auto;
+    }
+}
+
+/* Adjust main content containers */
+.page-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .page-content {
+        max-width: 1200px;
+        padding: 20px 40px;
+    }
+}
+s
