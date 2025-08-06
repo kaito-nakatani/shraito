@@ -20,94 +20,115 @@ custom_css:
             <button class="section-tab" onclick="showSection('travel')">✈️ Travel</button>
         </div>
         
+        <!-- PERFORMANCE OPTIMIZED: Only load 6 photos initially, rest on demand -->
         <div id="engagement" class="gallery-section active">
-            <h3>Engagement Photos</h3>
-            <div class="section-gallery">
-                {% include hexphotos.html gridnums="2,3,2,3" section="engagement" %}
+            <h3>💕 Engagement Photos</h3>
+            <div class="lazy-gallery-container">
+                {% include hexphotos.html gridnums="2,2" section="engagement" %}
+                <button class="load-more-btn" onclick="loadMorePhotos('engagement', 6)">Load More Photos</button>
             </div>
         </div>
         
         <div id="prewedding" class="gallery-section">
-            <h3>Pre-Wedding Photoshoot</h3>
-            <div class="section-gallery">
-                {% include hexphotos.html gridnums="3,2,3,2" section="prewedding" %}
+            <h3>📸 Pre-Wedding Photoshoot</h3>
+            <div class="lazy-gallery-container">
+                <!-- Load on demand -->
+                <div class="loading-placeholder">Click to load photos...</div>
+                <button class="load-section-btn" onclick="loadSectionPhotos('prewedding', '3,2')">Load Pre-Wedding Photos</button>
             </div>
         </div>
         
         <div id="family" class="gallery-section">
-            <h3>Family Photos</h3>
-            <div class="section-gallery">
-                {% include hexphotos.html gridnums="2,2,3,2" section="family" %}
+            <h3>👨‍👩‍👧‍👦 Family Photos</h3>
+            <div class="lazy-gallery-container">
+                <div class="loading-placeholder">Click to load photos...</div>
+                <button class="load-section-btn" onclick="loadSectionPhotos('family', '2,2')">Load Family Photos</button>
             </div>
         </div>
         
         <div id="friends" class="gallery-section">
-            <h3>With Friends</h3>
-            <div class="section-gallery">
-                {% include hexphotos.html gridnums="3,3,2,2" section="friends" %}
+            <h3>👫 With Friends</h3>
+            <div class="lazy-gallery-container">
+                <div class="loading-placeholder">Click to load photos...</div>
+                <button class="load-section-btn" onclick="loadSectionPhotos('friends', '3,2')">Load Friends Photos</button>
             </div>
         </div>
         
         <div id="travel" class="gallery-section">
-            <h3>Travel Memories</h3>
-            <div class="section-gallery">
-                {% include hexphotos.html gridnums="2,3,3,2" section="travel" %}
+            <h3>✈️ Travel Memories</h3>
+            <div class="lazy-gallery-container">
+                <div class="loading-placeholder">Click to load photos...</div>
+                <button class="load-section-btn" onclick="loadSectionPhotos('travel', '2,3')">Load Travel Photos</button>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-function showSection(sectionName) {
+// PERFORMANCE OPTIMIZATION: Lazy Loading Gallery
+function showSection(sectionId) {
     // Hide all sections
-    document.querySelectorAll('.gallery-section').forEach(section => {
-        section.classList.remove('active');
-    });
+    const sections = document.querySelectorAll('.gallery-section');
+    const tabs = document.querySelectorAll('.section-tab');
     
-    // Remove active class from all tabs
-    document.querySelectorAll('.section-tab').forEach(tab => {
-        tab.classList.remove('active');
-    });
+    sections.forEach(section => section.classList.remove('active'));
+    tabs.forEach(tab => tab.classList.remove('active'));
     
     // Show selected section
-    document.getElementById(sectionName).classList.add('active');
-    
-    // Add active class to clicked tab
+    document.getElementById(sectionId).classList.add('active');
     event.target.classList.add('active');
+}
+
+function loadSectionPhotos(section, gridnums) {
+    const container = document.querySelector(`#${section} .lazy-gallery-container`);
+    container.innerHTML = '<div class="loading">Loading photos...</div>';
     
-    // Apply enhanced gallery styling to new section
+    // Simulate loading with delay for better UX
     setTimeout(() => {
-        initializeSectionGallery(sectionName);
-    }, 100);
-}
-
-function initializeSectionGallery(sectionName) {
-    const sectionContainer = document.querySelector(`#${sectionName} .section-gallery`);
-    if (sectionContainer) {
-        const hexContainer = sectionContainer.querySelector('.hex-container');
-        if (hexContainer) {
-            hexContainer.classList.add('modern-gallery-grid');
-            
-            const images = hexContainer.querySelectorAll('img');
-            images.forEach((img, index) => {
-                const wrapper = img.closest('.hex-wrapper') || img.parentElement;
-                wrapper.classList.add('gallery-item');
-                
-                img.style.opacity = '0';
-                img.style.transform = 'scale(0.9)';
-                
-                setTimeout(() => {
-                    img.style.transition = 'all 0.3s ease';
-                    img.style.opacity = '1';
-                    img.style.transform = 'scale(1)';
-                }, index * 100);
-            });
+        const photoCount = gridnums.split(',').reduce((sum, num) => sum + parseInt(num), 0);
+        let photosHTML = '<div class="hex-container modern-gallery-grid">';
+        
+        for (let i = 1; i <= photoCount; i++) {
+            photosHTML += `
+                <div class="hex-wrapper gallery-item">
+                    <div class="hex">
+                        <img src="/assets/${section}/photo${i}.jpg" 
+                             alt="Photo ${i}"
+                             loading="lazy"
+                             onerror="this.style.display='none';">
+                    </div>
+                </div>
+            `;
         }
-    }
+        photosHTML += '</div>';
+        container.innerHTML = photosHTML;
+    }, 500);
 }
 
-// Initialize default section on page load
-document.addEventListener('DOMContentLoaded', function() {
-    initializeSectionGallery('engagement');
-});
+function loadMorePhotos(section, startIndex) {
+    const button = event.target;
+    button.innerHTML = 'Loading...';
+    button.disabled = true;
+    
+    setTimeout(() => {
+        const container = document.querySelector(`#${section} .hex-container`);
+        
+        // Add more photos (example: photos 5-8)
+        for (let i = startIndex; i <= startIndex + 3; i++) {
+            const photoDiv = document.createElement('div');
+            photoDiv.className = 'hex-wrapper gallery-item';
+            photoDiv.innerHTML = `
+                <div class="hex">
+                    <img src="/assets/${section}/photo${i}.jpg" 
+                         alt="Photo ${i}"
+                         loading="lazy"
+                         onerror="this.style.display='none';">
+                </div>
+            `;
+            container.appendChild(photoDiv);
+        }
+        
+        button.style.display = 'none'; // Hide load more button
+    }, 300);
+}
 </script>
