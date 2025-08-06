@@ -1,11 +1,5 @@
 /* replacement for default styling, which I have now removed */
 
-:root{
-    --vcolor:rgb(20, 54, 54);
-    --ocolor:rgb(144, 28, 88);
-    --accent:#EAE;
-}
-
 *:target { background: yellow; }
 navbar {
     text-align:center;
@@ -228,21 +222,6 @@ span.establishment::after {
     .block .attire {
         margin-left : 30px;
     }
-}
-
-/* Enhanced root variables for cultural theming */
-:root {
-    --vcolor: rgb(20, 54, 54);
-    --ocolor: rgb(144, 28, 88);
-    --accent: #EAE;
-    --color-surface: rgba(255, 255, 255, 0.9);
-    --color-teal-500-rgb: 20, 54, 54;
-    --color-red-400-rgb: 144, 28, 88;
-    
-    /* New cultural colors */
-    --cherry-blossom: #ffb3d9;
-    --lotus-teal: #00cccc;
-    --gold-accent: #ffd700;
 }
 
 /* Enhanced body styling */
