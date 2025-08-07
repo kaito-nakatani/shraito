@@ -1,0 +1,49 @@
+{% comment %}
+Fixed photo inclusion with proper Jekyll asset handling
+{% endcomment %}
+
+{% if include.section %}
+    {% assign photo_path = '/assets/' | append: include.section | append: '/' %}
+{% else %}
+    {% assign photo_path = '/assets/' %}
+{% endif %}
+
+{% assign gridnums_array = include.gridnums | split: "," %}
+{% assign total_photos = 0 %}
+{% for num in gridnums_array %}
+    {% assign total_photos = total_photos | plus: num %}
+{% endfor %}
+
+<div class="hex-container modern-gallery-grid">
+    {% assign photo_index = 1 %}
+    {% for row_num in gridnums_array %}
+        {% for col in (1..row_num) %}
+            <div class="hex-wrapper gallery-item">
+                <div class="hex">
+                    <img src="{{ photo_path | append: 'photo' | append: photo_index | append: '.jpg' | relative_url }}" 
+                         alt="{{ include.section | capitalize }} Photo {{ photo_index }}"
+                         loading="lazy"
+                         onerror="this.style.display='none'; this.parentElement.parentElement.style.display='none';">
+                </div>
+            </div>
+            {% assign photo_index = photo_index | plus: 1 %}
+        {% endfor %}
+    {% endfor %}
+</div>
+
+<script>
+// Fallback for missing images
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.hex img');
+    images.forEach(function(img) {
+        img.addEventListener('error', function() {
+            console.log('Failed to load image:', this.src);
+            // Hide the entire gallery item if image fails
+            const galleryItem = this.closest('.hex-wrapper');
+            if (galleryItem) {
+                galleryItem.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
