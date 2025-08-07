@@ -2,44 +2,21 @@
 layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}">
-  {%- include head.html -%}
+{% include navbar.html %}
 
-  <body>
-    <!-- Password Protection -->
-    {% include password-protection.html %}
-    
-    <!-- Cherry Blossom Storm -->
-    <div class="cherry-storm" id="cherryStorm"></div>
+<div class="center">
+<h1> {{page.title}} </h1>
+</div>
 
-    <!-- Main content -->
-    <div id="main-content" style="display: none;">
-      <div class="wrapper">
-        {% include navbar.html %}
-        
-        <div class="tab-layout"> <!-- ADDED: wrapper for proper alignment -->
-          {% if page.leftblock %}
-            <div class="sideways">
-              <h1>{{ page.leftblock }}</h1> <!-- FIXED: removed any indentation -->
-            </div>
-          {% endif %}
-          
-          <main class="page-content" aria-label="Content">
-            {{ content }}
-          </main>
-        </div>
-      </div>
-    </div>
+{% if page.leftblock %}
+<div class="block">
+<div class="sideways"><h1>
+    {{ page.leftblock }}
+</h1></div>
+{% endif %}
 
-    <!-- Scripts -->
-    <script src="{{ '/cssjs/password-protection.js' | relative_url }}"></script>
-    <script src="{{ '/cssjs/enhanced-wedding.js' | relative_url }}"></script>
-    <script src="{{ '/cssjs/cherry-storm.js' | relative_url }}"></script>
-    {% if page.custom_js %}
-      {% for js_file in page.custom_js %}
-      <script src="{{ '/cssjs/' | append: js_file | append: '.js' | relative_url }}"></script>
-      {% endfor %}  
-    {% endif %}
-  </body>
-</html>
+{{ content }}
+
+{% if page.leftblock %}
+</div>
+{% endif %}
