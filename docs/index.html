@@ -1,163 +1,277 @@
----
-layout: default
-custom_css:
-  - main
-  - imghex
-  - landing
-  - enhanced-styles
-  - cherry-storm
-custom_js:
-  - enhanced-wedding
-  - cherry-storm
-rain: false
----
+<!DOCTYPE html>
+<html lang="en"><!--- copied from the default, below, and  
+https://github.com/riggraz/no-style-please/blob/master/_includes/head.html.-->
 
-{% include navbar.html %}
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>Shraito</title>
 
-<div class="main-content-enhanced">
-    <div class="center">
-        <h1 class="main-title">
-            <span class="shreya">Shreya</span>
-            <span class="oli"> & </span>
-            <span class="kaito">Kaito</span>
-        </h1>
+  
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="/shraito/cssjs/main.css" />
+    
+    
+    <link rel="stylesheet" href="/shraito/cssjs/rain.css" />
+    
+    <link rel="stylesheet" href="/shraito/cssjs/imghex.css" />
+    
+    <link rel="stylesheet" href="/shraito/cssjs/landing.css" />
+    
+    
+  </head><body>
+    
+    <div class="rain-pane">
+      <div class="rain-controls">
+        <button id="interact-toggle" onclick="toggleRainInteraction()">
+          <!-- <img src="shraito/assets/thunderbolt.png" height=80></img> -->
+          <!-- 🗲 -->
+          &#127788;
+        </button>
+      </div>  
     </div>
+    
 
-    <!-- MOVIE-STYLE CAROUSEL SLIDER -->
-    <div class="movie-carousel-container">
-        <div class="carousel-wrapper">
-            <div class="carousel-track" id="main-carousel-track">
-                <!-- Slide 1 -->
-                <div class="carousel-slide active">
-                    <div class="slide-image">
-                        <img src="{{ '/assets/engagement/photo1.jpg' | relative_url }}" alt="Engagement Photo 1" onerror="this.src='{{ '/assets/prewedding/photo1.jpg' | relative_url }}'">
-                    </div>
-                    <div class="slide-content">
-                        <h2>Our Engagement</h2>
-                        <p>The moment we decided to spend forever together, surrounded by love and joy.</p>
-                    </div>
-                </div>
-                
-                <!-- Slide 2 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="{{ '/assets/prewedding/photo1.jpg' | relative_url }}" alt="Pre-wedding Photo 1" onerror="this.src='{{ '/assets/family/photo1.jpg' | relative_url }}'">
-                    </div>
-                    <div class="slide-content">
-                        <h2>Pre-Wedding Moments</h2>
-                        <p>Capturing the excitement and anticipation before our big day.</p>
-                    </div>
-                </div>
-                
-                <!-- Slide 3 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="{{ '/assets/family/photo1.jpg' | relative_url }}" alt="Family Photo 1" onerror="this.src='{{ '/assets/friends/photo1.jpg' | relative_url }}'">
-                    </div>
-                    <div class="slide-content">
-                        <h2>Family Traditions</h2>
-                        <p>Blending two families into one beautiful celebration of love.</p>
-                    </div>
-                </div>
-                
-                <!-- Slide 4 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="{{ '/assets/travel/photo1.jpg' | relative_url }}" alt="Travel Photo 1" onerror="this.src='{{ '/assets/engagement/photo2.jpg' | relative_url }}'">
-                    </div>
-                    <div class="slide-content">
-                        <h2>Journey Together</h2>
-                        <p>Adventures around the world that brought us closer together.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Navigation Arrows -->
-            <button class="carousel-nav prev" onclick="moveMainSlide(-1)" aria-label="Previous slide">
-                <span>‹</span>
-            </button>
-            <button class="carousel-nav next" onclick="moveMainSlide(1)" aria-label="Next slide">
-                <span>›</span>
-            </button>
-            
-            <!-- Slide Indicators -->
-            <div class="carousel-indicators">
-                <button class="indicator active" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
-                <button class="indicator" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
-                <button class="indicator" onclick="goToSlide(2)" aria-label="Go to slide 3"></button>
-                <button class="indicator" onclick="goToSlide(3)" aria-label="Go to slide 4"></button>
-            </div>
-        </div>
-    </div>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+<navbar class="fullpagewidth">
+<ul>
+<!-- <li class="nav-home"><a href="/">Voli</a></li> -->
+<!-- <li class="nav-home"><a href="/"></a></li> -->
+<li class="nav-item"> <!-- current-tab -->
+    <a href="/shraito/">
+        <!-- <div style="background-image: url('/assets/cloud.png'); width:10px; height:18px;"></div> -->
+        <img src="/shraito/assets/cloud.png" height="30px" style="margin:-10px -0px; " />
+    </a>
+</li>
 
-    <!-- Wedding Announcement -->
-    <div class="wedding-announcement">
-        <h2>We're Getting Married!</h2>
-        <p><strong>February 3rd, 2026</strong></p>
-        <p><strong>Bangalore, India</strong></p>
-        <p>Join us as we celebrate our love story and the beginning of our journey together.</p>
-    </div>
 
-    <!-- Couple Description -->
-    <div class="couple-description">
-        <p>Two hearts, two cultures, one beautiful love story. We met during our graduate studies and knew we had found something special. Now, we're excited to share our joy with family and friends from around the world.</p>
-    </div>
+
+    
+<li class="nav-item ">
+    <a href="/shraito/tabs/events.html">
+        Events
+    </a>
+</li>
+
+
+
+
+    
+<li class="nav-item ">
+    <a href="/shraito/tabs/travel-info.html">
+        Travel
+    </a>
+</li>
+
+
+
+
+    
+<li class="nav-item ">
+    <a href="/shraito/tabs/qa.html">
+        QA
+    </a>
+</li>
+
+
+
+
+    
+        <br />
+    
+<li class="nav-item ">
+    <a href="/shraito/tabs/recos.html">
+        Recommendations
+    </a>
+</li>
+
+
+
+
+
+
+    
+<li class="nav-item ">
+    <a href="/shraito/tabs/gallery.html">
+        Gallery
+    </a>
+</li>
+
+
+
+<br />
+<li class="nav-item rsvp">
+    <a href="https://forms.gle/1KobqjmUYpwjUKuJ7"> RSVP </a>
+</li>
+
+</ul>
+</navbar>
+
+<div class="center">
+<h1 class="main-title"><span class="varsha">V</span><span class="oli">oli</span></h1>
 </div>
 
-<script>
-// Movie-style carousel functionality
-let currentSlide = 0;
-const totalSlides = 4;
+<!-- 
+Varsha Kishore
+and 
+Oli(ver) Richardson
+are getting married to one another.
+The ceremony will be 
+in 
+[Bangalore, India](https://maps.app.goo.gl/XyncfmUAKSynTgSL7)
+at 
+[the Tamarind Tree](https://www.thetamarindtree.in/)
+on January 16th, 2024.
+We hope you can join us!
+-->
 
-function moveMainSlide(direction) {
-    currentSlide += direction;
+<!-- <div class="gallery-spacer"></div> -->
+<div class="fullpagewidth">
+<div class="" style="--hex-spacing:5px; --imgwidth:200px; --imgheight:230px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<div class="gallery-spacer"></div>
+
+<div class="hex-container">
     
-    if (currentSlide >= totalSlides) {
-        currentSlide = 0;
-    } else if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    }
+    <div class="hex-row">
+        
+        <div class="hex-wrapper">
+        <div class="hex-pad"></div>
+        <div class="hex">
+            <img src="/shraito/assets/small/1.JPG" />
+            
+        </div>
+        </div>
+        
+        <div class="hex-wrapper">
+        <div class="hex-pad"></div>
+        <div class="hex">
+            <img src="/shraito/assets/small/2.jpg" />
+            
+        </div>
+        </div>
+        
+        <div class="hex-wrapper">
+        <div class="hex-pad"></div>
+        <div class="hex">
+            <img src="/shraito/assets/small/3.jpg" />
+            
+        </div>
+        </div>
+        
+        <div class="hex-wrapper">
+        <div class="hex-pad"></div>
+        <div class="hex">
+            <img src="/shraito/assets/small/4.jpg" />
+            
+        </div>
+        </div>
+        
+        <div class="hex-wrapper">
+        <div class="hex-pad"></div>
+        <div class="hex">
+            <img src="/shraito/assets/small/5.jpg" />
+            
+        </div>
+        </div>
+        
+        <div class="hex-wrapper">
+        <div class="hex-pad"></div>
+        <div class="hex">
+            <img src="/shraito/assets/small/6.jpg" />
+            
+        </div>
+        </div>
+        
+        <div class="hex-wrapper">
+        <div class="hex-pad"></div>
+        <div class="hex">
+            <img src="/shraito/assets/small/7.JPG" />
+            
+        </div>
+        </div>
+        
+    </div>
     
-    updateMainCarousel();
-}
+</div>
+ 
+<div class="small-spacer"></div>
 
-function goToSlide(index) {
-    currentSlide = index;
-    updateMainCarousel();
-}
+ <!--6,3-->
+</div>
+</div>
+<!-- <div class="small-spacer"></div> -->
 
-function updateMainCarousel() {
-    const track = document.getElementById('main-carousel-track');
-    const indicators = document.querySelectorAll('.carousel-indicators .indicator');
-    const slides = document.querySelectorAll('.carousel-slide');
+<!-- Varsha and Oli met at Cornell... -->
+<p>Shreya Kishore
+and 
+Kaito Nakatani
+are getting married to one another.
+The ceremony will be 
+in 
+<a href="https://maps.app.goo.gl/DRykhnkgKmyNoWvF8">Bangalore, India</a>
+at 
+<a href="https://www.thetamarindtree.in/">the Tamarind Tree</a>
+on January 17th, 2025.
+We hope you can join us!</p>
+
+<hr style="max-width:50%;margin: 20px auto;" />
+
+<!-- <span class="varsha">Varsha exploits</span>; 
+    <span class="oli">Oli explores</span>   -->
+<p class="center"><span class="varsha">Varsha reliably makes things work</span>;
+    <span class="oli">Oli sometimes has brilliant ideas</span>.<br />
+<span class="varsha">Varsha finds the best things</span>; 
+    <span class="oli">Oli finds the most unique ones</span>.<br />
+<span class="varsha">Varsha likes content</span>; 
+    <span class="oli">Oli likes form</span>.</p>
+
+<p>After growing up on opposite sides of the earth, 
+    Varsha and Oli met in graduate school at Cornell. 
+They are remarkably similar people with very different strengths.
+They have become an excellent team
+    in their six years together,
+    and are excited to commit to a lifetime of partnership!</p>
+
+<!-- 
+<div class="center">
+<div class="nav-item rsvp">
+    <a href="https://forms.gle/1KobqjmUYpwjUKuJ7"> RSVP </a>
+</div>
+</div> -->
+
+
+      </div>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/shraito/cssjs/main.js"></script>
     
-    // Update track position
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+        <script type="text/javascript" src="/shraito/cssjs/rain.js"></script>
+      
     
-    // Update indicators
-    indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === currentSlide);
-    });
-    
-    // Update slide visibility
-    slides.forEach((slide, index) => {
-        slide.classList.toggle('active', index === currentSlide);
-    });
-}
-
-// Auto-play functionality
-let autoplayInterval = setInterval(() => {
-    moveMainSlide(1);
-}, 5000);
-
-// Pause auto-play on hover
-document.querySelector('.movie-carousel-container').addEventListener('mouseenter', () => {
-    clearInterval(autoplayInterval);
-});
-
-document.querySelector('.movie-carousel-container').addEventListener('mouseleave', () => {
-    autoplayInterval = setInterval(() => {
-        moveMainSlide(1);
-    }, 5000);
-});
-</script>
+  </body>
+</html>
