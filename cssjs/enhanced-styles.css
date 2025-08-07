@@ -670,18 +670,6 @@ body {
     border-color: rgba(255, 183, 197, 0.4) !important;
 }
 
-/* REMOVE ALL HEX GRID STYLES - REPLACED WITH CAROUSEL */
-
-/* Hide hex grid completely */
-.hex-container,
-.hex-wrapper,
-.hex-row,
-.hex,
-.hex-pad,
-*[class*="hex"] {
-    display: none !important;
-}
-
 /* Enhanced Homepage Carousel Styles - COMPLETE REPLACEMENT */
 .homepage-carousel {
     max-width: 900px;
@@ -1309,62 +1297,6 @@ body {
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    .main-photo-showcase .hex-wrapper {
-        width: 300px;
-        height: 300px;
-    }
-    
-    .event-block {
-        flex-direction: column;
-        min-height: auto;
-    }
-    
-    .evt-leftblock {
-        writing-mode: initial;
-        text-orientation: initial;
-        min-width: auto;
-        max-width: none;
-        padding: 20px;
-        text-align: center;
-        border-right: none;
-        border-bottom: 3px solid rgba(255, 183, 197, 0.3);
-    }
-    
-    .leftblock-content {
-        transform: none;
-    }
-    
-    .evt-rightblock {
-        padding: 20px;
-    }
-    
-    .evt-rightblock h2 {
-        font-size: 1.6em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .main-photo-showcase .hex-wrapper {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .evt-rightblock {
-        padding: 15px;
-    }
-    
-    .timing, .attire {
-        padding: 12px 15px;
-    }
-    
-    .add-to-calendar-btn {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
 }
 
 /* Mobile Tab Scrolling Fix */
@@ -2255,13 +2187,181 @@ body {
     }
 }
 
-/* Hide hex grid on homepage to prevent conflicts with carousel */
-.homepage-carousel ~ .hex-container,
-.carousel-container ~ .hex-container {
-    display: none !important;
+
+/* Gallery Carousel Styles */
+.gallery-carousel-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(255, 245, 250, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(255, 183, 197, 0.2);
+    border: 2px solid rgba(255, 183, 197, 0.3);
 }
 
-/* Only show hex grid on gallery pages, not homepage */
-body:not(.gallery-page) .hex-container {
-    display: none !important;
+.gallery-carousel-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 500px;
+    background: #fff;
+}
+
+.gallery-carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.gallery-carousel-slide {
+    flex: 0 0 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.gallery-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 183, 197, 0.6);
+    color: var(--ocolor);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-carousel-btn:hover {
+    background: rgba(255, 183, 197, 0.9);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 183, 197, 0.4);
+}
+
+.gallery-carousel-btn.prev {
+    left: 15px;
+}
+
+.gallery-carousel-btn.next {
+    right: 15px;
+}
+
+.gallery-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.gallery-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 183, 197, 0.4);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-indicator:hover {
+    background: rgba(255, 183, 197, 0.7);
+    transform: scale(1.2);
+}
+
+.gallery-indicator.active {
+    background: var(--ocolor);
+    transform: scale(1.3);
+}
+
+/* Ensure homepage carousel still works */
+.homepage-carousel .carousel-track {
+    display: flex !important;
+    width: 700% !important; /* 7 slides */
+}
+
+.homepage-carousel .carousel-slide {
+    flex: 0 0 calc(100% / 7) !important;
+    width: calc(100% / 7) !important;
+}
+
+/* Fix carousel slide positioning */
+.carousel-slide.active {
+    transform: translateX(0);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .gallery-carousel-wrapper {
+        height: 350px;
+    }
+    
+    .gallery-carousel-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .homepage-carousel .carousel-wrapper {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-carousel-wrapper {
+        height: 280px;
+    }
+    
+    .gallery-carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .homepage-carousel .carousel-wrapper {
+        height: 250px;
+    }
+}
+
+/* Fix image loading issues */
+.carousel-slide img,
+.gallery-carousel-slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Image error handling styles */
+.carousel-slide,
+.gallery-carousel-slide {
+    background: linear-gradient(45deg, rgba(255, 183, 197, 0.1), rgba(255, 235, 245, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide img[style*="display: none"] + div,
+.gallery-carousel-slide img[style*="display: none"] + div {
+    color: var(--ocolor);
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
 }

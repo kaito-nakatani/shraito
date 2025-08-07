@@ -1,21 +1,4 @@
-// DISABLE ALL HEX FUNCTIONALITY FIRST
-document.addEventListener('DOMContentLoaded', function() {
-    // Remove any hex elements that might exist
-    const hexElements = document.querySelectorAll('[class*="hex"]');
-    hexElements.forEach(element => {
-        if (!element.classList.contains('homepage-carousel') && 
-            !element.classList.contains('carousel-wrapper') && 
-            !element.classList.contains('carousel-track')) {
-            element.style.display = 'none';
-            element.style.visibility = 'hidden';
-        }
-    });
-    
-    // Initialize carousel
-    new HomepageCarousel();
-});
-
-// Homepage Carousel Functionality
+// Homepage Carousel Functionality - Fixed Version
 class HomepageCarousel {
     constructor() {
         this.track = document.getElementById('carouselTrack');
@@ -35,8 +18,8 @@ class HomepageCarousel {
         // Create indicators
         this.createIndicators();
         
-        // Set initial slide width
-        this.updateSlideWidth();
+        // Set initial state
+        this.updateCarousel();
         
         // Add event listeners
         this.prevBtn?.addEventListener('click', () => this.previousSlide());
@@ -50,13 +33,19 @@ class HomepageCarousel {
         this.track.addEventListener('mouseleave', () => this.startAutoPlay());
         
         // Handle window resize
-        window.addEventListener('resize', () => this.updateSlideWidth());
+        window.addEventListener('resize', () => this.updateCarousel());
         
         // Touch/swipe support for mobile
         this.addTouchSupport();
+        
+        // Handle image loading errors
+        this.handleImageErrors();
     }
 
     createIndicators() {
+        if (!this.indicators) return;
+        
+        this.indicators.innerHTML = '';
         for (let i = 0; i < this.totalSlides; i++) {
             const indicator = document.createElement('button');
             indicator.classList.add('indicator');
@@ -66,13 +55,16 @@ class HomepageCarousel {
         }
     }
 
-    updateSlideWidth() {
-        const slideWidth = this.track.clientWidth;
-        this.slides.forEach(slide => {
-            slide.style.width = slideWidth + 'px';
+    updateCarousel() {
+        const containerWidth = this.track.parentElement.clientWidth;
+        const translateX = -this.currentIndex * containerWidth;
+        this.track.style.transform = `translateX(${translateX}px)`;
+        
+        // Update indicators
+        const indicators = document.querySelectorAll('.indicator');
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === this.currentIndex);
         });
-        this.track.style.width = (slideWidth * this.totalSlides) + 'px';
-        this.updateCarousel();
     }
 
     nextSlide() {
@@ -90,22 +82,11 @@ class HomepageCarousel {
         this.updateCarousel();
     }
 
-    updateCarousel() {
-        const slideWidth = this.track.clientWidth / this.totalSlides;
-        const translateX = -this.currentIndex * slideWidth;
-        this.track.style.transform = `translateX(${translateX}px)`;
-        
-        // Update indicators
-        document.querySelectorAll('.indicator').forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === this.currentIndex);
-        });
-    }
-
     startAutoPlay() {
-        this.stopAutoPlay(); // Clear existing interval
+        this.stopAutoPlay();
         this.autoPlayInterval = setInterval(() => {
             this.nextSlide();
-        }, 4000); // Change slide every 4 seconds
+        }, 4000);
     }
 
     stopAutoPlay() {
@@ -136,7 +117,7 @@ class HomepageCarousel {
             isDragging = false;
             
             const deltaX = startX - currentX;
-            const threshold = 50; // Minimum swipe distance
+            const threshold = 50;
             
             if (Math.abs(deltaX) > threshold) {
                 if (deltaX > 0) {
@@ -149,9 +130,23 @@ class HomepageCarousel {
             this.startAutoPlay();
         });
     }
+
+    handleImageErrors() {
+        const images = this.track.querySelectorAll('img');
+        images.forEach((img, index) => {
+            img.addEventListener('error', () => {
+                console.warn(`Image failed to load: ${img.src}`);
+                // Try alternative path
+                if (!img.src.includes('./')) {
+                    img.src = './' + img.getAttribute('src');
+                }
+            });
+            
+            img.addEventListener('load', () => {
+                console.log(`Image loaded successfully: ${img.src}`);
+            });
+        });
+    }
 }
 
-// Initialize carousel when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    new HomepageCarousel();
-});
+

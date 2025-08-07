@@ -365,18 +365,7 @@ strong, b {
     }
 }
 
-/* DISABLE ALL HEXAGON FUNCTIONALITY COMPLETELY */
-.hex-container,
-.hex-wrapper, 
-.hex-row,
-.hex,
-.hex-pad,
-*[class*="hex"]:not(.homepage-carousel):not(.carousel-wrapper):not(.carousel-track) {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
+
 
 /* Ensure carousel takes precedence */
 .homepage-carousel,
