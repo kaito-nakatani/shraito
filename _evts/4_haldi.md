@@ -5,7 +5,6 @@ timerange: 9:00am -- 11:30pm
 accent: "#f7a223"
 leftblock: "Rituals"
 attire: Clothes you don't mind getting wet
-access_level : 2
 title: "Haldi"
 location: "Miraya Greens, S.No. 73, Sakalwara Road, off Bannerghatta Main Road, Bengaluru, Karnataka 560083, India"
 start: "20260204T033000Z"

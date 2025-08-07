@@ -10,125 +10,180 @@ custom_css:
   - enhanced-styles
 ---
 
-<div class="sectional-gallery">
+<div class="carousel-gallery">
     <div class="gallery-sections">
         <div class="section-tabs">
-            <button class="section-tab active" onclick="showSection('engagement')">💕 Engagement</button>
-            <button class="section-tab" onclick="showSection('prewedding')">📸 Pre-Wedding</button>
-            <button class="section-tab" onclick="showSection('family')">👨‍👩‍👧‍👦 Family</button>
-            <button class="section-tab" onclick="showSection('friends')">👫 Friends</button>
-            <button class="section-tab" onclick="showSection('travel')">✈️ Travel</button>
+            <button class="section-tab active" onclick="showCarousel('engagement')">💕 Engagement</button>
+            <button class="section-tab" onclick="showCarousel('prewedding')">📸 Pre-Wedding</button>
+            <button class="section-tab" onclick="showCarousel('family')">👨‍👩‍👧‍👦 Family</button>
+            <button class="section-tab" onclick="showCarousel('friends')">👫 Friends</button>
+            <button class="section-tab" onclick="showCarousel('travel')">✈️ Travel</button>
         </div>
         
-        <!-- PERFORMANCE OPTIMIZED: Only load 6 photos initially, rest on demand -->
-        <div id="engagement" class="gallery-section active">
+        <!-- Engagement Carousel -->
+        <div id="engagement-carousel" class="carousel-section active">
             <h3>💕 Engagement Photos</h3>
-            <div class="lazy-gallery-container">
-                {% include hexphotos.html gridnums="2,2" section="engagement" %}
-                <button class="load-more-btn" onclick="loadMorePhotos('engagement', 6)">Load More Photos</button>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="engagement-track">
+                        <div class="carousel-slide"><img src="/assets/engagement/photo1.jpg" alt="Engagement Photo 1"></div>
+                        <div class="carousel-slide"><img src="/assets/engagement/photo2.jpg" alt="Engagement Photo 2"></div>
+                        <div class="carousel-slide"><img src="/assets/engagement/photo3.jpg" alt="Engagement Photo 3"></div>
+                        <div class="carousel-slide"><img src="/assets/engagement/photo4.jpg" alt="Engagement Photo 4"></div>
+                        <div class="carousel-slide"><img src="/assets/engagement/photo5.jpg" alt="Engagement Photo 5"></div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="moveSlide('engagement', -1)">‹</button>
+                <button class="carousel-btn next" onclick="moveSlide('engagement', 1)">›</button>
+                <div class="carousel-indicators" id="engagement-indicators">
+                    <span class="indicator active" onclick="currentSlide('engagement', 1)"></span>
+                    <span class="indicator" onclick="currentSlide('engagement', 2)"></span>
+                    <span class="indicator" onclick="currentSlide('engagement', 3)"></span>
+                    <span class="indicator" onclick="currentSlide('engagement', 4)"></span>
+                    <span class="indicator" onclick="currentSlide('engagement', 5)"></span>
+                </div>
             </div>
         </div>
         
-        <div id="prewedding" class="gallery-section">
+        <!-- Other carousels will load on demand -->
+        <div id="prewedding-carousel" class="carousel-section">
             <h3>📸 Pre-Wedding Photoshoot</h3>
-            <div class="lazy-gallery-container">
-                <!-- Load on demand -->
-                <div class="loading-placeholder">Click to load photos...</div>
-                <button class="load-section-btn" onclick="loadSectionPhotos('prewedding', '3,2')">Load Pre-Wedding Photos</button>
-            </div>
+            <div class="loading-placeholder">Click above to load carousel...</div>
         </div>
         
-        <div id="family" class="gallery-section">
+        <div id="family-carousel" class="carousel-section">
             <h3>👨‍👩‍👧‍👦 Family Photos</h3>
-            <div class="lazy-gallery-container">
-                <div class="loading-placeholder">Click to load photos...</div>
-                <button class="load-section-btn" onclick="loadSectionPhotos('family', '2,2')">Load Family Photos</button>
-            </div>
+            <div class="loading-placeholder">Click above to load carousel...</div>
         </div>
         
-        <div id="friends" class="gallery-section">
+        <div id="friends-carousel" class="carousel-section">
             <h3>👫 With Friends</h3>
-            <div class="lazy-gallery-container">
-                <div class="loading-placeholder">Click to load photos...</div>
-                <button class="load-section-btn" onclick="loadSectionPhotos('friends', '3,2')">Load Friends Photos</button>
-            </div>
+            <div class="loading-placeholder">Click above to load carousel...</div>
         </div>
         
-        <div id="travel" class="gallery-section">
+        <div id="travel-carousel" class="carousel-section">
             <h3>✈️ Travel Memories</h3>
-            <div class="lazy-gallery-container">
-                <div class="loading-placeholder">Click to load photos...</div>
-                <button class="load-section-btn" onclick="loadSectionPhotos('travel', '2,3')">Load Travel Photos</button>
-            </div>
+            <div class="loading-placeholder">Click above to load carousel...</div>
         </div>
     </div>
 </div>
 
 <script>
-// PERFORMANCE OPTIMIZATION: Lazy Loading Gallery
-function showSection(sectionId) {
-    // Hide all sections
-    const sections = document.querySelectorAll('.gallery-section');
-    const tabs = document.querySelectorAll('.section-tab');
+// Carousel functionality
+let carouselStates = {
+    engagement: { currentSlide: 0, totalSlides: 5 },
+    prewedding: { currentSlide: 0, totalSlides: 0 },
+    family: { currentSlide: 0, totalSlides: 0 },
+    friends: { currentSlide: 0, totalSlides: 0 },
+    travel: { currentSlide: 0, totalSlides: 0 }
+};
+
+function showCarousel(section) {
+    // Hide all carousels
+    document.querySelectorAll('.carousel-section').forEach(carousel => {
+        carousel.classList.remove('active');
+    });
     
-    sections.forEach(section => section.classList.remove('active'));
-    tabs.forEach(tab => tab.classList.remove('active'));
+    // Remove active from all tabs
+    document.querySelectorAll('.section-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
     
-    // Show selected section
-    document.getElementById(sectionId).classList.add('active');
+    // Show selected carousel
+    document.getElementById(section + '-carousel').classList.add('active');
     event.target.classList.add('active');
+    
+    // Load carousel if not loaded
+    if (section !== 'engagement' && carouselStates[section].totalSlides === 0) {
+        loadCarouselSection(section);
+    }
 }
 
-function loadSectionPhotos(section, gridnums) {
-    const container = document.querySelector(`#${section} .lazy-gallery-container`);
-    container.innerHTML = '<div class="loading">Loading photos...</div>';
+function loadCarouselSection(section) {
+    const carousel = document.getElementById(section + '-carousel');
+    const photoCount = getPhotoCount(section);
     
-    // Simulate loading with delay for better UX
-    setTimeout(() => {
-        const photoCount = gridnums.split(',').reduce((sum, num) => sum + parseInt(num), 0);
-        let photosHTML = '<div class="hex-container modern-gallery-grid">';
-        
-        for (let i = 1; i <= photoCount; i++) {
-            photosHTML += `
-                <div class="hex-wrapper gallery-item">
-                    <div class="hex">
-                        <img src="/assets/${section}/photo${i}.jpg" 
-                             alt="Photo ${i}"
-                             loading="lazy"
-                             onerror="this.style.display='none';">
-                    </div>
+    let carouselHTML = `
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="${section}-track">
+    `;
+    
+    for (let i = 1; i <= photoCount; i++) {
+        carouselHTML += `<div class="carousel-slide"><img src="/assets/${section}/photo${i}.jpg" alt="${section} Photo ${i}" loading="lazy"></div>`;
+    }
+    
+    carouselHTML += `
                 </div>
-            `;
-        }
-        photosHTML += '</div>';
-        container.innerHTML = photosHTML;
-    }, 500);
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide('${section}', -1)">‹</button>
+            <button class="carousel-btn next" onclick="moveSlide('${section}', 1)">›</button>
+            <div class="carousel-indicators" id="${section}-indicators">
+    `;
+    
+    for (let i = 1; i <= photoCount; i++) {
+        carouselHTML += `<span class="indicator ${i === 1 ? 'active' : ''}" onclick="currentSlide('${section}', ${i})"></span>`;
+    }
+    
+    carouselHTML += `
+            </div>
+        </div>
+    `;
+    
+    carousel.innerHTML = '<h3>' + carousel.querySelector('h3').innerHTML + '</h3>' + carouselHTML;
+    carouselStates[section].totalSlides = photoCount;
 }
 
-function loadMorePhotos(section, startIndex) {
-    const button = event.target;
-    button.innerHTML = 'Loading...';
-    button.disabled = true;
+function getPhotoCount(section) {
+    const counts = {
+        prewedding: 6,
+        family: 5,
+        friends: 7,
+        travel: 8
+    };
+    return counts[section] || 5;
+}
+
+function moveSlide(section, direction) {
+    const state = carouselStates[section];
+    const track = document.getElementById(section + '-track');
     
-    setTimeout(() => {
-        const container = document.querySelector(`#${section} .hex-container`);
-        
-        // Add more photos (example: photos 5-8)
-        for (let i = startIndex; i <= startIndex + 3; i++) {
-            const photoDiv = document.createElement('div');
-            photoDiv.className = 'hex-wrapper gallery-item';
-            photoDiv.innerHTML = `
-                <div class="hex">
-                    <img src="/assets/${section}/photo${i}.jpg" 
-                         alt="Photo ${i}"
-                         loading="lazy"
-                         onerror="this.style.display='none';">
-                </div>
-            `;
-            container.appendChild(photoDiv);
-        }
-        
-        button.style.display = 'none'; // Hide load more button
-    }, 300);
+    state.currentSlide += direction;
+    
+    if (state.currentSlide >= state.totalSlides) {
+        state.currentSlide = 0;
+    } else if (state.currentSlide < 0) {
+        state.currentSlide = state.totalSlides - 1;
+    }
+    
+    updateCarousel(section);
+}
+
+function currentSlide(section, slideIndex) {
+    carouselStates[section].currentSlide = slideIndex - 1;
+    updateCarousel(section);
+}
+
+function updateCarousel(section) {
+    const state = carouselStates[section];
+    const track = document.getElementById(section + '-track');
+    const indicators = document.getElementById(section + '-indicators');
+    
+    if (track) {
+        track.style.transform = `translateX(-${state.currentSlide * 100}%)`;
+    }
+    
+    if (indicators) {
+        indicators.querySelectorAll('.indicator').forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === state.currentSlide);
+        });
+    }
+}
+
+// Auto-play functionality (optional)
+function startAutoplay(section, interval = 5000) {
+    return setInterval(() => {
+        moveSlide(section, 1);
+    }, interval);
 }
 </script>

@@ -5,7 +5,6 @@ timerange: 5:00pm -- 10:00pm
 accent: "#be95be"
 leftblock: "Sangeet"
 attire: Indian or Western
-access_level : 3
 title: "Sangeet"
 location: "Miraya Greens, S.No. 73, Sakalwara Road, off Bannerghatta Main Road, Bengaluru, Karnataka 560083, India"
 start: "20260204T113000Z"

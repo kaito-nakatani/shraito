@@ -5,7 +5,6 @@ timerange: 9:00am -- 2:00pm
 leftblock: Wedding
 accent: "#A00"
 attire: Traditional Indian clothes (saris, lehengas, kurtas)
-access_level : 1
 title: "Murutham"
 location: "Miraya Greens, S.No. 73, Sakalwara Road, off Bannerghatta Main Road, Bengaluru, Karnataka 560083, India"
 start: "20260206T033000Z"

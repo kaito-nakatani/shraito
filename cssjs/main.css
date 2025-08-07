@@ -262,14 +262,36 @@ body {
     --pink-gradient-end: rgba(255, 235, 245, 0.9);
 }
 
-/* Enhanced body styling with cherry blossom theme */
+/* REPLACE existing body background with lotus image */
 body {
-    background: linear-gradient(135deg, 
-        var(--pink-gradient-start) 0%, 
-        var(--pink-gradient-end) 100%);
+    background: 
+        /* Lotus flower background image */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><radialGradient id="lotus1" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff99cc" stop-opacity="0.3"/><stop offset="100%" stop-color="%23ffb3d9" stop-opacity="0.1"/></radialGradient><radialGradient id="lotus2" cx="50%" cy="50%"><stop offset="0%" stop-color="%23e6f3ff" stop-opacity="0.4"/><stop offset="100%" stop-color="%23ccf2ff" stop-opacity="0.1"/></radialGradient></defs><g opacity="0.6"><ellipse cx="200" cy="150" rx="40" ry="60" fill="%23ff99cc" opacity="0.2" transform="rotate(45 200 150)"/><ellipse cx="200" cy="150" rx="60" ry="40" fill="%23ffb3d9" opacity="0.15" transform="rotate(45 200 150)"/><ellipse cx="200" cy="150" rx="30" ry="45" fill="%23ff80b3" opacity="0.25" transform="rotate(135 200 150)"/><ellipse cx="200" cy="150" rx="45" ry="30" fill="%23ffcce6" opacity="0.2" transform="rotate(135 200 150)"/></g><g opacity="0.5"><ellipse cx="800" cy="300" rx="35" ry="55" fill="%23e6f3ff" opacity="0.3" transform="rotate(-30 800 300)"/><ellipse cx="800" cy="300" rx="55" ry="35" fill="%23ccf2ff" opacity="0.2" transform="rotate(-30 800 300)"/><ellipse cx="800" cy="300" rx="25" ry="40" fill="%23b3e6ff" opacity="0.35" transform="rotate(60 800 300)"/><ellipse cx="800" cy="300" rx="40" ry="25" fill="%23d9f0ff" opacity="0.25" transform="rotate(60 800 300)"/></g><g opacity="0.4"><ellipse cx="400" cy="600" rx="45" ry="65" fill="%23ff99cc" opacity="0.2" transform="rotate(15 400 600)"/><ellipse cx="400" cy="600" rx="65" ry="45" fill="%23ffb3d9" opacity="0.15" transform="rotate(15 400 600)"/><ellipse cx="400" cy="600" rx="35" ry="50" fill="%23ff80b3" opacity="0.25" transform="rotate(105 400 600)"/></g><g opacity="0.3"><ellipse cx="1000" cy="500" rx="30" ry="45" fill="%23e6f3ff" opacity="0.3" transform="rotate(-60 1000 500)"/><ellipse cx="1000" cy="500" rx="45" ry="30" fill="%23ccf2ff" opacity="0.2" transform="rotate(-60 1000 500)"/></g></svg>') no-repeat center center,
+        /* Soft gradient overlay */
+        linear-gradient(135deg, 
+            rgba(255, 245, 250, 0.9) 0%, 
+            rgba(255, 235, 245, 0.85) 50%,
+            rgba(240, 248, 255, 0.9) 100%);
+    
+    background-size: cover, auto;
+    background-attachment: fixed, scroll;
     min-height: 100vh;
     position: relative;
 }
+
+/* REPLACE name colors - Pink Shreya, Blue Kaito */
+span.shreya {
+    color: #E91E63 !important; /* BRIGHT PINK */
+    text-shadow: 2px 2px 4px rgba(233, 30, 99, 0.3) !important;
+    font-weight: 600 !important;
+}
+
+span.kaito {
+    color: #2196F3 !important; /* BRIGHT BLUE */
+    text-shadow: 2px 2px 4px rgba(33, 150, 243, 0.3) !important;
+    font-weight: 600 !important;
+}
+
 
 /* Fix markdown bold formatting */
 strong, b {

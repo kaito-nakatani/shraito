@@ -13,4 +13,3 @@ end: "20260203T130000Z"
 desc: "A friendly cricket match between the bride side vs. the groom side!"
 ---
 We are playing a friendly cricket match between the bride side vs. the groom side!
-
