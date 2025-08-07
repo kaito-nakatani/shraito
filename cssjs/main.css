@@ -262,22 +262,68 @@ body {
     --pink-gradient-end: rgba(255, 235, 245, 0.9);
 }
 
-/* REPLACE existing body background with lotus image */
+/* FIXED LOTUS BACKGROUND - Remove broken SVG and add working pattern */
 body {
     background: 
-        /* Lotus flower background image */
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><radialGradient id="lotus1" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff99cc" stop-opacity="0.3"/><stop offset="100%" stop-color="%23ffb3d9" stop-opacity="0.1"/></radialGradient><radialGradient id="lotus2" cx="50%" cy="50%"><stop offset="0%" stop-color="%23e6f3ff" stop-opacity="0.4"/><stop offset="100%" stop-color="%23ccf2ff" stop-opacity="0.1"/></radialGradient></defs><g opacity="0.6"><ellipse cx="200" cy="150" rx="40" ry="60" fill="%23ff99cc" opacity="0.2" transform="rotate(45 200 150)"/><ellipse cx="200" cy="150" rx="60" ry="40" fill="%23ffb3d9" opacity="0.15" transform="rotate(45 200 150)"/><ellipse cx="200" cy="150" rx="30" ry="45" fill="%23ff80b3" opacity="0.25" transform="rotate(135 200 150)"/><ellipse cx="200" cy="150" rx="45" ry="30" fill="%23ffcce6" opacity="0.2" transform="rotate(135 200 150)"/></g><g opacity="0.5"><ellipse cx="800" cy="300" rx="35" ry="55" fill="%23e6f3ff" opacity="0.3" transform="rotate(-30 800 300)"/><ellipse cx="800" cy="300" rx="55" ry="35" fill="%23ccf2ff" opacity="0.2" transform="rotate(-30 800 300)"/><ellipse cx="800" cy="300" rx="25" ry="40" fill="%23b3e6ff" opacity="0.35" transform="rotate(60 800 300)"/><ellipse cx="800" cy="300" rx="40" ry="25" fill="%23d9f0ff" opacity="0.25" transform="rotate(60 800 300)"/></g><g opacity="0.4"><ellipse cx="400" cy="600" rx="45" ry="65" fill="%23ff99cc" opacity="0.2" transform="rotate(15 400 600)"/><ellipse cx="400" cy="600" rx="65" ry="45" fill="%23ffb3d9" opacity="0.15" transform="rotate(15 400 600)"/><ellipse cx="400" cy="600" rx="35" ry="50" fill="%23ff80b3" opacity="0.25" transform="rotate(105 400 600)"/></g><g opacity="0.3"><ellipse cx="1000" cy="500" rx="30" ry="45" fill="%23e6f3ff" opacity="0.3" transform="rotate(-60 1000 500)"/><ellipse cx="1000" cy="500" rx="45" ry="30" fill="%23ccf2ff" opacity="0.2" transform="rotate(-60 1000 500)"/></g></svg>') no-repeat center center,
-        /* Soft gradient overlay */
+        /* Working Lotus flower background pattern */
+        radial-gradient(ellipse 300px 200px at 20% 30%, rgba(255, 182, 193, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 250px 350px at 80% 70%, rgba(176, 224, 230, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse 400px 300px at 50% 20%, rgba(255, 192, 203, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse 350px 250px at 30% 80%, rgba(173, 216, 230, 0.07) 0%, transparent 50%),
+        /* Main gradient background */
         linear-gradient(135deg, 
-            rgba(255, 245, 250, 0.9) 0%, 
-            rgba(255, 235, 245, 0.85) 50%,
-            rgba(240, 248, 255, 0.9) 100%);
+            rgba(255, 245, 250, 0.92) 0%, 
+            rgba(255, 235, 245, 0.90) 50%,
+            rgba(248, 248, 255, 0.92) 100%);
     
-    background-size: cover, auto;
-    background-attachment: fixed, scroll;
+    background-size: 600px 400px, 500px 700px, 800px 600px, 700px 500px, 100% 100%;
+    background-position: 0% 0%, 100% 100%, 50% 0%, 0% 100%, 0 0;
+    background-attachment: scroll;
     min-height: 100vh;
     position: relative;
+    animation: gentleLotusShift 120s ease-in-out infinite;
 }
+
+/* Gentle animation for lotus background */
+@keyframes gentleLotusShift {
+    0%, 100% { 
+        background-position: 0% 0%, 100% 100%, 50% 0%, 0% 100%, 0 0; 
+    }
+    50% { 
+        background-position: 10% 10%, 90% 90%, 60% 10%, 10% 90%, 0 0; 
+    }
+}
+
+/* FIXED RSVP STYLING - Remove weird box */
+.rsvp {
+    margin-left: 15px;
+    display: inline-block;
+    border-radius: 25px; /* CHANGED from 5px */
+    border: none; /* REMOVED: border: 2px solid black; */
+    background: linear-gradient(135deg, 
+        rgba(233, 30, 99, 0.9) 0%, 
+        rgba(233, 30, 99, 1) 100%); /* CHANGED: from var(--vcolor) */
+    padding: 12px 25px; /* ADDED: explicit padding */
+    transition: all 0.3s ease; /* ENHANCED: transition */
+    font-size: 15pt;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+}
+
+.rsvp a {
+    color: white;
+    text-decoration: none;
+}
+
+.rsvp:hover {
+    font-size: 16pt; /* REDUCED: from 20pt for smoother effect */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+    background: linear-gradient(135deg, 
+        rgba(233, 30, 99, 1) 0%, 
+        rgba(194, 24, 91, 1) 100%);
+}
+
 
 /* REPLACE name colors - Pink Shreya, Blue Kaito */
 span.shreya {
@@ -305,16 +351,6 @@ strong, b {
     font-weight: 600;
 }
 
-/* Enhanced span styling */
-span.shreya {
-    color: var(--vcolor);
-    text-shadow: 2px 2px 4px rgba(255, 183, 197, 0.3);
-}
-
-span.kaito {
-    color: var(--ocolor);
-    text-shadow: 2px 2px 4px rgba(255, 183, 197, 0.3);
-}
 
 /* Final Integration Enhancements */
 .main-content-enhanced {

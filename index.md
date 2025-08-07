@@ -23,14 +23,14 @@ rain: false
         </h1>
     </div>
 
-    <!-- ENHANCED PHOTO SHOWCASE - Multiple Photos -->
+    <!-- FIXED PHOTO SHOWCASE WITH PROPER REFERENCES -->
     <div class="main-photo-showcase">
         <div class="hero-gallery">
             <div class="main-photo">
-                <!-- Main large photo -->
+                <!-- Main large photo using existing assets -->
                 <div class="hex-wrapper featured-photo">
                     <div class="hex">
-                        <img src="/assets/select_photos/main1.jpg" alt="Shreya and Kaito - Main Photo">
+                        <img src="{{ '/assets/engagement/photo1.jpg' | relative_url }}" alt="Shreya and Kaito - Main Photo" onerror="this.src='{{ '/assets/prewedding/photo1.jpg' | relative_url }}'">
                     </div>
                 </div>
             </div>
@@ -40,17 +40,17 @@ rain: false
                 <div class="photo-row">
                     <div class="hex-wrapper secondary-photo">
                         <div class="hex">
-                            <img src="/assets/select_photos/main2.jpg" alt="Shreya and Kaito - Photo 2">
+                            <img src="{{ '/assets/engagement/photo2.jpg' | relative_url }}" alt="Shreya and Kaito - Photo 2" onerror="this.src='{{ '/assets/family/photo1.jpg' | relative_url }}'">
                         </div>
                     </div>
                     <div class="hex-wrapper secondary-photo">
                         <div class="hex">
-                            <img src="/assets/select_photos/main3.jpg" alt="Shreya and Kaito - Photo 3">
+                            <img src="{{ '/assets/prewedding/photo1.jpg' | relative_url }}" alt="Shreya and Kaito - Photo 3" onerror="this.src='{{ '/assets/friends/photo1.jpg' | relative_url }}'">
                         </div>
                     </div>
                     <div class="hex-wrapper secondary-photo">
                         <div class="hex">
-                            <img src="/assets/select_photos/main4.jpg" alt="Shreya and Kaito - Photo 4">
+                            <img src="{{ '/assets/family/photo1.jpg' | relative_url }}" alt="Shreya and Kaito - Photo 4" onerror="this.src='{{ '/assets/travel/photo1.jpg' | relative_url }}'">
                         </div>
                     </div>
                 </div>
@@ -58,12 +58,12 @@ rain: false
                 <div class="photo-row">
                     <div class="hex-wrapper secondary-photo">
                         <div class="hex">
-                            <img src="/assets/select_photos/main5.jpg" alt="Shreya and Kaito - Photo 5">
+                            <img src="{{ '/assets/friends/photo1.jpg' | relative_url }}" alt="Shreya and Kaito - Photo 5" onerror="this.src='{{ '/assets/engagement/photo3.jpg' | relative_url }}'">
                         </div>
                     </div>
                     <div class="hex-wrapper secondary-photo">
                         <div class="hex">
-                            <img src="/assets/select_photos/main6.jpg" alt="Shreya and Kaito - Photo 6">
+                            <img src="{{ '/assets/travel/photo1.jpg' | relative_url }}" alt="Shreya and Kaito - Photo 6" onerror="this.src='{{ '/assets/prewedding/photo2.jpg' | relative_url }}'">
                         </div>
                     </div>
                 </div>

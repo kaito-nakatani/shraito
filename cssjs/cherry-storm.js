@@ -43,27 +43,25 @@ class CherryStorm {
         const randomSize = sizes[Math.floor(Math.random() * sizes.length)];
         petal.classList.add(randomSize);
         
-        // More float animation on mobile for visual richness
-        if (window.innerWidth < 768 && Math.random() > 0.5) {
-            petal.classList.add('float');
-        } else if (window.innerWidth >= 768 && Math.random() > 0.7) {
-            petal.classList.add('float');
+        // ENHANCED: More drift variations for realistic movement
+        const driftTypes = ['', 'float']; // Empty string = default driftFall, 'float' = floatDriftFall
+        const randomDrift = driftTypes[Math.floor(Math.random() * driftTypes.length)];
+        if (randomDrift) {
+            petal.classList.add(randomDrift);
         }
         
         petal.style.left = Math.random() * 100 + 'vw';
         
-        // Mobile optimized duration
-        const duration = window.innerWidth < 768 ? 
-            (10 + Math.random() * 8) :  // Mobile: 10-18 seconds (faster)
-            (12 + Math.random() * 6);   // Desktop: 12-18 seconds
-            
+        // Random duration for more natural variation
+        const baseDuration = window.innerWidth < 768 ? 12 : 10;
+        const duration = baseDuration + Math.random() * 8; // 10-18 seconds variation
         petal.style.animationDuration = duration + 's';
-        petal.style.animationDelay = Math.random() * 3 + 's';
+        petal.style.animationDelay = Math.random() * 5 + 's';
         
         this.container.appendChild(petal);
         this.petals.push(petal);
         
-        // Clean up and regenerate
+        // Clean up after animation completes
         setTimeout(() => {
             if (petal.parentNode && this.isRunning) {
                 petal.parentNode.removeChild(petal);
@@ -72,14 +70,14 @@ class CherryStorm {
                     this.petals.splice(index, 1);
                 }
                 
-                // Regenerate more frequently on mobile
-                const regenerateChance = window.innerWidth < 768 ? 0.8 : 0.7;
-                if (this.petals.length < this.maxPetals && Math.random() > (1 - regenerateChance)) {
+                // Create replacement petal
+                if (this.petals.length < this.maxPetals && Math.random() > 0.2) {
                     this.createPetal();
                 }
             }
-        }, (duration + 3) * 1000);
+        }, (duration + 5) * 1000);
     }
+
 
     // ... rest of the methods remain the same
     adjustPetals() {

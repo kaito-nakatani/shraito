@@ -10,12 +10,98 @@
     overflow: hidden;
 }
 
+/* Enhanced Cherry Blossom with Horizontal Drift */
 .cherry-petal {
     position: absolute;
     opacity: 0.15;
-    animation: fall linear infinite;
+    animation: driftFall linear infinite; /* CHANGED: from 'fall' to 'driftFall' */
     pointer-events: none;
 }
+
+/* NEW: Drifting Fall Animation - Realistic Cherry Blossom Movement */
+@keyframes driftFall {
+    0% {
+        transform: translateY(-100px) translateX(0px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.15;
+    }
+    20% {
+        transform: translateY(20vh) translateX(15px) rotate(45deg);
+    }
+    40% {
+        transform: translateY(40vh) translateX(-10px) rotate(90deg);
+    }
+    60% {
+        transform: translateY(60vh) translateX(20px) rotate(180deg);
+    }
+    80% {
+        transform: translateY(80vh) translateX(-5px) rotate(270deg);
+    }
+    90% {
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px)) translateX(10px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Enhanced Float Animation - More Realistic Drift */
+@keyframes floatDriftFall {
+    0% {
+        transform: translateY(-100px) translateX(0px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.15;
+    }
+    15% {
+        transform: translateY(15vh) translateX(25px) rotate(30deg);
+    }
+    30% {
+        transform: translateY(30vh) translateX(-15px) rotate(90deg);
+    }
+    45% {
+        transform: translateY(45vh) translateX(30px) rotate(150deg);
+    }
+    60% {
+        transform: translateY(60vh) translateX(-20px) rotate(210deg);
+    }
+    75% {
+        transform: translateY(75vh) translateX(25px) rotate(270deg);
+    }
+    85% {
+        transform: translateY(85vh) translateX(-10px) rotate(320deg);
+    }
+    90% {
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px)) translateX(15px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Update float class to use new animation */
+.cherry-petal.float {
+    animation-name: floatDriftFall;
+}
+
+/* Enhanced petal variations for more natural movement */
+.cherry-petal.size-small {
+    animation-duration: 14s, 16s, 18s; /* Slightly faster for smaller petals */
+}
+
+.cherry-petal.size-medium {
+    animation-duration: 12s, 14s, 16s; /* Standard timing */
+}
+
+.cherry-petal.size-large {
+    animation-duration: 10s, 12s, 14s; /* Slower for larger petals */
+}
+
 
 /* Darker Cherry Blossom Petals */
 .cherry-petal::before {
