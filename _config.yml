@@ -41,11 +41,6 @@ collections:
     output: true
   tabs:
     output: true
-    order:
-      - events.html
-      - travel-info.md
-      - qa.md
-      - recos.md
 
 
 destination: docs/

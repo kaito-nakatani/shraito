@@ -1,6 +1,3 @@
-/* replacement for default styling, which I have now removed */
-
-*:target { background: yellow; }
 navbar {
     text-align:center;
     display:block;
@@ -33,23 +30,6 @@ body {
         width: calc(100% - 20px);
     }
 }
-
-
-.sideways {
-    /* rotate: -90deg; */
-    /* border: 1px solid black; */
-    transform: rotate(-90deg) translateY(-120%) translateX(-50%);
-    transform-origin: left top;
-    position: absolute;
-    top: 50%;
-}
-.sideways h1 {
-    font-size: 1.8em;
-    margin-bottom: 2ex;
-    font-weight: 300;
-    /* font-family: monospace; */
-}
-
 
 .block {
     margin-top: 30px;
@@ -162,27 +142,6 @@ a {
     /* color: inherit; */
 }
 
-.fullpagewidth {
-    text-align: center;
-    position: relative;
-    left: calc(50% - 50vw);
-    width: 100vw;
-    /* left: calc(50% - 49vw); 
-    width: 98vw; */
-    overflow: hidden;
-}
-
-.marquee {
-    position: relative;
-    animation: marquee 20s linear infinite;
-    width: 100%;
-}
-
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
 span.shreya {
     color: var(--vcolor)
         /* color-mix(teal 80%, black); */
@@ -196,15 +155,6 @@ span.kaito {
     color: var(--ocolor);
 }
 
-span.establishment {
-    /* font-weight: 500; */
-    font-weight: bold;
-    /* color: color-mix(in srgb, var(--vcolor) 50%, red 40%); */
-    color: color-mix(in srgb, var(--accent) 50%, red 20%);
-}
-span.establishment::after {
-    content: " — "
-}
 
 @media only screen and (max-width: 768px) {
     .sideways {
@@ -224,24 +174,6 @@ span.establishment::after {
     }
 }
 
-/* Enhanced body styling */
-body {
-    background: linear-gradient(135deg, 
-        rgba(255, 179, 217, 0.03) 0%, 
-        rgba(0, 204, 204, 0.03) 100%);
-    min-height: 100vh;
-    position: relative;
-}
-
-/* Enhanced navbar styling */
-.enhanced-navbar {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
 
 /* Enhanced Pink Theme Colors */
 :root {
