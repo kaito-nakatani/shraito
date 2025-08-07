@@ -18,41 +18,36 @@ custom_css:
             <h2>🇮🇳 Indian Wedding Traditions</h2>
             <div class="tradition-content">
                 <h3>Mehendi Ceremony</h3>
-                <p>The bride and female family members get intricate henna designs applied to their hands and feet, symbolizing joy and spiritual awakening.</p>
-                
-                <h3>Sangam Ceremony</h3>
-                <p>A musical evening where families from both sides come together to celebrate through traditional songs and dances.</p>
-                
-                <h3>Sacred Fire Ceremony (Agni)</h3>
-                <p>The couple takes seven sacred vows around the holy fire, representing their promises to each other for their married life.</p>
-            </div>
+                <p>The bride and close female relatives have intricate henna designs applied to their hands and feet. Mehendi symbolizes beauty, joy, and spiritual awakening, and is believed to bring good luck to the couple.</p>
+
+                <h3>Sangeet</h3>
+                <p>A lively musical evening where both families come together to celebrate with singing, dancing, and performances. The Sangeet fosters bonding and sets a joyful tone for the wedding festivities.</p>
+
+                <h3>Murutham</h3>
+                <p>This is the auspicious time chosen for the wedding rituals, determined by consulting astrologers. Murutham ensures that the ceremonies are performed at a time believed to bring prosperity and harmony to the couple.</p>
+
+                <h3>Chapuram Puja</h3>
+                <p>A traditional prayer ceremony performed before the wedding to seek blessings from the deities and ancestors. The Chapuram Puja purifies the space and invokes divine grace for a harmonious union.</p>
         </div>
 
         <div class="culture-block">
-            <h2>🇯🇵 Japanese Wedding Elements</h2>
+            <h2>🌺 Clothes Recommendations</h2>
             <div class="tradition-content">
-                <h3>San-san-kudo (Three-Three-Nine Times)</h3>
-                <p>A sake-sharing ritual where the couple takes three sips each from three cups, symbolizing the union of two families.</p>
-                
-                <h3>Cherry Blossom Blessing</h3>
-                <p>Inspired by the beauty of sakura, we incorporate cherry blossom petals as symbols of life's precious and fragile nature.</p>
-                
-                <h3>Origami Crane Display</h3>
-                <p>One thousand paper cranes folded by family and friends, representing good fortune and longevity for our marriage.</p>
-            </div>
-        </div>
-
-        <div class="culture-block">
-            <h2>🌺 Our Unique Blend</h2>
-            <div class="tradition-content">
-                <p>We're combining elements from both cultures to create a ceremony that honors our heritage while celebrating our unique love story. Expect to see:</p>
+                <p>Indian attire is known for its vibrant colors, intricate patterns, and elegant draping. Here are some popular options you might see at the wedding:</p>
                 <ul>
-                    <li>Lotus and cherry blossom decorations throughout the venue</li>
-                    <li>Traditional Indian music mixed with Japanese instruments</li>
-                    <li>Fusion cuisine featuring dishes from both cultures</li>
-                    <li>Attire that incorporates colors and patterns from both traditions</li>
-                </ul>
-            </div>
+                    <li>
+                        <strong>Saree:</strong> A long, flowing fabric (usually 5–9 yards) draped gracefully around the body, paired with a blouse and petticoat. Sarees come in many styles and fabrics, making them a timeless choice for festive occasions.
+                    </li>
+                    <li>
+                        <strong>Kanjivaram Saree:</strong> A luxurious type of saree from South India, woven from pure silk and often adorned with rich gold borders and traditional motifs. These sarees are prized for their craftsmanship and elegance.
+                    </li>
+                    <li>
+                        <strong>Lehenga:</strong> A three-piece ensemble consisting of a flared skirt (lehenga), a fitted blouse (choli), and a dupatta (scarf). Lehengas are often heavily embroidered and are popular for weddings and celebrations.
+                    </li>
+                    <li>
+                        <strong>Kurta:</strong> A long tunic worn by both men and women, usually paired with trousers (such as churidar or pajama). Kurtas can be simple or elaborately decorated, making them versatile for both casual and formal events.
+                    </li>
+                </ul>    </div>
         </div>
     </div>
 </div>

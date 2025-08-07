@@ -28,16 +28,6 @@ https://github.com/riggraz/no-style-please/blob/master/_includes/head.html.-->
     
   </head><body>
     
-    <div class="rain-pane">
-      <div class="rain-controls">
-        <button id="interact-toggle" onclick="toggleRainInteraction()">
-          <!-- <img src="shraito/assets/thunderbolt.png" height=80></img> -->
-          <!-- 🗲 -->
-          &#127788;
-        </button>
-      </div>  
-    </div>
-    
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -153,69 +143,40 @@ We hope you can join us!
   
 <div class="gallery-spacer"></div>
 
-<div class="hex-container">
-    
-    <div class="hex-row">
-        
-        <div class="hex-wrapper">
-        <div class="hex-pad"></div>
-        <div class="hex">
-            <img src="/shraito/assets/small/1.JPG" />
-            
+<!-- Replace the current photo display section with: -->
+<div class="homepage-carousel">
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <img src="assets/select_photos/photo1.jpg" alt="Wedding Photo 1">
         </div>
+        <div class="carousel-slide">
+          <img src="assets/select_photos/photo2.jpg" alt="Wedding Photo 2">
         </div>
-        
-        <div class="hex-wrapper">
-        <div class="hex-pad"></div>
-        <div class="hex">
-            <img src="/shraito/assets/small/2.jpg" />
-            
+        <div class="carousel-slide">
+          <img src="assets/select_photos/photo3.jpg" alt="Wedding Photo 3">
         </div>
+        <div class="carousel-slide">
+          <img src="assets/select_photos/photo4.jpg" alt="Wedding Photo 4">
         </div>
-        
-        <div class="hex-wrapper">
-        <div class="hex-pad"></div>
-        <div class="hex">
-            <img src="/shraito/assets/small/3.jpg" />
-            
+        <div class="carousel-slide">
+          <img src="assets/select_photos/photo5.jpg" alt="Wedding Photo 5">
         </div>
+        <div class="carousel-slide">
+          <img src="assets/select_photos/photo6.jpg" alt="Wedding Photo 6">
         </div>
-        
-        <div class="hex-wrapper">
-        <div class="hex-pad"></div>
-        <div class="hex">
-            <img src="/shraito/assets/small/4.jpg" />
-            
+        <div class="carousel-slide">
+          <img src="assets/select_photos/photo7.jpg" alt="Wedding Photo 7">
         </div>
-        </div>
-        
-        <div class="hex-wrapper">
-        <div class="hex-pad"></div>
-        <div class="hex">
-            <img src="/shraito/assets/small/5.jpg" />
-            
-        </div>
-        </div>
-        
-        <div class="hex-wrapper">
-        <div class="hex-pad"></div>
-        <div class="hex">
-            <img src="/shraito/assets/small/6.jpg" />
-            
-        </div>
-        </div>
-        
-        <div class="hex-wrapper">
-        <div class="hex-pad"></div>
-        <div class="hex">
-            <img src="/shraito/assets/small/7.JPG" />
-            
-        </div>
-        </div>
-        
+      </div>
+      <button class="carousel-btn prev" id="prevBtn">&#8249;</button>
+      <button class="carousel-btn next" id="nextBtn">&#8250;</button>
     </div>
-    
+    <div class="carousel-indicators" id="carouselIndicators"></div>
+  </div>
 </div>
+
  
 <div class="small-spacer"></div>
 

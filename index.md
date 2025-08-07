@@ -6,9 +6,8 @@ custom_css:
   - landing
   - enhanced-styles
   - cherry-storm
-custom_js:
-  - enhanced-wedding
-  - cherry-storm
+custom_js: ["main", "imghex", "landing", "enhanced-styles", "cherry-storm", "homepage-carousel"]
+s
 rain: false
 ---
 
