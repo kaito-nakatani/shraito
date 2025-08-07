@@ -136,11 +136,6 @@
         rgba(156, 79, 84, 0.75) 100%); /* Dark rose edge */
 }
 
-.cultural-bg.cherry-blossom {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g><circle cx="30" cy="30" r="2" fill="%23E75480" opacity="0.5"/><circle cx="32" cy="28" r="1.5" fill="%23C71C84" opacity="0.4"/><circle cx="28" cy="32" r="1.5" fill="%239C4F54" opacity="0.4"/><circle cx="70" cy="60" r="2" fill="%23E75480" opacity="0.5"/><circle cx="72" cy="58" r="1.5" fill="%23C71C84" opacity="0.4"/><circle cx="68" cy="62" r="1.5" fill="%239C4F54" opacity="0.4"/></g></svg>') repeat;
-    opacity: 0.04; /* Slightly increased opacity for darker appearance */
-    background-size: 150px 150px;
-}
 
 .cherry-petal.size-medium::before {
     width: 8px;
