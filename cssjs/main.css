@@ -364,3 +364,38 @@ strong, b {
         padding: 20px 40px;
     }
 }
+
+/* DISABLE ALL HEXAGON FUNCTIONALITY COMPLETELY */
+.hex-container,
+.hex-wrapper, 
+.hex-row,
+.hex,
+.hex-pad,
+*[class*="hex"]:not(.homepage-carousel):not(.carousel-wrapper):not(.carousel-track) {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Ensure carousel takes precedence */
+.homepage-carousel,
+.carousel-container,
+.carousel-wrapper,
+.carousel-track,
+.carousel-slide {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.carousel-track {
+    display: flex !important;
+}
+
+/* Clear any hex-based clip paths */
+* {
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+}

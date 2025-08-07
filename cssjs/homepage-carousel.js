@@ -1,3 +1,20 @@
+// DISABLE ALL HEX FUNCTIONALITY FIRST
+document.addEventListener('DOMContentLoaded', function() {
+    // Remove any hex elements that might exist
+    const hexElements = document.querySelectorAll('[class*="hex"]');
+    hexElements.forEach(element => {
+        if (!element.classList.contains('homepage-carousel') && 
+            !element.classList.contains('carousel-wrapper') && 
+            !element.classList.contains('carousel-track')) {
+            element.style.display = 'none';
+            element.style.visibility = 'hidden';
+        }
+    });
+    
+    // Initialize carousel
+    new HomepageCarousel();
+});
+
 // Homepage Carousel Functionality
 class HomepageCarousel {
     constructor() {
