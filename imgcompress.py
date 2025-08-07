@@ -1,6 +1,6 @@
-default_src = 'assets/big/'
-default_tgt = 'assets/small/'
-default_size = (600,600)
+default_src = 'assets/_engagement/'
+default_tgt = 'assets/engagement/'
+default_size = (1400,1400)
 
 import argparse
 parser = argparse.ArgumentParser(
@@ -16,7 +16,9 @@ args = parser.parse_args()
 import os
 from PIL import Image, ImageOps
 for fn in os.listdir(args.src):
+    if fn == '.DS_Store':
+        continue
     im = Image.open(os.path.join(args.src, fn))
-    im_fixed = ImageOps.exif_transpose(im);
+    im_fixed = ImageOps.exif_transpose(im)
     im_fixed.thumbnail(args.size)
     im_fixed.save(os.path.join(args.tgt, fn), "jpeg")
