@@ -24,7 +24,9 @@ custom_js:
     <h3><strong>February 3rd - 6th, 2026</strong></h3>
     <h3><strong><a href="https://www.mirayagreens.com/" target="_blank">Miraya Greens</a>, Bangalore, India</strong></h3>
   </div>
+</div>
 
+<div>
   <div class="gallery-counsel">
     <div class="carousel-wrapper">
       <div class="carousel-track" id="carouselTrack">
@@ -71,6 +73,8 @@ let galleryCarousels = {
   'engagement': { currentIndex: 0, totalSlides: 7 },
   'varsha-wedding': { currentIndex: 0, totalSlides: 4 },
   'family': { currentIndex: 0, totalSlides: 7 }
+  'proposal': { currentIndex: 0, totalSlides: 4 },
+  'select_photos': { currentIndex: 0, totalSlides: 7 }
 };
 
 // Section tab functionality - FIXED VERSION

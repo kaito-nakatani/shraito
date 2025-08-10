@@ -100,19 +100,19 @@ custom_css:
       <div class="carousel-wrapper">
         <div class="carousel-track" id="proposal-track">
           <div class="carousel-slide">
-            <img src="{{ '/assets/proposal/photo1.jpg' | relative_url }}" alt="Varsha Wedding Photo 1" loading="lazy" onerror="this.src='./assets/proposal/photo1.jpg'">
+            <img src="{{ '/assets/proposal/photo1.jpg' | relative_url }}" alt="Proposal Photo 1" loading="lazy" onerror="this.src='./assets/proposal/photo1.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/proposal/photo2.jpg' | relative_url }}" alt="Varsha Wedding Photo 2" loading="lazy" onerror="this.src='./assets/proposal/photo2.jpg'">
+            <img src="{{ '/assets/proposal/photo2.jpg' | relative_url }}" alt="Proposal Photo 2" loading="lazy" onerror="this.src='./assets/proposal/photo2.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/proposal/photo3.jpg' | relative_url }}" alt="Varsha Wedding Photo 3" loading="lazy" onerror="this.src='./assets/proposal/photo3.jpg'">
+            <img src="{{ '/assets/proposal/photo3.jpg' | relative_url }}" alt="Proposal Photo 3" loading="lazy" onerror="this.src='./assets/proposal/photo3.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/proposal/photo4.jpg' | relative_url }}" alt="Varsha Wedding Photo 4" loading="lazy" onerror="this.src='./assets/proposal/photo4.jpg'">
+            <img src="{{ '/assets/proposal/photo4.jpg' | relative_url }}" alt="Proposal Photo 4" loading="lazy" onerror="this.src='./assets/proposal/photo4.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/proposal/photo5.jpg' | relative_url }}" alt="Varsha Wedding Photo 5" loading="lazy" onerror="this.src='./assets/proposal/photo5.jpg'">
+            <img src="{{ '/assets/proposal/photo5.jpg' | relative_url }}" alt="Proposal Photo 5" loading="lazy" onerror="this.src='./assets/proposal/photo5.jpg'">
           </div>
         </div>
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('proposal', -1)">‹</button>
@@ -177,6 +177,8 @@ let galleryCarousels = {
   'engagement': { currentIndex: 0, totalSlides: 7 },
   'varsha-wedding': { currentIndex: 0, totalSlides: 4 },
   'family': { currentIndex: 0, totalSlides: 7 }
+  'proposal': { currentIndex: 0, totalSlides: 4 },
+  'select_photos': { currentIndex: 0, totalSlides: 7 }
 };
 
 // Section tab functionality - FIXED VERSION
