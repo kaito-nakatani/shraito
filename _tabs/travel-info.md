@@ -39,7 +39,7 @@ custom_js:
                     <strong>Airport</strong>
                 </div>
                 <div class="subsection-content" id="airport">
-                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber. The airport should have signs directing you to where the Uber pickup spot is. Once you make the booking, you will not be assigned to a specific driver but only given a OTP (one-time password). At the pickup spot, you will give the Uber driver the OTP, and your ride will start! </p>
+                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. If you need any recommendations, please take a look at <a href="/{{ site.baseurl }}tabs/recos.html#destination">our recommendation</a>!</p>
                 </div>
             </div>
             <!-- Subsection 1.3: Vaccination -->
@@ -49,7 +49,7 @@ custom_js:
                     <strong> Vaccination </strong>
                 </div>
                 <div class="subsection-content" id="passport-tips">
-                    <p> The CDC page has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! Universities often offer travel appointments to get vaccines and prescriptions for anti-malaria pills. Anti-malaria pills are especially recommended for travel to northern India. </p>
+                    <p> The CDC page has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! Anti-malaria pills are especially recommended for travel to northern India. </p>
                 </div>
             </div>
         </div>
@@ -80,6 +80,15 @@ custom_js:
                 </div>
                 <div class="subsection-content" id="currency">
                     <p>The currency used in India is the rupee (₹ / INR). India has extensive digital infrastructure, and so credit cards can be used to pay in most places. However, unless using an Indian credit card, this method of payment will typically incur a small currency exchange fee—unless your card offers the “no foreign transaction fee” benefit. For more details about cards without foreign transaction fees, consult your bank or credit card company. Physical money can be useful in some situations (e.g., at roadside shops), and so it may be worth exchanging for local currency. Currency can be exchanged at the airport or in the city. The airport is convenient, but may not have the most generous exchange rate.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <div class="subsection-header" onclick="toggleSubsection(this, 'transportation')">
+                    <span class="subsection-icon">▶</span>
+                    <strong>Transportation</strong>
+                </div>
+                <div class="subsection-content" id="transportation">
+                    <p>To travel to/from the airport you can use Uber. The airport should have signs directing you to where the Uber pickup spot is. Once you make the booking, you will not be assigned to a specific driver but only given a OTP (one-time password). At the pickup spot, you will give the Uber driver the OTP, and your ride will start!</p>
                 </div>
             </div>
             <!-- Subsection: Phone Plans and SIM Cards -->

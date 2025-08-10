@@ -1,42 +1,34 @@
-<div class="enhanced-navbar">
-  <div class="main-title center-content">
-    <span class="blossom">🌸</span>
-    Shreya
-    <span class="and-symbol">&</span>
-    Kaito
-    <span class="lotus">🪷</span>
-  </div>
-  
-  <div class="nav-tabs single-row">
-    <!-- Add this HOME button first -->
-    <div class="tab {% if page.url == '/' or page.url == '/index.html' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/">
-        <span class="home-icon">🏠</span> Home
-      </a>
+<navbar class="enhanced-navbar">
+    <div class="nav-home">
+        <a href="{{ '/' | relative_url }}">
+            <span class="shreya">Shreya</span>
+            &
+            <span class="kaito">Kaito</span>
+        </a>
     </div>
     
-    <div class="tab {% if page.title == 'Event Schedule' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/events">Events</a>
+    <div class="nav-tabs single-row">
+
+        <div class="tab {% if page.url == '/' or page.url == '/index.html' %}current-tab{% endif %}">
+            <a href="{{ site.baseurl }}/"> Home </a>
+        </div>
+        <div class="nav-item tab {% if page.url == '/tabs/events.html' %}current-tab{% endif %}">
+            <a href="{{ '/tabs/events.html' | relative_url }}">Events</a>
+        </div>
+        <div class="nav-item tab {% if page.url == '/tabs/travel-info.html' %}current-tab{% endif %}">
+            <a href="{{ '/tabs/travel-info.html' | relative_url }}">Travel Info</a>
+        </div>
+        <div class="nav-item tab {% if page.url == '/tabs/recos.html' %}current-tab{% endif %}">
+            <a href="{{ '/tabs/recos.html' | relative_url }}">Recommendations</a>
+        </div>
+        <div class="nav-item tab {% if page.url == '/tabs/qa.html' %}current-tab{% endif %}">
+            <a href="{{ '/tabs/qa.html' | relative_url }}">Q&A</a>
+        </div>
+        <div class="nav-item tab {% if page.url == '/tabs/gallery.html' %}current-tab{% endif %}">
+            <a href="{{ '/tabs/gallery.html' | relative_url }}">Gallery</a>
+        </div>
+        <div class="nav-item tab {% if page.url == '/tabs/rsvp.html' %}current-tab{% endif %}">
+            <a href="{{ '/tabs/rsvp.html' | relative_url }}">RSVP</a>
+        </div>
     </div>
-    
-    <div class="tab {% if page.title == 'Travel Info' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/travel-info">Travel Info</a>
-    </div>
-    
-    <div class="tab {% if page.title == 'Recommendations' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/recos">Recommendations</a>
-    </div>
-    
-    <div class="tab {% if page.title == 'Q&A' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/qa">Q&A</a>
-    </div>
-    
-    <div class="tab {% if page.title == 'Gallery' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/gallery">Gallery</a>
-    </div>
-    
-    <div class="tab {% if page.title == 'RSVP' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/rsvp">RSVP</a>
-    </div>
-  </div>
-</div>
+</navbar>
