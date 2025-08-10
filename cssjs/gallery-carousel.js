@@ -20,17 +20,6 @@ class GalleryCarousel {
   async loadImages() {
     // This will need to be populated with your actual image lists
     // You'll need to create a JSON file or update this with actual file names
-    this.imageData = {
-      'engagement': [
-        'assets/engagement/photo1.jpg',
-        'assets/engagement/photo2.jpg',
-        'assets/engagement/photo3.jpg',
-        'assets/engagement/photo4.jpg',
-        'assets/engagement/photo5.jpg',
-        'assets/engagement/photo6.jpg',
-        'assets/engagement/photo7.jpg'
-      ]
-    };
   }
 
   createCarousels() {
