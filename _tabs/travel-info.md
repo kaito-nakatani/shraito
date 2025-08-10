@@ -39,7 +39,7 @@ custom_js:
                     <strong>Airport</strong>
                 </div>
                 <div class="subsection-content" id="airport">
-                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. If you need any recommendations, please take a look at our [tourist destinations section]({{ site.baseurl }}/recos#tourist-destinations-across-india) in recommendations!</p>
+                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. If you need any recommendations, please take a look at the <a href="/{{ site.baseurl }}tabs/recos.html">Indian tourist destinations</a> in recommendations!</p>
                 </div>
             </div>
             <!-- Subsection 1.3: Vaccination -->

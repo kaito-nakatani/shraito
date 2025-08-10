@@ -16,7 +16,7 @@ custom_js:
             <strong>Does travel to India require a visa?</strong>
         </div>
         <div class="qa-answer">
-            Yes, for visitors from most countries. More information can be found on the <a href="/{{ site.baseurl }}tabs/travel-info.html", class="internal-link">Travel Info</a> page.
+            Yes, for visitors from most countries. More information can be found on the <a href="/{{ site.baseurl }}tabs/travel-info.html">Travel Info</a> page.
         </div>
     </div>
     <div class="qa-item">
@@ -84,7 +84,7 @@ custom_js:
             <strong>Is there a dress code? Can I shop for Indian clothes?</strong>
         </div>
         <div class="qa-answer">
-            There are attire recommendations below each event on the <a href="/{{ site.baseurl }}tabs/events.html">Events</a> page and <a href="/{{ site.baseurl }}tabs/recos.html", class="internal-link">clothes section</a> in the recommendation page. These are certainly not required and are just suggestions. If you are interested in purchasing Indian clothes, here are two streets in Bangalore where there are multiple shops that you can check out:
+            There are attire recommendations below each event on the <a href="/{{ site.baseurl }}tabs/events.html">Events</a> page and <a href="/{{ site.baseurl }}tabs/recos.html"> clothes section</a> in the recommendation page. These are certainly not required and are just suggestions. If you are interested in purchasing Indian clothes, here are two streets in Bangalore where there are multiple shops that you can check out:
             <ul class="slim">
                 <li>Commercial Street, and</li>
                 <li>Jaynagar 4th Block.</li>
