@@ -48,7 +48,7 @@ custom_js:
                     <span class="subsection-icon">▶</span>
                     <strong> Vaccination </strong>
                 </div>
-                <div class="subsection-content" id="passport-tips">
+                <div class="subsection-content" id="vaccination">
                     <p> The CDC page has vaccine/medication recommendations for traveling to India. None of these are required to enter India, but many might be recommended by your doctor! Anti-malaria pills are especially recommended for travel to northern India. </p>
                 </div>
             </div>

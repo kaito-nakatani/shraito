@@ -13,6 +13,45 @@ custom_js:
     <div class="qa-item">
         <div class="qa-question" onclick="toggleAnswer(this)">
             <span class="qa-icon">+</span>
+            <strong>🥻 Clothes </strong>
+        </div>
+        <div class="qa-answer">
+            <p> You can wear anything you are comfortable in for any event! There are no rules or colors to avoid, we just want you to be comfortable and have the best time. However, if you would like, there are loads of different types of Indian clothing you could wear.</p>
+            <p>
+            For women:
+            </p>
+            <ul>
+                <li><strong><a href="https://www.kalkifashion.com/global/lehengas.html" target="_blank"> Lehenga </a></strong></li>
+                <li><strong><a href="https://www.kalkifashion.com/global/sarees.html" target="_blank"> Saree </a></strong> - Bangalore is famous for silk saree called Kanjivaram Sarees. While sarees can be hard to wear on your own without prior experience, you can get ready-to-wear saree. </li>
+                <li><strong><a href="https://www.kalkifashion.com/global/salwar-kameez.html" target="_blank"> Salwar Kameez</a></strong> - There are different styles such as <a href="https://www.kalkifashion.com/global/salwar-kameez/anarkali-suits.html" target="_blank"> Anarkali Suit </a> or <a href="https://www.kalkifashion.com/global/salwar-kameez/sharara-suits.html" target="_blank"> Sharara Suit</a>.</li>
+                <li><strong><a href="https://www.kalkifashion.com/global/indo-western.html" target="_blank"> Indo-Western </a></strong></li>
+                <li><strong> Western</strong></li>
+            </ul>
+            For men:
+            </p>
+            <ul>
+                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/kurta-jacket-set.html" target="_blank"> Kurta </a></strong> - you can wear them <a href="https://www.kalkifashion.com/global/ethnic/see-all-men-s-wear.html" target="_blank"> without a jacket </a> too.</li>
+                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/sherwanis.html" target="_blank"> Sherwani </a></strong></li>
+                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/jodhpuris.html" target="_blank"> Bandghala / Jodupuri </a><strong></li>
+                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/indo-westerns-for-men.html" target="_blank"> Indo-Western </a></strong></li>
+                <li><strong> Western</strong></li>
+            </ul>
+            <p>
+            For clothes shopping, 4th Block Jayanagar is a popular area in Bangalore with many options for ethnic and wedding wear. Here are some recommended shops:</p>
+            <ul>
+                <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/uZXfdRw" target="_blank">Aarushe</a></strong></li>
+                <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/Reihsv6" target="_blank">Dazzles - Studio</a></strong></li>
+                <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/Mas4zQm" target="_blank">Koskii</a></strong></li>
+                <li><strong><a href="https://maps.app.goo.gl/iwsQXyMr3ub6C3vf8" target="_blank">Manyavar</a></strong></li>
+            </ul>
+            <p>
+            If the clothes don't fit you properly, you can typically ask them to resize in these shops. However, the stiching might take a few days.
+            </p>
+        </div>
+    </div>
+    <div class="qa-item">
+        <div class="qa-question" onclick="toggleAnswer(this)">
+            <span class="qa-icon">+</span>
             <strong>🍽️ Food Recommendations</strong>
         </div>
         <div class="qa-answer">
@@ -124,22 +163,6 @@ custom_js:
             <ul>
                 <li><strong>Bull Temple</strong> — A 16th-century temple featuring a massive granite bull statue.</li>
                 <li><strong>Iskcon Temple</strong> — A modern Krishna temple perched on a hilltop.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="qa-item">
-        <div class="qa-question" onclick="toggleAnswer(this)">
-            <span class="qa-icon">+</span>
-            <strong>🛍️ Clothes Shopping</strong>
-        </div>
-        <div class="qa-answer">
-            <p>For clothes shopping, 4th Block Jayanagar is a popular area in Bangalore with many options for ethnic and wedding wear. Here are some recommended shops:</p>
-            <ul>
-                <li><strong><a href="https://g.co/kgs/uZXfdRw" target="_blank">Aarushe</a></strong></li>
-                <li><strong><a href="https://g.co/kgs/Reihsv6" target="_blank">Dazzles - Studio</a></strong></li>
-                <li><strong><a href="https://g.co/kgs/Mas4zQm" target="_blank">Koskii</a></strong></li>
-                <li><strong><a href="https://g.co/kgs/nDtAYnY" target="_blank">Mayeeka</a></strong></li>
-                <li><strong>Manyavar</strong></li>
             </ul>
         </div>
     </div>

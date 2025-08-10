@@ -339,118 +339,98 @@ body {
     text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.3);
 }
 
+/* Horizontal Wedding Countdown Timer */
 .countdown-timer {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
+  display: flex;
+  gap: 12px; /* Reduced gap for tighter horizontal layout */
+  justify-content: center;
+  flex-wrap: nowrap; /* Prevent wrapping to keep horizontal */
+  padding: 0 20px 20px;
+  align-items: center;
 }
 
 .countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 70px;
-    padding: 10px;
-    background: rgba(255, 235, 245, 0.6);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 183, 197, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 55px; /* Slightly smaller for better fit */
+  max-width: 55px; /* Prevent expansion */
+  padding: 8px 6px; /* Reduced padding */
+  background: rgba(255, 235, 245, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 183, 197, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 183, 197, 0.1);
+  transition: all 0.3s ease;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .countdown-number {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: var(--ocolor);
-    text-shadow: 2px 2px 4px rgba(255, 183, 197, 0.2);
-    line-height: 1;
+  font-size: 1.4em; /* Slightly smaller for horizontal layout */
+  font-weight: bold;
+  color: var(--ocolor);
+  text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.2);
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .countdown-label {
-    font-size: 0.9em;
-    color: var(--vcolor);
-    margin-top: 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
+  font-size: 0.7em; /* Smaller text for compact layout */
+  color: var(--vcolor);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
-/* Mobile Responsiveness */
+/* Mobile adjustments for horizontal layout */
 @media screen and (max-width: 768px) {
-    .enhanced-navbar {
-        padding: 20px 15px;
-        border-radius: 20px;
-    }
-    
-    .nav-tabs {
-        gap: 12px;
-    }
-    
-    .nav-tabs .tab {
-        padding: 12px 20px;
-        font-size: 0.9em;
-    }
-    
-    .countdown-container {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-        margin: 30px 15px;
-        padding: 20px;
-    }
-    
-    .countdown-timer {
-        gap: 15px;
-    }
-    
-    .countdown-number {
-        font-size: 1.8em;
-    }
-    
-    .countdown-item {
-        min-width: 60px;
-        padding: 8px;
-    }
-    
-    .modern-gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-    
-    .update-notification {
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        left: 15px;
-        transform: none;
-        padding: 12px 20px;
-    }
-    
-    .qa-answer {
-        padding: 0 15px 15px 50px;
-    }
-    
-    .main-title {
-        font-size: 48pt;
-    }
+  .countdown-timer {
+    gap: 8px;
+    padding: 0 15px 15px;
+    justify-content: space-between; /* Distribute evenly */
+  }
+  
+  .countdown-item {
+    min-width: 48px;
+    max-width: 48px;
+    padding: 6px 4px;
+  }
+  
+  .countdown-number {
+    font-size: 1.2em;
+  }
+  
+  .countdown-label {
+    font-size: 0.65em;
+    margin-top: 3px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .main-title {
-        font-size: 36pt;
-    }
-    
-    .countdown-timer {
-        gap: 10px;
-    }
-    
-    .countdown-item {
-        min-width: 50px;
-        padding: 6px;
-    }
-    
-    .countdown-number {
-        font-size: 1.5em;
-    }
+  .countdown-timer {
+    gap: 6px;
+  }
+  
+  .countdown-item {
+    min-width: 42px;
+    max-width: 42px;
+    padding: 5px 3px;
+  }
+  
+  .countdown-number {
+    font-size: 1.1em;
+  }
+  
+  .countdown-label {
+    font-size: 0.6em;
+  }
+}
+
+/* Ensure container supports horizontal layout */
+.countdown-container-collapsible-fixed {
+  max-width: 350px; /* Slightly wider to accommodate horizontal layout */
+  min-width: 300px; /* Ensure minimum width */
 }
 
 /* Event Layout Enhancements */
@@ -530,49 +510,6 @@ body {
 .evt-content {
     margin-bottom: 20px;
     color: #555;
-}
-
-/* Enhanced Google Calendar Button Styling */
-.calendar-actions {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.add-to-calendar-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, 
-        rgba(66, 133, 244, 0.9) 0%, 
-        rgba(52, 168, 83, 0.9) 100%);
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 0.95em;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.add-to-calendar-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(66, 133, 244, 0.4);
-    background: linear-gradient(135deg, 
-        rgba(66, 133, 244, 1) 0%, 
-        rgba(52, 168, 83, 1) 100%);
-    text-decoration: none;
-    color: white;
-}
-
-.add-to-calendar-btn:active {
-    transform: translateY(0px);
-}
-
-.calendar-icon {
-    font-size: 1.2em;
-    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -1317,23 +1254,46 @@ body {
     text-align: left;
 }
 
-.add-to-calendar-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, 
-        rgba(66, 133, 244, 0.9) 0%, 
-        rgba(52, 168, 83, 0.9) 100%);
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 0.95em;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+.add-to-calendar-btn:active {
+    transform: translateY(0px);
 }
+
+/* Enhanced Google Calendar Button Styling - Fixed Icon Alignment */
+.add-to-calendar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Reduced gap for better alignment */
+  background: linear-gradient(135deg, 
+    rgba(66, 133, 244, 0.9) 0%, 
+    rgba(52, 168, 83, 0.9) 100%);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  vertical-align: middle; /* Ensure proper alignment */
+}
+
+.calendar-icon {
+  font-size: 1.1em; /* Slightly smaller to match text better */
+  line-height: 1; /* Remove line height variations */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
+/* Ensure text aligns properly with icon */
+.add-to-calendar-btn span,
+.add-to-calendar-btn .calendar-icon {
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
 
 .add-to-calendar-btn:hover {
     transform: translateY(-2px);
@@ -1345,88 +1305,84 @@ body {
     color: white;
 }
 
-.calendar-icon {
-    font-size: 1.2em;
-    animation: pulse 2s infinite;
-}
-
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
 }
 
-/* Mobile Tab Scrolling Fix */
-.nav-tabs.single-row {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start; /* Changed from center */
-    gap: 15px;
-    margin-top: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    padding: 0 10px; /* Add horizontal padding */
-    scroll-snap-type: x mandatory; /* Snap scrolling */
+/* Enhanced Navigation with Proper Current Tab Highlighting */
+.nav-tabs .tab a.nav-link {
+  color: inherit;
+  text-decoration: none !important;
+  transition: color 0.3s ease;
 }
 
-.nav-tabs.single-row::-webkit-scrollbar {
-    display: none; /* WebKit browsers */
+.nav-tabs .tab a.nav-link:hover {
+  text-decoration: none !important;
+  color: inherit;
 }
 
-.nav-tabs.single-row .tab {
-    flex-shrink: 0;
-    white-space: nowrap;
-    scroll-snap-align: start; /* Snap to start of each tab */
-    min-width: max-content; /* Ensure tabs don't compress */
+.nav-tabs .tab a.nav-link:focus {
+  text-decoration: none !important;
+  outline: none;
 }
 
-/* Mobile-specific improvements */
-@media screen and (max-width: 768px) {
-    .enhanced-navbar {
-        padding: 15px 10px; /* Reduced padding */
-    }
-    
-    .nav-tabs.single-row {
-        gap: 12px;
-        padding: 0 15px;
-        margin: 15px -15px 0 -15px; /* Extend to edge */
-        scroll-padding-left: 15px;
-    }
-    
-    .nav-tabs.single-row .tab {
-        padding: 10px 18px; /* Slightly larger touch targets */
-        font-size: 0.9em;
-        border-radius: 15px;
-    }
-    
-    /* Add scroll indicators */
-    .nav-tabs.single-row::before,
-    .nav-tabs.single-row::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 20px;
-        pointer-events: none;
-        z-index: 2;
-    }
-    
-    .nav-tabs.single-row::before {
-        left: 0;
-        background: linear-gradient(to right, 
-            rgba(255, 245, 250, 0.9) 0%, 
-            rgba(255, 245, 250, 0) 100%);
-    }
-    
-    .nav-tabs.single-row::after {
-        right: 0;
-        background: linear-gradient(to left, 
-            rgba(255, 245, 250, 0.9) 0%, 
-            rgba(255, 245, 250, 0) 100%);
-    }
+/* Remove blue underlines specifically from home link */
+.nav-tabs .tab a.home-link {
+  text-decoration: none !important;
 }
+
+.nav-tabs .tab a.home-link:hover,
+.nav-tabs .tab a.home-link:focus,
+.nav-tabs .tab a.home-link:active,
+.nav-tabs .tab a.home-link:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* Enhanced current tab highlighting */
+.nav-tabs .tab.current-tab {
+  background: linear-gradient(135deg, 
+    rgba(255, 183, 197, 0.4) 0%, 
+    rgba(227, 170, 181, 0.4) 100%) !important;
+  border-color: rgba(255, 183, 197, 0.8) !important;
+  font-weight: 700 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(255, 183, 197, 0.5) !important;
+  position: relative;
+}
+
+/* Add a subtle glow to current tab */
+.nav-tabs .tab.current-tab::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, 
+    rgba(255, 183, 197, 0.2) 0%, 
+    rgba(227, 170, 181, 0.2) 100%);
+  border-radius: 22px;
+  z-index: -1;
+  animation: currentTabGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes currentTabGlow {
+  from { 
+    box-shadow: 0 0 10px rgba(255, 183, 197, 0.3);
+  }
+  to { 
+    box-shadow: 0 0 20px rgba(255, 183, 197, 0.6);
+  }
+}
+
+/* Ensure current tab text color is proper */
+.nav-tabs .tab.current-tab a {
+  color: var(--ocolor) !important;
+  font-weight: 700;
+}
+
 
 @media screen and (max-width: 480px) {
     .nav-tabs.single-row .tab {
@@ -1882,7 +1838,7 @@ body {
     line-height: 1.6;
 }
 
-/* Enhanced Mobile Tab Navigation with Scroll Indicators */
+/* Enhanced Mobile Tab Navigation with Slider Indicator */
 @media screen and (max-width: 768px) {
   .enhanced-navbar {
     position: relative;
@@ -1895,47 +1851,50 @@ body {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 0 40px; /* Make room for arrows */
+    padding: 0 20px;
+    margin-bottom: 10px;
   }
   
+  .nav-tabs.single-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Remove arrow indicators - DELETE these if they exist */
   .nav-tabs.single-row::before,
   .nav-tabs.single-row::after {
-    content: '→';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 183, 197, 0.9);
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 10;
-    animation: pulse 2s infinite;
+    display: none !important;
   }
   
-  .nav-tabs.single-row::before {
-    content: '←';
-    left: 5px;
-  }
-  
+  /* Add slider indicator */
   .nav-tabs.single-row::after {
-    right: 5px;
-  }
-  
-  /* Hide indicators when at start/end */
-  .nav-tabs.single-row.at-start::before {
-    opacity: 0.3;
-  }
-  
-  .nav-tabs.single-row.at-end::after {
-    opacity: 0.3;
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: linear-gradient(90deg, 
+      rgba(255, 183, 197, 0.3) 0%, 
+      rgba(255, 183, 197, 0.8) 50%, 
+      rgba(255, 183, 197, 0.3) 100%);
+    border-radius: 2px;
+    display: block !important;
+    animation: slideIndicator 2s ease-in-out infinite;
   }
 }
+
+@keyframes slideIndicator {
+  0%, 100% { 
+    transform: translateX(-50%) scaleX(0.8);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: translateX(-50%) scaleX(1.2);
+    opacity: 1;
+  }
+}
+
 
 @keyframes pulse {
   0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.8; }
