@@ -15,7 +15,7 @@ custom_js:
 <h1>{{page.title}}</h1>
 
 <p class="event-intro">Feel free to wear anything you'd like for all of the events. The attire listed below is just a suggestion in case you are looking for inspiration. 
-    If you need any recommendations, please look at the <a href="/{{ site.baseurl }}tabs/recos.html#clothes">clothes section</a> of our recommendations.</p>
+    If you need any recommendations, please look at the <a href="/{{ site.baseurl }}tabs/recos.html#clothes-shopping" class="internal-link">clothes section</a> of our recommendations.</p>
 
 {% assign i = 0 %}
 {% assign evts_sorted = site.evts | sort : "start" %}
@@ -37,7 +37,7 @@ custom_js:
             
             <div class="evt-content">
             <div class="evt-summary">
-                {{ evt.content | truncatewords: 30 }}
+                evt.content
             </div>
             {% if evt.rituals %}
             <div class="evt-rituals-toggle">

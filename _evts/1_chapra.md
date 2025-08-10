@@ -8,7 +8,7 @@ location: "#557, 9th Cross, 3rd Phase, J P Nagar, Bangalore 560078."
 start: "20260129T020000Z"
 end: "20260129T083000Z"
 desc: "Event to commence wedding celebrations by seeking blessings."
-rituals: |
+rituals:
     <div>
         <strong>Naandi:</strong> Naandi Homa is a sacred fire ritual performed at the beginning of traditional Telugu weddings to invoke blessings from the gods and ancestors. It is typically conducted a day or two before the wedding ceremony. The ritual is meant to ensure that the rest of the wedding events proceed smoothly, without any obstacles. Offerings are made into the holy fire, and prayers are recited to invite positive energy, peace, and prosperity for the couple's new life together. In essence, the Naandi Homa is a spiritual “kickoff” that sets an auspicious tone for the entire wedding celebration.
     </div>
