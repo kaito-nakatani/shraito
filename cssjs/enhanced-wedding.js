@@ -19,7 +19,8 @@ function initializeCountdown() {
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         } else {
             // Wedding day has arrived!
-            document.querySelector('.countdown-container-fixed h4').textContent = '🎉 Wedding Day is Here! 🎉';
+            // Change this line:
+            document.querySelector('.countdown-container-collapsible-fixed .countdown-title').textContent = '🎉 Wedding Day is Here! 🎉';
             document.querySelector('.countdown-timer').innerHTML = '<div class="wedding-day-message">Congratulations!</div>';
         }
     }
@@ -87,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
 });
 
-// Collapsible Countdown Functionality
+// Collapsible Countdown Functionality with Previous Visual Style
 function toggleCountdown() {
   const content = document.getElementById('countdownContent');
   const toggle = document.getElementById('countdownToggle');
@@ -104,11 +105,14 @@ function toggleCountdown() {
   }
 }
 
-// Auto-collapse on mobile after 5 seconds
+// Auto-collapse on mobile after 5 seconds, but keep expanded on desktop
 document.addEventListener('DOMContentLoaded', function() {
   if (window.innerWidth <= 768) {
     setTimeout(() => {
-      toggleCountdown();
+      const content = document.getElementById('countdownContent');
+      if (content && !content.classList.contains('collapsed')) {
+        toggleCountdown();
+      }
     }, 5000);
   }
 });

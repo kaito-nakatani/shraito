@@ -884,21 +884,19 @@ body {
     filter: brightness(1.05) saturate(1.1) !important;
 }
 
-
-/* Collapsible Wedding Countdown */
-.countdown-container-collapsible {
+/* Collapsible Wedding Countdown - Bottom Right with Previous Visual Style */
+.countdown-container-collapsible-fixed {
   position: fixed;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 20px;
   background: rgba(255, 245, 250, 0.95);
   backdrop-filter: blur(15px);
   border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(255, 183, 197, 0.3);
+  box-shadow: 0 10px 40px rgba(255, 183, 197, 0.3);
   border: 2px solid rgba(255, 183, 197, 0.3);
   z-index: 100;
+  max-width: 320px;
   transition: all 0.3s ease;
-  max-width: 400px;
 }
 
 .countdown-header {
@@ -908,12 +906,20 @@ body {
   padding: 15px 20px;
   cursor: pointer;
   user-select: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.countdown-header h4 {
-  margin: 0;
+.countdown-header:hover {
+  background: rgba(255, 235, 245, 0.6);
+}
+
+.countdown-title {
   color: var(--ocolor);
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.3);
+  margin: 0;
 }
 
 .countdown-toggle-btn {
@@ -930,16 +936,20 @@ body {
   color: white;
   font-weight: bold;
   font-size: 16px;
+  box-shadow: 0 2px 8px rgba(255, 183, 197, 0.2);
 }
 
 .countdown-toggle-btn:hover {
   background: rgba(255, 183, 197, 1);
   transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 183, 197, 0.3);
 }
 
 .countdown-content {
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s ease, 
+              padding 0.4s ease;
   max-height: 200px;
   opacity: 1;
 }
@@ -954,35 +964,110 @@ body {
   display: flex;
   gap: 15px;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 0 20px 20px;
 }
 
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  padding: 10px;
+  background: rgba(255, 235, 245, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 183, 197, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 183, 197, 0.1);
+  transition: all 0.3s ease;
+}
+
+.countdown-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 183, 197, 0.2);
+  background: rgba(255, 235, 245, 0.8);
+}
+
+.countdown-number {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--ocolor);
+  text-shadow: 2px 2px 4px rgba(255, 183, 197, 0.2);
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 0.8em;
+  color: var(--vcolor);
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
 .toggle-arrow {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
 }
 
 .toggle-arrow.rotated {
   transform: rotate(180deg);
 }
 
-/* Mobile specific adjustments */
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
-  .countdown-container-collapsible {
-    position: fixed;
+  .countdown-container-collapsible-fixed {
     bottom: 10px;
-    left: 10px;
     right: 10px;
-    transform: none;
+    left: 10px;
     max-width: none;
+    padding: 0;
+  }
+  
+  .countdown-header {
+    padding: 12px 15px;
+  }
+  
+  .countdown-title {
+    font-size: 1.1em;
+  }
+  
+  .countdown-toggle-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
   }
   
   .countdown-timer {
-    gap: 10px;
+    gap: 8px;
+    padding: 0 15px 15px;
   }
   
   .countdown-item {
     min-width: 50px;
+    padding: 8px;
+  }
+  
+  .countdown-number {
+    font-size: 1.4em;
+  }
+  
+  .countdown-label {
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .countdown-timer {
+    gap: 6px;
+  }
+  
+  .countdown-item {
+    min-width: 45px;
     padding: 6px;
+  }
+  
+  .countdown-number {
+    font-size: 1.2em;
   }
 }
 
