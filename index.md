@@ -13,7 +13,7 @@ rain: false
   <div class="wedding-announcement">
     <h2>We're Getting Married!</h2>
     <h3><strong>February 3rd - 6th, 2026</strong></h3>
-    <h3><strong><a href="https://www.mirayagreens.com/" target="_blank"> Miraya Greens </a>, Bangalore, India</strong></h3>
+    <h3><strong><a href="https://www.mirayagreens.com/" target="_blank">Miraya Greens</a>, Bangalore, India</strong></h3>
   </div>
 
   <!-- Homepage Carousel with Correct Image Paths -->

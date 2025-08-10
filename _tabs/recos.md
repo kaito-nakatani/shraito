@@ -29,12 +29,11 @@ custom_js:
             <ul>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/kurta-jacket-set.html" target="_blank"> Kurta </a></strong> - you can wear them <a href="https://www.kalkifashion.com/global/ethnic/see-all-men-s-wear.html" target="_blank"> without a jacket </a> too.</li>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/sherwanis.html" target="_blank"> Sherwani </a></strong></li>
-                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/jodhpuris.html" target="_blank"> Bandghala / Jodupuri </a><strong></li>
+                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/jodhpuris.html" target="_blank"> Bandghala / Jodupuri </a></strong></li>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/indo-westerns-for-men.html" target="_blank"> Indo-Western </a></strong></li>
                 <li><strong> Western</strong></li>
             </ul>
-            <p>
-            For clothes shopping, 4th Block Jayanagar is a popular area in Bangalore with many options for ethnic and wedding wear. Here are some recommended shops:</p>
+            <p>For clothes shopping, 4th Block Jayanagar is a popular area in Bangalore with many options for ethnic and wedding wear. Here are some recommended shops:</p>
             <ul>
                 <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/uZXfdRw" target="_blank">Aarushe</a></strong></li>
                 <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/Reihsv6" target="_blank">Dazzles - Studio</a></strong></li>
