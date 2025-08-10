@@ -7,14 +7,13 @@ rain: false
 
 {% include navbar.html %}
 
-# <span class="shreya">Shreya</span> & <span class="kaito">Kaito</span>
+# <span class="shreya">Dr. Shreya Kishore</span> & <span class="kaito">Mr. Kaito Nakatani</span>
 
 <div class="center-content">
   <div class="wedding-announcement">
     <h2>We're Getting Married!</h2>
-    <h3><strong>February 3rd, 2026</strong></h3>
-    <h3><strong>Bangalore, India</strong></h3>
-    <p>Join us as we celebrate our love story and the beginning of our journey together.</p>
+    <h3><strong>February 3rd - 6th, 2026</strong></h3>
+    <h3><strong><a href="https://www.mirayagreens.com/" target="_blank"> Miraya Greens </a>, Bangalore, India</strong></h3>
   </div>
 
   <!-- Homepage Carousel with Correct Image Paths -->
@@ -49,9 +48,5 @@ rain: false
       </div>
       <div class="carousel-indicators" id="carouselIndicators"></div>
     </div>
-  </div>
-
-  <div class="couple-description">
-    <p><strong>Two hearts, two cultures, one beautiful love story.</strong> We met during our graduate studies and knew we had found something special. Now, we're excited to share our joy with family and friends from around the world.</p>
   </div>
 </div>

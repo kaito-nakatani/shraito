@@ -7,31 +7,31 @@
   
   <div class="nav-tabs single-row">
     <div class="tab {% if page.url == '/' or page.url == '/index.html' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/" class="nav-link home-link"> Home </a>
+      <a href="{{ '/' | relative_url }}" class="nav-link home-link"> Home </a>
     </div>
     
     <div class="tab {% if page.title == 'Event Schedule' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/events.html" class="nav-link">Events</a>
+      <a href="{{ '/tabs/events.html' | relative_url }}" class="nav-link">Events</a>
     </div>
     
     <div class="tab {% if page.title == 'Travel Information' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/travel-info.html" class="nav-link">Travel Info</a>
+      <a href="{{ '/tabs/travel-info.html' | relative_url }}" class="nav-link">Travel Info</a>
     </div>
     
     <div class="tab {% if page.title == 'Recommendations in Bangalore' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/recos.html" class="nav-link">Recommendations</a>
+      <a href="{{ '/tabs/recos.html' | relative_url }}" class="nav-link">Recommendations</a>
     </div>
     
     <div class="tab {% if page.title == 'Q&A' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/qa.html" class="nav-link">Q&A</a>
+      <a href="{{ '/tabs/qa.html' | relative_url }}" class="nav-link">Q&A</a>
     </div>
     
     <div class="tab {% if page.title == 'Gallery' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/gallery.html" class="nav-link">Gallery</a>
+      <a href="{{ '/tabs/gallery.html' | relative_url }}" class="nav-link">Gallery</a>
     </div>
     
     <div class="tab {% if page.title == 'RSVP' %}current-tab{% endif %}">
-      <a href="{{ site.baseurl }}/rsvp.html" class="nav-link">RSVP</a>
+      <a href="{{ '/tabs/rsvp.html' | relative_url }}" class="nav-link">RSVP</a>
     </div>
   </div>
 </div>
