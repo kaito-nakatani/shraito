@@ -3,10 +3,13 @@ layout: default
 custom_css:
   - main
   - enhanced-styles
+  - gallery-carousel
   - cherry-storm
 custom_js:
   - main
   - enhanced-styles
+  - enhanced-gallery
+  - gallery-carousel
   - cherry-storm
   - homepage-carousel 
 ---
@@ -23,7 +26,7 @@ custom_js:
     <h3><strong><a href="https://www.mirayagreens.com/" target="_blank">Miraya Greens</a>, Bangalore, India</strong></h3>
   </div>
 
-  <div class="homepage-carousel-container">
+  <div class="gallery-counsel">
     <div class="carousel-wrapper">
       <div class="carousel-track" id="carouselTrack">
         <div class="carousel-slide">
@@ -50,7 +53,15 @@ custom_js:
       </div>
       <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous photo">‹</button>
       <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next photo">›</button>
-      <div class="carousel-indicators" id="carouselIndicators"></div>
+      <div class="carousel-indicators" id="engagement-indicators">
+        <button class="indicator active" onclick="goToGallerySlide('engagement', 0)"></button>
+        <button class="indicator" onclick="goToGallerySlide('engagement', 1)"></button>
+        <button class="indicator" onclick="goToGallerySlide('engagement', 2)"></button>
+        <button class="indicator" onclick="goToGallerySlide('engagement', 3)"></button>
+        <button class="indicator" onclick="goToGallerySlide('engagement', 4)"></button>
+        <button class="indicator" onclick="goToGallerySlide('engagement', 5)"></button>
+        <button class="indicator" onclick="goToGallerySlide('engagement', 6)"></button>
+      </div>
     </div>
   </div>
 </div>
