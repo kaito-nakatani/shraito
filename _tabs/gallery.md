@@ -14,6 +14,7 @@ custom_css:
   <div class="section-tabs">
     <div class="section-tab active" data-section="engagement">💕 Engagement</div>
     <div class="section-tab" data-section="varsha-wedding">📸 Varsha Wedding</div>
+    <div class="section-tab" data-section="proposal">💍 Proposal</div>
     <div class="section-tab" data-section="family">👨‍👩‍👧‍👦 Family</div>
   </div>
 
@@ -76,6 +77,9 @@ custom_css:
           <div class="carousel-slide">
             <img src="{{ '/assets/varsha-wedding/photo4.jpg' | relative_url }}" alt="Varsha Wedding Photo 4" loading="lazy" onerror="this.src='./assets/varsha-wedding/photo4.jpg'">
           </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/varsha-wedding/photo5.jpg' | relative_url }}" alt="Varsha Wedding Photo 5" loading="lazy" onerror="this.src='./assets/varsha-wedding/photo5.jpg'">
+          </div>
         </div>
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('varsha-wedding', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('varsha-wedding', 1)">›</button>
@@ -85,6 +89,41 @@ custom_css:
         <button class="indicator" onclick="goToGallerySlide('varsha-wedding', 1)"></button>
         <button class="indicator" onclick="goToGallerySlide('varsha-wedding', 2)"></button>
         <button class="indicator" onclick="goToGallerySlide('varsha-wedding', 3)"></button>
+        <button class="indicator" onclick="goToGallerySlide('varsha-wedding', 4)"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROPOSAL SECTION -->
+  <div id="proposal-section" class="gallery-section">
+    <div class="gallery-carousel" id="proposal-carousel">
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="proposal-track">
+          <div class="carousel-slide">
+            <img src="{{ '/assets/proposal/photo1.jpg' | relative_url }}" alt="Varsha Wedding Photo 1" loading="lazy" onerror="this.src='./assets/proposal/photo1.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/proposal/photo2.jpg' | relative_url }}" alt="Varsha Wedding Photo 2" loading="lazy" onerror="this.src='./assets/proposal/photo2.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/proposal/photo3.jpg' | relative_url }}" alt="Varsha Wedding Photo 3" loading="lazy" onerror="this.src='./assets/proposal/photo3.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/proposal/photo4.jpg' | relative_url }}" alt="Varsha Wedding Photo 4" loading="lazy" onerror="this.src='./assets/proposal/photo4.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/proposal/photo5.jpg' | relative_url }}" alt="Varsha Wedding Photo 5" loading="lazy" onerror="this.src='./assets/proposal/photo5.jpg'">
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('proposal', -1)">‹</button>
+        <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('proposal', 1)">›</button>
+      </div>
+      <div class="carousel-indicators" id="proposal-indicators">
+        <button class="indicator active" onclick="goToGallerySlide('proposal', 0)"></button>
+        <button class="indicator" onclick="goToGallerySlide('proposal', 1)"></button>
+        <button class="indicator" onclick="goToGallerySlide('proposal', 2)"></button>
+        <button class="indicator" onclick="goToGallerySlide('proposal', 3)"></button>
+        <button class="indicator" onclick="goToGallerySlide('proposal', 4)"></button>
       </div>
     </div>
   </div>
