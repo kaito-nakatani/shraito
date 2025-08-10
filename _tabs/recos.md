@@ -17,9 +17,7 @@ custom_js:
         </div>
         <div class="qa-answer">
             <p> You can wear anything you are comfortable in for any event! There are no rules or colors to avoid, we just want you to be comfortable and have the best time. However, if you would like, there are loads of different types of Indian clothing you could wear.</p>
-            <p>
-            For women:
-            </p>
+            <p>For women:</p>
             <ul>
                 <li><strong><a href="https://www.kalkifashion.com/global/lehengas.html" target="_blank"> Lehenga </a></strong></li>
                 <li><strong><a href="https://www.kalkifashion.com/global/sarees.html" target="_blank"> Saree </a></strong> - Bangalore is famous for silk saree called Kanjivaram Sarees. While sarees can be hard to wear on your own without prior experience, you can get ready-to-wear saree. </li>
@@ -27,8 +25,7 @@ custom_js:
                 <li><strong><a href="https://www.kalkifashion.com/global/indo-western.html" target="_blank"> Indo-Western </a></strong></li>
                 <li><strong> Western</strong></li>
             </ul>
-            For men:
-            </p>
+            <p>For men:</p>
             <ul>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/kurta-jacket-set.html" target="_blank"> Kurta </a></strong> - you can wear them <a href="https://www.kalkifashion.com/global/ethnic/see-all-men-s-wear.html" target="_blank"> without a jacket </a> too.</li>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/sherwanis.html" target="_blank"> Sherwani </a></strong></li>

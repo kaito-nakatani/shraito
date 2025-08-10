@@ -1,6 +1,15 @@
+def crop_center_square(img):
+    width, height = img.size
+    min_dim = min(width, height)
+    left = (width - min_dim) // 2
+    top = (height - min_dim) // 2
+    right = left + min_dim
+    bottom = top + min_dim
+    return img.crop((left, top, right, bottom))
+
 default_src = 'assets/_engagement/'
 default_tgt = 'assets/engagement/'
-default_size = (1000,1000)
+default_size = (1400,1400)
 
 import argparse
 parser = argparse.ArgumentParser(
@@ -22,6 +31,7 @@ for fn in os.listdir(args.src):
         continue
     im = Image.open(os.path.join(args.src, fn))
     im_fixed = ImageOps.exif_transpose(im)
-    im_fixed.thumbnail(args.size)
-    im_fixed.save(os.path.join(args.tgt, f'photo{num}.jpg'), "jpeg")
+    im_square = crop_center_square(im_fixed)
+    im_square.thumbnail(args.size)
+    im_square.save(os.path.join(args.tgt, f'photo{num}.jpg'), "jpeg")
     num += 1
