@@ -31,7 +31,7 @@ custom_js:
             <span class="qa-icon">+</span>
             <strong>🌏 Tourist Destinations Across India</strong>
         </div>
-        <div class="qa-answer", id="destination">
+        <div class="qa-answer">
             <p>India is a vast country with many famous destinations outside Bangalore. Here are some highlights by region:</p>
             <ul>
                 <li><strong>Northern India</strong>
@@ -132,7 +132,7 @@ custom_js:
             <span class="qa-icon">+</span>
             <strong>🛍️ Clothes Shopping</strong>
         </div>
-        <div class="qa-answer", id="clothes">
+        <div class="qa-answer">
             <p>For clothes shopping, 4th Block Jayanagar is a popular area in Bangalore with many options for ethnic and wedding wear. Here are some recommended shops:</p>
             <ul>
                 <li><strong><a href="https://g.co/kgs/uZXfdRw" target="_blank">Aarushe</a></strong></li>
