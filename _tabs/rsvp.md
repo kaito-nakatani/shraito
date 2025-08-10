@@ -7,20 +7,18 @@ custom_css:
 ---
 
 <div class="rsvp-coming-soon">
-    <div class="cultural-decoration cherry-motif"></div>
+    <div class="cultural-decoration"></div>
     <h1>RSVP</h1>
     <div class="coming-soon-message">
         <h2>Coming Soon</h2>
         <p>We're putting the finishing touches on our RSVP system!</p>
         <p>In the meantime, please reach out to us directly with any questions.</p>
-        
         <div class="contact-info">
             <p><strong>Contact:</strong></p>
-            <p>Email: kaitonakatani1998@gmail.com</p>
-            <p>Phone: [Your contact number]</p>
+            <p>Email: kaitonakatani1998@gmail.com / shreyakishore1998@gmail.com</p>
+            <p>WhatsApp: +852-9387-5920 (Kaito) / +1-650-772-2399 (Shreya)</p>
         </div>
     </div>
-    <div class="cultural-decoration lotus-motif"></div>
 </div>
 
 <style>
@@ -55,18 +53,6 @@ custom_css:
     width: 60px;
     height: 60px;
     opacity: 0.2;
-}
-
-.cherry-motif {
-    top: 20px;
-    left: 20px;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="5" fill="%23ffb3d9"/></svg>') no-repeat center;
-}
-
-.lotus-motif {
-    bottom: 20px;
-    right: 20px;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><ellipse cx="50" cy="50" rx="8" ry="12" fill="%2300cccc"/></svg>') no-repeat center;
 }
 
 .contact-info {
