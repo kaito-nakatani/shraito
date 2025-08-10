@@ -1,6 +1,6 @@
 /* Gallery Carousel Styles */
 .sectional-gallery {
-  max-width: 1000px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -55,7 +55,7 @@
 }
 
 .gallery-carousel {
-  max-width: 900px;
+  max-width: 500px;
   margin: 0 auto;
 }
 

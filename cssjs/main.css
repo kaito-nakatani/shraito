@@ -346,7 +346,7 @@ strong, b {
 
 /* Homepage Carousel Styles */
 .homepage-carousel-container {
-  max-width: 800px;
+  max-width: 500px;
   margin: 40px auto;
   position: relative;
 }
