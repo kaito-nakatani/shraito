@@ -101,47 +101,6 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Home Button Specific Styling */
-.nav-tabs .tab a .home-icon {
-  font-size: 1.2em;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-/* Highlight home button when on homepage */
-.nav-tabs .tab.current-tab a .home-icon {
-  animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-  from { 
-    text-shadow: 0 0 5px rgba(255, 183, 197, 0.5);
-  }
-  to { 
-    text-shadow: 0 0 10px rgba(255, 183, 197, 0.8), 
-                 0 0 15px rgba(255, 183, 197, 0.6);
-  }
-}
-
-/* Mobile adjustments for home button */
-@media screen and (max-width: 768px) {
-  .nav-tabs .tab a .home-icon {
-    font-size: 1.1em;
-    margin-right: 3px;
-  }
-}
-
-.nav-tabs .tab.current-tab {
-    background: linear-gradient(135deg, 
-        rgba(255, 183, 197, 0.3) 0%, 
-        rgba(227, 170, 181, 0.3) 100%);
-    border-color: rgba(255, 183, 197, 0.8);
-    font-weight: 600;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 183, 197, 0.4);
-}
-
-
 /* Main Content Enhancement */
 .main-content-enhanced {
     position: relative;

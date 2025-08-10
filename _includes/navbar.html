@@ -1,16 +1,9 @@
 <navbar class="enhanced-navbar">
-    <div class="nav-home">
-        <a href="{{ '/' | relative_url }}">
-            <span class="shreya">Shreya</span>
-            &
-            <span class="kaito">Kaito</span>
-        </a>
-    </div>
-    
     <div class="nav-tabs single-row">
-
         <div class="tab {% if page.url == '/' or page.url == '/index.html' %}current-tab{% endif %}">
-            <a href="{{ site.baseurl }}/"> Home </a>
+            <a href="{{ '/' | relative_url }}"> <span class="shreya">Shreya</span>
+            &
+            <span class="kaito">Kaito</span> </a>
         </div>
         <div class="nav-item tab {% if page.url == '/tabs/events.html' %}current-tab{% endif %}">
             <a href="{{ '/tabs/events.html' | relative_url }}">Events</a>

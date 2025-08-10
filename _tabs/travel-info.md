@@ -69,7 +69,7 @@ custom_js:
                     <strong>Airport WiFi</strong>
                 </div>
                 <div class="subsection-content" id="airport-wifi">
-                    <p>WiFi in Indian airports is a bit annoying: in order to connect to airport wifi, you will need to provide a verification code sent by SMS to a phone number. If you don’t have a working phone connection in India and need to use the airport WiFi, go to the information desk, or ask the airport staff. The attendant at the information desk can either give you a one-time use code or use their own mobile device to receive your verification code.</p>
+                    <p>WiFi in Indian airports is a bit annoying: in order to connect to airport wifi, you will need to provide a verification code sent by SMS to a phone number. If you don’t have a working phone connection in India and need to use the airport WiFi, ask the information desk or find a Wi-Fi kiosk. At the information desk, the attendant at the information desk can either give you a one-time use code or use their own mobile device to receive your verification code. At the kiosk, you can scan your passport to receive a one-time code.</p>
                 </div>
             </div>
             <!-- Subsection: Currency -->
@@ -79,13 +79,13 @@ custom_js:
                     <strong>Currency</strong>
                 </div>
                 <div class="subsection-content" id="currency">
-                    <p>The currency used in India is the rupee (₹ / INR). India has extensive digital infrastructure, and so credit cards can be used to pay in most places. However, unless using an Indian credit card, this method of payment will typically incur a small currency exchange fee—unless your card offers the “no foreign transaction fee” benefit. For more details about cards without foreign transaction fees, consult your bank or credit card company. Physical money can be useful in some situations (e.g., at roadside shops), and so it may be worth exchanging for local currency. Currency can be exchanged at the airport or in the city. The airport is convenient, but may not have the most generous exchange rate.</p>
+                    <p>The currency used in India is the rupee (₹ / INR). India has extensive digital infrastructure, and so credit cards can be used to pay in most places. However, physical money can be useful in some situations (e.g., at street food shops), and so it may be worth exchanging for local currency. Currency can be exchanged at the airport or in the city. The airport is convenient, but may not have the most generous spread.</p>
                 </div>
             </div>
             <div class="subsection">
                 <div class="subsection-header" onclick="toggleSubsection(this, 'transportation')">
                     <span class="subsection-icon">▶</span>
-                    <strong>Transportation</strong>
+                    <strong>Airport Transportation</strong>
                 </div>
                 <div class="subsection-content" id="transportation">
                     <p>To travel to/from the airport you can use Uber. The airport should have signs directing you to where the Uber pickup spot is. Once you make the booking, you will not be assigned to a specific driver but only given a OTP (one-time password). At the pickup spot, you will give the Uber driver the OTP, and your ride will start!</p>
@@ -98,7 +98,7 @@ custom_js:
                     <strong>Phone Plans and SIM Cards</strong>
                 </div>
                 <div class="subsection-content" id="phone-sim">
-                    <p>Most carriers offer some sort of an international roaming plan for India. Yet these plans can be relatively expensive; it is likely to be cheaper to get a local SIM in India (a country in which data is notoriously affordable). Note that, to use a local sim, your phone cannot be carrier-locked. If your phone is unlocked and you would like us to arrange a physical local SIM card for you, let us know on the RSVP form. A local SIM may also be purchased in the airport. If you don’t want a physical SIM, there are eSIMs like this one: <a href="https://bytesim.com/">ByteSIM</a>.</p>
+                    <p>Most carriers offer some sort of an international roaming plan for India. Yet these plans can be relatively expensive; it is likely to be cheaper to get a local SIM in India. Note that, to use a local sim, your phone cannot be carrier-locked. A local SIM may also be purchased in the airport. If you don’t want a physical SIM, there are eSIMs like this one: <a href="https://bytesim.com/">ByteSIM</a>.</p>
                 </div>
             </div>
         </div>
