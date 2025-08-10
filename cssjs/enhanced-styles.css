@@ -323,35 +323,32 @@ body {
   padding: 0;
 }
 
+/* Desktop Wedding Countdown - Force Single Row */
 .countdown-timer {
   display: flex;
   gap: 15px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* CHANGED: Prevent wrapping */
   padding: 0 20px 20px;
+  min-width: 320px; /* Ensure minimum width */
 }
 
 .countdown-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 60px;
-  padding: 10px;
+  min-width: 55px; /* REDUCED: Smaller width for single row */
+  padding: 8px; /* REDUCED: Smaller padding */
   background: rgba(255, 235, 245, 0.6);
   border-radius: 12px;
   border: 1px solid rgba(255, 183, 197, 0.2);
   box-shadow: 0 2px 8px rgba(255, 183, 197, 0.1);
   transition: all 0.3s ease;
-}
-
-.countdown-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 183, 197, 0.2);
-  background: rgba(255, 235, 245, 0.8);
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .countdown-number {
-  font-size: 1.8em;
+  font-size: 1.6em; /* REDUCED: Smaller font size */
   font-weight: bold;
   color: var(--ocolor);
   text-shadow: 2px 2px 4px rgba(255, 183, 197, 0.2);
@@ -359,13 +356,25 @@ body {
 }
 
 .countdown-label {
-  font-size: 0.8em;
+  font-size: 0.75em; /* REDUCED: Smaller label text */
   color: var(--vcolor);
-  margin-top: 5px;
+  margin-top: 3px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 500;
 }
+
+/* Ensure container doesn't expand on desktop */
+@media screen and (min-width: 769px) {
+  .countdown-container-collapsible-fixed {
+    max-width: 320px; /* FIXED: Maximum width */
+  }
+  
+  .countdown-timer {
+    gap: 12px; /* Tighter gap on desktop */
+  }
+}
+
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
@@ -605,11 +614,11 @@ body {
     transform: translateY(0px);
 }
 
-/* Enhanced Google Calendar Button Styling - Fixed Icon Alignment */
+/* Fixed Google Calendar Button Styling - Icon Alignment */
 .add-to-calendar-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* Reduced gap for better alignment */
+  gap: 6px; /* Reduced gap for better alignment */
   background: linear-gradient(135deg, 
     rgba(66, 133, 244, 0.9) 0%, 
     rgba(52, 168, 83, 0.9) 100%);
@@ -622,23 +631,25 @@ body {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  vertical-align: middle; /* Ensure proper alignment */
+  vertical-align: middle;
 }
 
 .calendar-icon {
-  font-size: 1.1em; /* Slightly smaller to match text better */
-  line-height: 1; /* Remove line height variations */
+  font-size: 1em; /* Match text size exactly */
+  line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  animation: pulse 2s infinite;
+  margin: 0; /* Remove any default margins */
 }
 
-/* Ensure text aligns properly with icon */
+/* Ensure both elements are perfectly aligned */
 .add-to-calendar-btn span,
 .add-to-calendar-btn .calendar-icon {
   vertical-align: middle;
   line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
 }
 
 
@@ -918,51 +929,57 @@ body {
     }
 }
 
-/* Enhanced Mobile Tab Navigation with Slider Indicator */
+/* Enhanced Mobile Tab Navigation with Fixed Left Alignment */
 @media screen and (max-width: 768px) {
   .enhanced-navbar {
     position: relative;
+    padding: 15px 10px; /* Reduced padding */
   }
   
   .nav-tabs.single-row {
-    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* CHANGED: Left align instead of center */
+    gap: 10px;
+    margin-top: 15px;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 0 20px;
-    margin-bottom: 10px;
+    padding: 0 15px 15px 15px; /* Add bottom padding for slide indicator */
+    margin-bottom: 0;
   }
   
   .nav-tabs.single-row::-webkit-scrollbar {
     display: none;
   }
   
-  /* Remove arrow indicators - DELETE these if they exist */
-  .nav-tabs.single-row::before,
-  .nav-tabs.single-row::after {
-    display: none !important;
-  }
-  
-  /* Add slider indicator */
+  /* Add slide indicator at bottom */
   .nav-tabs.single-row::after {
     content: '';
     position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 4px;
+    bottom: 5px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
     background: linear-gradient(90deg, 
-      rgba(255, 183, 197, 0.3) 0%, 
-      rgba(255, 183, 197, 0.8) 50%, 
-      rgba(255, 183, 197, 0.3) 100%);
+      rgba(255, 183, 197, 0.2) 0%, 
+      rgba(255, 183, 197, 0.8) 30%, 
+      rgba(255, 183, 197, 0.8) 70%, 
+      rgba(255, 183, 197, 0.2) 100%);
     border-radius: 2px;
-    display: block !important;
-    animation: slideIndicator 2s ease-in-out infinite;
+    display: block;
+  }
+  
+  .nav-tabs.single-row .tab {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 10px 16px;
+    font-size: 0.9em;
   }
 }
+
 
 @keyframes slideIndicator {
   0%, 100% { 
