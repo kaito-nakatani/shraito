@@ -11,7 +11,7 @@ custom_css:
     <div class="coming-soon-message">
         <h2>RSVP Form</h2>
         <p>Here is the official RSVP form. If you know your flight information already, please let us know as well!</p>
-        <p>In the meantime, please reach out to us directly with any questions.</p>
+        <p>If you'd like, please reach out to us directly with any questions.</p>
         <div class="contact-info">
             <p><strong>Contact:</strong></p>
             <p>Email: kaitonakatani1998@gmail.com / shreyakishore1998@gmail.com</p>
