@@ -64,3 +64,83 @@ custom_js:
     </div>
   </div>
 </div>
+
+<script>
+// Gallery carousel functionality
+let galleryCarousels = {
+  'engagement': { currentIndex: 0, totalSlides: 7 },
+  'varsha-wedding': { currentIndex: 0, totalSlides: 4 },
+  'family': { currentIndex: 0, totalSlides: 7 }
+};
+
+// Section tab functionality - FIXED VERSION
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.section-tab');
+  const sections = document.querySelectorAll('.gallery-section');
+  
+  console.log('Found tabs:', tabs.length);
+  console.log('Found sections:', sections.length);
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const sectionId = this.dataset.section;
+      console.log('Clicked tab for section:', sectionId);
+      
+      // Update active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Update active section
+      sections.forEach(s => s.classList.remove('active'));
+      const targetSection = document.getElementById(sectionId + '-section');
+      console.log('Target section:', targetSection);
+      
+      if (targetSection) {
+        targetSection.classList.add('active');
+      } else {
+        console.error('Section not found:', sectionId + '-section');
+      }
+    });
+  });
+});
+
+function navigateGalleryCarousel(sectionId, direction) {
+  const carousel = galleryCarousels[sectionId];
+  if (!carousel) {
+    console.error('Carousel not found for section:', sectionId);
+    return;
+  }
+  
+  let newIndex = carousel.currentIndex + direction;
+  
+  if (newIndex < 0) newIndex = carousel.totalSlides - 1;
+  if (newIndex >= carousel.totalSlides) newIndex = 0;
+  
+  goToGallerySlide(sectionId, newIndex);
+}
+
+function goToGallerySlide(sectionId, slideIndex) {
+  const carousel = galleryCarousels[sectionId];
+  if (!carousel) {
+    console.error('Carousel not found for section:', sectionId);
+    return;
+  }
+  
+  carousel.currentIndex = slideIndex;
+  
+  const track = document.getElementById(sectionId + '-track');
+  const indicators = document.querySelectorAll(`#${sectionId}-indicators .indicator`);
+  
+  if (track) {
+    const translateX = -slideIndex * 100;
+    track.style.transform = `translateX(${translateX}%)`;
+  } else {
+    console.error('Track not found:', sectionId + '-track');
+  }
+  
+  // Update indicators
+  indicators.forEach((indicator, index) => {
+    indicator.classList.toggle('active', index === slideIndex);
+  });
+}
+</script>
