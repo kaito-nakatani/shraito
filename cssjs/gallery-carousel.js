@@ -22,16 +22,14 @@ class GalleryCarousel {
     // You'll need to create a JSON file or update this with actual file names
     this.imageData = {
       'engagement': [
-        'assets/engagement/img1.jpg',
-        'assets/engagement/img2.jpg',
-        // Add all your engagement photos
-      ],
-      'varsha-wedding': [
-        'assets/varsha-wedding/img1.jpg',
-        'assets/varsha-wedding/img2.jpg',
-        // Add all your varsha-wedding photos
-      ],
-      // Continue for other folders...
+        'assets/engagement/photo1.jpg',
+        'assets/engagement/photo2.jpg',
+        'assets/engagement/photo3.jpg',
+        'assets/engagement/photo4.jpg',
+        'assets/engagement/photo5.jpg',
+        'assets/engagement/photo6.jpg',
+        'assets/engagement/photo7.jpg'
+      ]
     };
   }
 
