@@ -7,11 +7,11 @@ rain: false
 
 {% include navbar.html %}
 
-# <span class="shreya">Dr. Shreya Kishore</span> & <span class="kaito">Mr. Kaito Nakatani</span>
+# <span class="shreya"> Shreya </span> & <span class="kaito"> Kaito </span>
 
 <div class="center-content">
   <div class="wedding-announcement">
-    <h2>We're Getting Married!</h2>
+    <h2>We are Getting Married!</h2>
     <h3><strong>February 3rd - 6th, 2026</strong></h3>
     <h3><strong><a href="https://www.mirayagreens.com/" target="_blank">Miraya Greens</a>, Bangalore, India</strong></h3>
   </div>

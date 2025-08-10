@@ -20,14 +20,14 @@ custom_js:
             <p>For women:</p>
             <ul>
                 <li><strong><a href="https://www.kalkifashion.com/global/lehengas.html" target="_blank"> Lehenga </a></strong></li>
-                <li><strong><a href="https://www.kalkifashion.com/global/sarees.html" target="_blank"> Saree </a></strong> - Bangalore is famous for silk saree called Kanjivaram Sarees. While sarees can be hard to wear on your own without prior experience, you can get ready-to-wear saree. </li>
+                <li><strong><a href="https://www.kalkifashion.com/global/sarees.html" target="_blank"> Saree</a></strong> - Bangalore is famous for silk sarees called Kanjivaram Sarees. While sarees can be hard to wear on your own without prior experience, you can get ready-to-wear saree. </li>
                 <li><strong><a href="https://www.kalkifashion.com/global/salwar-kameez.html" target="_blank"> Salwar Kameez</a></strong> - There are different styles such as <a href="https://www.kalkifashion.com/global/salwar-kameez/anarkali-suits.html" target="_blank"> Anarkali Suit </a> or <a href="https://www.kalkifashion.com/global/salwar-kameez/sharara-suits.html" target="_blank"> Sharara Suit</a>.</li>
                 <li><strong><a href="https://www.kalkifashion.com/global/indo-western.html" target="_blank"> Indo-Western </a></strong></li>
                 <li><strong> Western</strong></li>
             </ul>
             <p>For men:</p>
             <ul>
-                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/kurta-jacket-set.html" target="_blank"> Kurta </a></strong> - you can wear them <a href="https://www.kalkifashion.com/global/ethnic/see-all-men-s-wear.html" target="_blank"> without a jacket </a> too.</li>
+                <li><strong><a href="https://www.kalkifashion.com/global/ethnic/kurta-jacket-set.html" target="_blank"> Kurta</a></strong> - you can wear them <a href="https://www.kalkifashion.com/global/ethnic/see-all-men-s-wear.html" target="_blank"> without a jacket</a> too.</li>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/sherwanis.html" target="_blank"> Sherwani </a></strong></li>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/jodhpuris.html" target="_blank"> Bandghala / Jodupuri </a></strong></li>
                 <li><strong><a href="https://www.kalkifashion.com/global/ethnic/indo-westerns-for-men.html" target="_blank"> Indo-Western </a></strong></li>

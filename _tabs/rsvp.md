@@ -8,10 +8,9 @@ custom_css:
 
 <div class="rsvp-coming-soon">
     <div class="cultural-decoration"></div>
-    <h1>RSVP</h1>
     <div class="coming-soon-message">
-        <h2>Coming Soon</h2>
-        <p>We're putting the finishing touches on our RSVP system!</p>
+        <h2>RSVP Form</h2>
+        <p>Here is the official RSVP form. If you know your flight information already, please let us know as well!</p>
         <p>In the meantime, please reach out to us directly with any questions.</p>
         <div class="contact-info">
             <p><strong>Contact:</strong></p>
