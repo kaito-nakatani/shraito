@@ -39,7 +39,7 @@ custom_js:
             <div class="evt-summary">
                 {{ evt.content | truncatewords: 30 }}
             </div>
-            {% if evt.content contains ":" and evt.content.size > 150 %}
+            {% if evt.rituals %}
             <div class="evt-rituals-toggle">
                 <button class="rituals-btn" onclick="toggleRituals('{{ evt.name | slugify }}')">
                 <span class="toggle-icon">+</span> Learn about the rituals
@@ -47,7 +47,7 @@ custom_js:
             </div>
             <div class="evt-rituals-content" id="{{ evt.name | slugify }}-rituals" style="display: none;">
                 <div class="ritual-descriptions">
-                {{ evt.content | remove_first: evt.content | split: ": " | join: ":" }}
+                {{ evt.rituals }}
                 </div>
             </div>
             {% endif %}
