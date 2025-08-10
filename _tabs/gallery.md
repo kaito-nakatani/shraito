@@ -44,11 +44,9 @@ custom_css:
             <img src="{{ '/assets/engagement/photo7.jpg' | relative_url }}" alt="Engagement Photo 7" loading="lazy" onerror="this.src='./assets/engagement/photo7.jpg'">
           </div>
         </div>
-        
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('engagement', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('engagement', 1)">›</button>
       </div>
-      
       <div class="carousel-indicators" id="engagement-indicators">
         <button class="indicator active" onclick="goToGallerySlide('engagement', 0)"></button>
         <button class="indicator" onclick="goToGallerySlide('engagement', 1)"></button>
