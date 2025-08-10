@@ -367,11 +367,37 @@ body {
 /* Ensure container doesn't expand on desktop */
 @media screen and (min-width: 769px) {
   .countdown-container-collapsible-fixed {
-    max-width: 320px; /* FIXED: Maximum width */
+    max-width: 450px; /* FIXED: Maximum width */
+    min-width: 400px; /* ADDED: Minimum width */
   }
   
   .countdown-timer {
-    gap: 12px; /* Tighter gap on desktop */
+    gap: 20px; /* INCREASED: More space between items */
+    padding: 0 25px 25px; /* INCREASED: More padding */
+    min-width: 380px; /* ADDED: Ensure minimum width */
+  }
+  
+  .countdown-item {
+    min-width: 70px; /* INCREASED: From 55px to 70px */
+    padding: 12px; /* INCREASED: From 8px to 12px */
+    flex-shrink: 0;
+  }
+  
+  .countdown-number {
+    font-size: 2em; /* INCREASED: From 1.6em to 2em */
+    font-weight: bold;
+    color: var(--ocolor);
+    text-shadow: 2px 2px 4px rgba(255, 183, 197, 0.2);
+    line-height: 1;
+  }
+  
+  .countdown-label {
+    font-size: 0.85em; /* INCREASED: From 0.75em to 0.85em */
+    color: var(--vcolor);
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
   }
 }
 
