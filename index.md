@@ -11,7 +11,6 @@ custom_js:
   - enhanced-gallery
   - gallery-carousel
   - cherry-storm
-  - homepage-carousel 
 ---
 
 
@@ -51,16 +50,16 @@ custom_js:
           <img src="{{ '/assets/select_photos/photo7.jpg' | relative_url }}" alt="Shreya & Kaito" onerror="this.src='./assets/select_photos/photo7.jpg'">
         </div>
       </div>
-      <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous photo">‹</button>
-      <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next photo">›</button>
-      <div class="carousel-indicators" id="engagement-indicators">
-        <button class="indicator active" onclick="goToGallerySlide('engagement', 0)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 1)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 2)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 3)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 4)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 5)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 6)"></button>
+      <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('select_photos', -1)">‹</button>
+      <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('select_photos', 1)">›</button>
+      <div class="carousel-indicators" id="select_photos-indicators">
+        <button class="indicator active" onclick="goToGallerySlide('select_photos', 0)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 1)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 2)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 3)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 4)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 5)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 6)"></button>
       </div>
     </div>
   </div>
