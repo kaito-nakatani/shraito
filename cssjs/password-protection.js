@@ -107,22 +107,20 @@
     
     // Initialize password protection
     function initializePasswordProtection() {
-
+        // If already authenticated, show content immediately WITHOUT showing password form
         if (isAuthenticated()) {
-        const overlay = document.getElementById('password-overlay');
-        if (overlay) {
-          overlay.style.display = 'none';
-          overlay.style.visibility = 'hidden';
-          overlay.remove(); // ADDED: Remove completely
+            const overlay = document.getElementById('password-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+            }
+            
+            const mainContent = document.getElementById('main-content');
+            if (mainContent) {
+                mainContent.style.display = 'block';
+                mainContent.style.opacity = '1';
+            }
+            return;
         }
-        
-        const mainContent = document.getElementById('main-content');
-        if (mainContent) {
-          mainContent.style.display = 'block';
-          mainContent.style.opacity = '1';
-        }
-        return;
-       }
         
         // Only show password form if NOT authenticated
         const overlay = document.getElementById('password-overlay');
@@ -159,25 +157,3 @@
     }
     
 })();
-
-// Add this function after the existing code in password-protection.js
-function preventPasswordFlash() {
-  // If authenticated, immediately hide password overlay
-  if (isAuthenticated()) {
-    const overlay = document.getElementById('password-overlay');
-    if (overlay) {
-      overlay.style.display = 'none !important';
-      overlay.style.visibility = 'hidden';
-      overlay.remove(); // Remove from DOM completely
-    }
-    
-    const mainContent = document.getElementById('main-content');
-    if (mainContent) {
-      mainContent.style.display = 'block';
-      mainContent.style.opacity = '1';
-    }
-  }
-}
-
-// Call this function immediately when script loads
-preventPasswordFlash();

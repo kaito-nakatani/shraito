@@ -2,6 +2,8 @@
 title_short: Gallery
 title: Gallery
 layout: tab
+custom_js:
+  - gallery-carousel
 custom_css:
   - enhanced-gallery
   - gallery-carousel
