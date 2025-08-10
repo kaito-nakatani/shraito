@@ -2,7 +2,7 @@
     <div class="nav-home">
         <a href="{{ '/' | relative_url }}">
             <span class="shreya">Shreya</span>
-            <span class="shreya"> & </span>
+            & </span>
             <span class="kaito">Kaito</span>
         </a>
     </div>
@@ -11,27 +11,18 @@
         <div class="nav-item tab {% if page.url == '/tabs/events.html' %}current-tab{% endif %}">
             <a href="{{ '/tabs/events.html' | relative_url }}">Events</a>
         </div>
-
-        <div class="nav-item tab {% if page.url == '/tabs/culture.html' %}current-tab{% endif %}">
-            <a href="{{ '/tabs/culture.html' | relative_url }}">Culture</a>
-        </div>
-        
-        <div class="nav-item tab {% if page.url == '/tabs/gallery.html' %}current-tab{% endif %}">
-            <a href="{{ '/tabs/gallery.html' | relative_url }}">Gallery</a>
-        </div>
-        
         <div class="nav-item tab {% if page.url == '/tabs/travel-info.html' %}current-tab{% endif %}">
             <a href="{{ '/tabs/travel-info.html' | relative_url }}">Travel Info</a>
         </div>
-        
         <div class="nav-item tab {% if page.url == '/tabs/recos.html' %}current-tab{% endif %}">
-            <a href="{{ '/tabs/recos.html' | relative_url }}">Recos</a>
+            <a href="{{ '/tabs/recos.html' | relative_url }}">Recommendations</a>
         </div>
-        
         <div class="nav-item tab {% if page.url == '/tabs/qa.html' %}current-tab{% endif %}">
             <a href="{{ '/tabs/qa.html' | relative_url }}">Q&A</a>
         </div>
-        
+        <div class="nav-item tab {% if page.url == '/tabs/gallery.html' %}current-tab{% endif %}">
+            <a href="{{ '/tabs/gallery.html' | relative_url }}">Gallery</a>
+        </div>
         <div class="rsvp">
             <a href="{{ '/tabs/rsvp.html' | relative_url }}">RSVP</a>
         </div>

@@ -1624,43 +1624,6 @@ body {
     transform: scale(1.1);
 }
 
-/* CULTURE PAGE STYLES */
-.culture-page {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px 40px;
-}
-
-.culture-intro {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 30px;
-    background: rgba(255, 245, 250, 0.8);
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(255, 183, 197, 0.1);
-}
-
-.culture-block {
-    background: rgba(255, 245, 250, 0.6);
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-    border-left: 5px solid var(--ocolor);
-    box-shadow: 0 4px 15px rgba(255, 183, 197, 0.1);
-}
-
-.culture-block h2 {
-    color: var(--ocolor);
-    margin-bottom: 20px;
-    font-size: 1.6em;
-}
-
-.tradition-content h3 {
-    color: var(--vcolor);
-    margin: 20px 0 10px 0;
-    font-size: 1.2em;
-}
-
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .hero-gallery {
@@ -1698,14 +1661,6 @@ body {
         width: 40px;
         height: 40px;
         font-size: 16px;
-    }
-    
-    .culture-page {
-        padding: 20px 15px;
-    }
-    
-    .culture-block {
-        padding: 20px 15px;
     }
 }
 
