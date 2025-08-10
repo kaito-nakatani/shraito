@@ -15,7 +15,7 @@ custom_js:
 <h1>{{page.title}}</h1>
 
 <p class="event-intro">Feel free to wear anything you'd like for all of the events. The attire listed below is just a suggestion in case you are looking for inspiration. 
-    If you need any recommendations, please look at the <a href="/{{ site.baseurl }}tabs/recos.html#clothes-shopping" class="internal-link">clothes section</a> of our recommendations.</p>
+    If you need any recommendations, please look at the <a href="/{{ site.baseurl }}tabs/recos.html#clothes-shopping">clothes section</a> of our recommendations.</p>
 
 {% assign i = 0 %}
 {% assign evts_sorted = site.evts | sort : "start" %}
@@ -58,8 +58,7 @@ custom_js:
                 {% capture gcal_url %}https://calendar.google.com/calendar/render?action=TEMPLATE&text={{ evt.title | url_encode }}&dates={{ evt.start | date: "%Y%m%dT%H%M%SZ" }}/{{ evt.end | date: "%Y%m%dT%H%M%SZ" }}&details={{ evt.desc | url_encode }}&location={{ evt.location | url_encode }}{% endcapture %}
                 
                 <a href="{{ gcal_url }}" target="_blank" class="add-to-calendar-btn" rel="nofollow">
-                    <span class="calendar-icon">📅</span>
-                    Add to Google Calendar
+                    <span class="calendar-icon">📅</span> Add to Google Calendar
                 </a>
             </div>
         </div>
