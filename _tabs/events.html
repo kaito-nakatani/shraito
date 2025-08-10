@@ -5,7 +5,6 @@ layout: default
 custom_css:
   - calendar
   - enhanced-styles
-  - events-sidebar
 ---
 
 {% include navbar.html %}
@@ -13,21 +12,14 @@ custom_css:
 <div class="page-content">
 <h1>{{page.title}}</h1>
 
-<p class="event-intro">Here are all the details for our wedding celebration! We can't wait to celebrate with you.</p>
-
-<p class="attire-note">(Feel free to wear anything you'd like for all of the events. The attire listed below is just a suggestion in case you are looking for inspiration.)</p>
+<p class="event-intro">Feel free to wear anything you'd like for all of the events. The attire listed below is just a suggestion in case you are looking for inspiration. 
+    If you need any recommendations, please look at the <a href="/recos/#clothes-shopping">clothes shopping section</a> of our recommendations.</p>
 
 {% assign i = 0 %}
 {% assign evts_sorted = site.evts | sort : "start" %}
 {% for evt in evts_sorted %}
 
 <div class="event-block block-{{i}}">
-    <div class="evt-leftblock">
-        <div class="leftblock-content">
-            <p>{{ evt.leftblock }}</p>
-        </div>
-    </div>
-    
     <div class="evt-rightblock">
         <h2>{{ evt.name }}</h2>
         

@@ -597,16 +597,6 @@ body {
         flex-direction: column;
     }
     
-    .evt-leftblock {
-        writing-mode: initial;
-        text-orientation: initial;
-        padding: 20px;
-        min-width: auto;
-        text-align: center;
-        border-right: none;
-        border-bottom: 2px solid rgba(255, 183, 197, 0.3);
-    }
-    
     .evt-rightblock {
         padding: 20px;
     }
@@ -1157,58 +1147,6 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 35px rgba(255, 183, 197, 0.25);
     border-color: rgba(255, 183, 197, 0.4);
-}
-
-/* Thinner Event Sidebar - Better Visuals */
-.evt-leftblock {
-    background: linear-gradient(135deg, 
-        rgba(255, 183, 197, 0.4) 0%, 
-        rgba(227, 170, 181, 0.4) 100%);
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 80px; /* REDUCED from 140px */
-    max-width: 80px; /* REDUCED from 140px */
-    padding: 20px 10px; /* REDUCED horizontal padding */
-    border-right: 3px solid rgba(255, 183, 197, 0.3);
-    position: relative;
-}
-
-.leftblock-content p {
-    margin: 0;
-    font-weight: 600; /* REDUCED from 700 */
-    font-size: 0.95em; /* REDUCED from 1.1em */
-    color: var(--ocolor);
-    text-transform: uppercase;
-    letter-spacing: 1.5px; /* REDUCED from 2px */
-    text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.3);
-    line-height: 1.1; /* REDUCED from 1.2 */
-}
-
-
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
-    .evt-leftblock {
-        writing-mode: initial;
-        text-orientation: initial;
-        min-width: auto;
-        max-width: none;
-        padding: 15px; /* REDUCED from 20px */
-        text-align: center;
-        border-right: none;
-        border-bottom: 3px solid rgba(255, 183, 197, 0.3);
-    }
-    
-    .leftblock-content {
-        transform: none;
-    }
-    
-    .leftblock-content p {
-        font-size: 0.9em;
-        letter-spacing: 1px;
-    }
 }
 
 .evt-rightblock {
