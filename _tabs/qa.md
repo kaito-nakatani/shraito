@@ -2,7 +2,6 @@
 title: Questions and Answers
 title_short: QA
 layout: tab
-leftblock: Questions and Answers
 custom_css:
   - qa
   - enhanced-styles

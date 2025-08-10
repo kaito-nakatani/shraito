@@ -101,6 +101,36 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Home Button Specific Styling */
+.nav-tabs .tab a .home-icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Highlight home button when on homepage */
+.nav-tabs .tab.current-tab a .home-icon {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { 
+    text-shadow: 0 0 5px rgba(255, 183, 197, 0.5);
+  }
+  to { 
+    text-shadow: 0 0 10px rgba(255, 183, 197, 0.8), 
+                 0 0 15px rgba(255, 183, 197, 0.6);
+  }
+}
+
+/* Mobile adjustments for home button */
+@media screen and (max-width: 768px) {
+  .nav-tabs .tab a .home-icon {
+    font-size: 1.1em;
+    margin-right: 3px;
+  }
+}
+
 .nav-tabs .tab.current-tab {
     background: linear-gradient(135deg, 
         rgba(255, 183, 197, 0.3) 0%, 
@@ -896,63 +926,107 @@ body {
 }
 
 
-/* Fix countdown container - NO MORE BLOCKING POPUP */
-.countdown-container-fixed {
+/* Collapsible Wedding Countdown */
+.countdown-container-collapsible {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 245, 250, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(255, 183, 197, 0.3);
+  border: 2px solid rgba(255, 183, 197, 0.3);
+  z-index: 100;
+  transition: all 0.3s ease;
+  max-width: 400px;
+}
+
+.countdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.countdown-header h4 {
+  margin: 0;
+  color: var(--ocolor);
+  font-size: 1.1em;
+}
+
+.countdown-toggle-btn {
+  background: rgba(255, 183, 197, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.countdown-toggle-btn:hover {
+  background: rgba(255, 183, 197, 1);
+  transform: scale(1.1);
+}
+
+.countdown-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 200px;
+  opacity: 1;
+}
+
+.countdown-content.collapsed {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0 20px 20px;
+}
+
+.toggle-arrow {
+  transition: transform 0.3s ease;
+}
+
+.toggle-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+/* Mobile specific adjustments */
+@media screen and (max-width: 768px) {
+  .countdown-container-collapsible {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(255, 245, 250, 0.95);
-    backdrop-filter: blur(15px);
-    padding: 15px 20px;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(255, 183, 197, 0.3);
-    border: 2px solid rgba(255, 183, 197, 0.3);
-    z-index: 100;
-    max-width: 300px;
-    font-size: 0.9em;
-}
-
-.countdown-container-fixed h4 {
-    margin: 0 0 10px 0;
-    color: var(--ocolor);
-    font-size: 1.1em;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.3);
-}
-
-.countdown-container-fixed .countdown-timer {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-.countdown-container-fixed .countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    transform: none;
+    max-width: none;
+  }
+  
+  .countdown-timer {
+    gap: 10px;
+  }
+  
+  .countdown-item {
     min-width: 50px;
-    padding: 8px;
-    background: rgba(255, 235, 245, 0.6);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 183, 197, 0.2);
+    padding: 6px;
+  }
 }
 
-.countdown-container-fixed .countdown-number {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: var(--ocolor);
-    text-shadow: 1px 1px 2px rgba(255, 183, 197, 0.2);
-    line-height: 1;
-}
-
-.countdown-container-fixed .countdown-label {
-    font-size: 0.75em;
-    color: var(--vcolor);
-    margin-top: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
 
 /* Fix tabs to stay in single row */
 .nav-tabs.single-row {
@@ -1764,36 +1838,64 @@ body {
     line-height: 1.6;
 }
 
-/* Mobile responsiveness for photos */
+/* Enhanced Mobile Tab Navigation with Scroll Indicators */
 @media screen and (max-width: 768px) {
-    .hero-gallery {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .main-photo,
-    .secondary-photos {
-        max-width: 100%;
-    }
-    
-    .featured-photo {
-        height: 300px;
-    }
-    
-    .secondary-photo {
-        height: 80px;
-    }
-    
-    .photo-row {
-        gap: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .wedding-announcement,
-    .couple-description {
-        padding: 20px 15px;
-        margin: 20px 10px;
-    }
+  .enhanced-navbar {
+    position: relative;
+  }
+  
+  .nav-tabs.single-row {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 40px; /* Make room for arrows */
+  }
+  
+  .nav-tabs.single-row::before,
+  .nav-tabs.single-row::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 183, 197, 0.9);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 10;
+    animation: pulse 2s infinite;
+  }
+  
+  .nav-tabs.single-row::before {
+    content: '←';
+    left: 5px;
+  }
+  
+  .nav-tabs.single-row::after {
+    right: 5px;
+  }
+  
+  /* Hide indicators when at start/end */
+  .nav-tabs.single-row.at-start::before {
+    opacity: 0.3;
+  }
+  
+  .nav-tabs.single-row.at-end::after {
+    opacity: 0.3;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-50%) scale(1.1); opacity: 1; }
 }
 
 /* Homepage Carousel Styles */
@@ -2257,4 +2359,59 @@ body {
     font-weight: 600;
     text-align: center;
     padding: 20px;
+}
+
+/* Expandable Rituals Section */
+.evt-rituals-toggle {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.rituals-btn {
+  background: linear-gradient(135deg, 
+    rgba(255, 183, 197, 0.8) 0%, 
+    rgba(227, 170, 181, 0.8) 100%);
+  border: 2px solid rgba(255, 183, 197, 0.3);
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.rituals-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 183, 197, 0.4);
+}
+
+.evt-rituals-content {
+  background: rgba(255, 235, 245, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 15px;
+  border-left: 4px solid var(--cherry-blossom);
+  animation: slideDown 0.3s ease-out;
+}
+
+.toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.rituals-btn.expanded .toggle-icon {
+  transform: rotate(45deg);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding: 0 20px;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    padding: 20px;
+  }
 }

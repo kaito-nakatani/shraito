@@ -2,7 +2,6 @@
 title: Travel Information
 title_short: Travel Info
 layout: tab
-leftblock: Travel Info
 custom_css:
   - qa
   - enhanced-styles
@@ -20,7 +19,6 @@ custom_js:
             <strong>🛂 Visa & Documentation</strong>
         </div>
         <div class="section-content" id="visa-section">
-            
             <!-- Subsection 1.1: Visa -->
             <div class="subsection">
                 <div class="subsection-header" onclick="toggleSubsection(this, 'visa')">
@@ -28,10 +26,12 @@ custom_js:
                     <strong>Visa</strong>
                 </div>
                 <div class="subsection-content" id="visa">
-                    <p> Most people can apply for an [e-visa](https://indianvisaonline.gov.in/evisa/tvoa.html), which can be obtained at most 30 days before travel. Make sure to apply using the official Indian Government’s website (ending with .in), and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website. </p>
+                    <p> Most people can apply for an <strong><a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank">e-visa</a></strong>, which can be obtained at most 30 days before travel. Make sure to apply using the official Indian Government’s website (ending with .in), and not a third party, as ads on Google might suggest! There are a lot of scam/phishing websites out there. Some might work, but you will be overcharged (and give your passport info to a scammer) unless you use the government website. </p>
+                    <p>
+                    If your country of origin doesn't support Indian e-visa, please let the couple know! We will do our best to support you.
+                    </p>
                 </div>
             </div>
-
             <!-- Subsection 1.2: Airport -->
             <div class="subsection">
                 <div class="subsection-header" onclick="toggleSubsection(this, 'airport')">
@@ -39,10 +39,9 @@ custom_js:
                     <strong>Airport</strong>
                 </div>
                 <div class="subsection-content" id="airport">
-                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber/Ola (Ola is a ride hailing app that’s like Uber). The airport should have signs directing you to where the Uber/Ola pickup spot is. </p>
+                    <p> Bangalore has one airport (BLR). This is most likely where you will be flying to/from. If you plan to travel around India before/after the wedding, you can also use trains and busses. To travel to/from the airport you can use Uber. The airport should have signs directing you to where the Uber pickup spot is. Once you make the booking, you will not be assigned to a specific driver but only given a OTP (one-time password). At the pickup spot, you will give the Uber driver the OTP, and your ride will start! </p>
                 </div>
             </div>
-
             <!-- Subsection 1.3: Vaccination -->
             <div class="subsection">
                 <div class="subsection-header" onclick="toggleSubsection(this, 'vaccination')">
@@ -55,7 +54,6 @@ custom_js:
             </div>
         </div>
     </div>
-
     <!-- Section 2: On Arrival -->
     <!-- Section 2: Arrival Logistics -->
     <div class="accordion-section">

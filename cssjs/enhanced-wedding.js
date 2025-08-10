@@ -86,3 +86,29 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
+
+// Collapsible Countdown Functionality
+function toggleCountdown() {
+  const content = document.getElementById('countdownContent');
+  const toggle = document.getElementById('countdownToggle');
+  const arrow = toggle.querySelector('.toggle-arrow');
+  
+  if (content.classList.contains('collapsed')) {
+    content.classList.remove('collapsed');
+    arrow.textContent = '−';
+    arrow.classList.remove('rotated');
+  } else {
+    content.classList.add('collapsed');
+    arrow.textContent = '+';
+    arrow.classList.add('rotated');
+  }
+}
+
+// Auto-collapse on mobile after 5 seconds
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth <= 768) {
+    setTimeout(() => {
+      toggleCountdown();
+    }, 5000);
+  }
+});

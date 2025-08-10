@@ -22,10 +22,14 @@
         {{ content }}
       </div>
 
-      <!-- Fixed Wedding countdown timer -->
-      <div class="countdown-container-fixed">
-        <div class="countdown-content">
+      <div class="countdown-container-collapsible" id="countdownContainer">
+        <div class="countdown-header" onclick="toggleCountdown()">
           <h4>🌸 Wedding Countdown 🪷</h4>
+          <button class="countdown-toggle-btn" id="countdownToggle">
+            <span class="toggle-arrow">−</span>
+          </button>
+        </div>
+        <div class="countdown-content" id="countdownContent">
           <div class="countdown-timer">
             <div class="countdown-item">
               <span class="countdown-number" id="days">--</span>
@@ -52,6 +56,7 @@
     <script src="{{ '/cssjs/password-protection.js' | relative_url }}"></script>
     <script src="{{ '/cssjs/enhanced-wedding.js' | relative_url }}"></script>
     <script src="{{ '/cssjs/cherry-storm.js' | relative_url }}"></script>
+    <script src="{{ site.baseurl }}/cssjs/mobile-nav-scroll.js"></script>
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
       <script src="{{ '/cssjs/' | append: js_file | append: '.js' | relative_url }}"></script>

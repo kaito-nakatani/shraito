@@ -5,6 +5,8 @@ layout: default
 custom_css:
   - calendar
   - enhanced-styles
+custom_js:
+  - ritual-toggle
 ---
 
 {% include navbar.html %}
@@ -13,7 +15,7 @@ custom_css:
 <h1>{{page.title}}</h1>
 
 <p class="event-intro">Feel free to wear anything you'd like for all of the events. The attire listed below is just a suggestion in case you are looking for inspiration. 
-    If you need any recommendations, please look at the <a href="/recos/#clothes-shopping">clothes shopping section</a> of our recommendations.</p>
+    If you need any recommendations, please look at the <a href="/{{ site.baseurl }}tabs/recos.html#clothes-shopping">clothes shopping section</a> of our recommendations.</p>
 
 {% assign i = 0 %}
 {% assign evts_sorted = site.evts | sort : "start" %}
@@ -34,7 +36,21 @@ custom_css:
             </div>
             
             <div class="evt-content">
-                {{ evt.content }}
+            <div class="evt-summary">
+                {{ evt.content | truncatewords: 30 }}
+            </div>
+            {% if evt.content contains ":" and evt.content.size > 150 %}
+            <div class="evt-rituals-toggle">
+                <button class="rituals-btn" onclick="toggleRituals('{{ evt.name | slugify }}')">
+                <span class="toggle-icon">+</span> Learn about the rituals
+                </button>
+            </div>
+            <div class="evt-rituals-content" id="{{ evt.name | slugify }}-rituals" style="display: none;">
+                <div class="ritual-descriptions">
+                {{ evt.content | remove_first: evt.content | split: ": " | join: ":" }}
+                </div>
+            </div>
+            {% endif %}
             </div>
             
             <!-- Google Calendar Add to Calendar Button -->

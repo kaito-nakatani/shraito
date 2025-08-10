@@ -26,19 +26,43 @@ class GalleryTabs {
     }
 
     switchToSection(sectionName, activeTab) {
-        // Remove active class from all tabs and sections
-        this.tabs.forEach(tab => tab.classList.remove('active'));
-        this.sections.forEach(section => section.classList.remove('active'));
+    // Remove active class from all tabs and sections
+    this.tabs.forEach(tab => tab.classList.remove('active'));
+    this.sections.forEach(section => section.classList.remove('active'));
+    
+    // Add active class to clicked tab
+    activeTab.classList.add('active');
+    
+    // Show corresponding section
+    const targetSection = document.getElementById(sectionName + '-section');
+    if (targetSection) {
+        targetSection.classList.add('active');
         
-        // Add active class to clicked tab
-        activeTab.classList.add('active');
-        
-        // Show corresponding section
-        const targetSection = document.getElementById(sectionName + '-section');
-        if (targetSection) {
-            targetSection.classList.add('active');
-        }
+        // Fix image loading issues
+        this.fixImagePaths(targetSection);
     }
+    }
+
+    // Add this new method to the GalleryTabs class:
+    fixImagePaths(section) {
+    const images = section.querySelectorAll('img');
+    images.forEach(img => {
+        // Handle image loading errors
+        img.addEventListener('error', function() {
+        // Try different path variations
+        const currentSrc = this.src;
+        if (!currentSrc.includes('./assets/')) {
+            this.src = currentSrc.replace('/assets/', './assets/');
+        }
+        });
+        
+        // Ensure proper loading
+        if (img.complete && img.naturalHeight === 0) {
+        img.src = img.src; // Trigger reload
+        }
+    });
+    }
+
 
     initializeLazyLoading() {
         // Simple lazy loading for better performance

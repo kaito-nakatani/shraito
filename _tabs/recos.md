@@ -2,7 +2,6 @@
 title: Recommendations in Bangalore
 title_short: Recommendations
 layout: tab
-leftblock: Recommendations
 custom_css:
   - qa
   - enhanced-styles
