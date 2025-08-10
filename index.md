@@ -31,7 +31,6 @@ custom_js:
     <div class="section-tab active" data-section="select_photos">Photos</div>
   </div>
 
-  <!-- ENGAGEMENT SECTION -->
   <div id="select_photos-section" class="gallery-section active">
     <div class="gallery-counsel", id="select_photos-carousel">
       <div class="carousel-wrapper">
@@ -60,15 +59,15 @@ custom_js:
         </div>
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('select_photos', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('select_photos', 1)">›</button>
-        <div class="carousel-indicators" id="select_photos-indicators">
-          <button class="indicator active" onclick="goToGallerySlide('select_photos', 0)"></button>
-          <button class="indicator" onclick="goToGallerySlide('select_photos', 1)"></button>
-          <button class="indicator" onclick="goToGallerySlide('select_photos', 2)"></button>
-          <button class="indicator" onclick="goToGallerySlide('select_photos', 3)"></button>
-          <button class="indicator" onclick="goToGallerySlide('select_photos', 4)"></button>
-          <button class="indicator" onclick="goToGallerySlide('select_photos', 5)"></button>
-          <button class="indicator" onclick="goToGallerySlide('select_photos', 6)"></button>
-        </div>
+      </div>
+      <div class="carousel-indicators" id="select_photos-indicators">
+        <button class="indicator active" onclick="goToGallerySlide('select_photos', 0)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 1)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 2)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 3)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 4)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 5)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 6)"></button>
       </div>
     </div>
   </div>
