@@ -32,7 +32,7 @@ custom_js:
   </div>
 
   <div id="select_photos-section" class="gallery-section active">
-    <div class="gallery-counsel", id="select_photos-carousel">
+    <div class="gallery-counsel" id="select_photos-carousel">
       <div class="carousel-wrapper">
         <div class="carousel-track" id="select_photos-track">
           <div class="carousel-slide">
