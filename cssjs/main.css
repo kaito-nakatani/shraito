@@ -359,13 +359,15 @@ strong, b {
 }
 
 .carousel-track {
-  display: flex;
+  display: flex !important;
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .carousel-slide {
   min-width: 100%;
   position: relative;
+  flex-shrink: 0;
 }
 
 .carousel-slide img {
@@ -388,6 +390,9 @@ strong, b {
   cursor: pointer;
   z-index: 2;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-btn:hover {
@@ -423,4 +428,24 @@ strong, b {
 .indicator.active {
   background: rgba(255, 183, 197, 1);
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-slide img {
+    height: 300px;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
 }

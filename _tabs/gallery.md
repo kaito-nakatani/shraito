@@ -2,8 +2,6 @@
 title_short: Gallery
 title: Gallery
 layout: tab
-custom_js:
-  - gallery-carousel
 custom_css:
   - enhanced-gallery
   - gallery-carousel
@@ -17,6 +15,7 @@ custom_css:
     <div class="section-tab" data-section="family">👨‍👩‍👧‍👦 Family</div>
   </div>
 
+  <!-- ENGAGEMENT SECTION -->
   <div id="engagement-section" class="gallery-section active">
     <div class="gallery-carousel" id="engagement-carousel">
       <div class="carousel-wrapper">
@@ -43,9 +42,11 @@ custom_css:
             <img src="{{ '/assets/engagement/photo7.jpg' | relative_url }}" alt="Engagement Photo 7" loading="lazy" onerror="this.src='./assets/engagement/photo7.jpg'">
           </div>
         </div>
+        
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('engagement', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('engagement', 1)">›</button>
       </div>
+      
       <div class="carousel-indicators" id="engagement-indicators">
         <button class="indicator active" onclick="goToGallerySlide('engagement', 0)"></button>
         <button class="indicator" onclick="goToGallerySlide('engagement', 1)"></button>
@@ -57,21 +58,23 @@ custom_css:
       </div>
     </div>
   </div>
+  
+  <!-- VARSHA WEDDING SECTION -->
   <div id="varsha-wedding-section" class="gallery-section">
     <div class="gallery-carousel" id="varsha-wedding-carousel">
       <div class="carousel-wrapper">
         <div class="carousel-track" id="varsha-wedding-track">
           <div class="carousel-slide">
-            <img src="{{ '/assets/_varsha-wedding/DCK09975.jpg' | relative_url }}" alt="Varsha Wedding Photo 1" loading="lazy" onerror="this.src='./assets/_varsha-wedding/DCK09975.jpg'">
+            <img src="{{ '/assets/varsha-wedding/photo1.jpg' | relative_url }}" alt="Varsha Wedding Photo 1" loading="lazy" onerror="this.src='./assets/varsha-wedding/photo1.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/_varsha-wedding/DSC03620.jpg' | relative_url }}" alt="Varsha Wedding Photo 2" loading="lazy" onerror="this.src='./assets/_varsha-wedding/DSC03620.jpg'">
+            <img src="{{ '/assets/varsha-wedding/photo2.jpg' | relative_url }}" alt="Varsha Wedding Photo 2" loading="lazy" onerror="this.src='./assets/varsha-wedding/photo2.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/_varsha-wedding/DSC03703.jpg' | relative_url }}" alt="Varsha Wedding Photo 3" loading="lazy" onerror="this.src='./assets/_varsha-wedding/DSC03703.jpg'">
+            <img src="{{ '/assets/varsha-wedding/photo3.jpg' | relative_url }}" alt="Varsha Wedding Photo 3" loading="lazy" onerror="this.src='./assets/varsha-wedding/photo3.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/_varsha-wedding/DSC04137.jpg' | relative_url }}" alt="Varsha Wedding Photo 4" loading="lazy" onerror="this.src='./assets/_varsha-wedding/DSC04137.jpg'">
+            <img src="{{ '/assets/varsha-wedding/photo4.jpg' | relative_url }}" alt="Varsha Wedding Photo 4" loading="lazy" onerror="this.src='./assets/varsha-wedding/photo4.jpg'">
           </div>
         </div>
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('varsha-wedding', -1)">‹</button>
@@ -85,32 +88,34 @@ custom_css:
       </div>
     </div>
   </div>
+
+  <!-- FAMILY SECTION -->
   <div id="family-section" class="gallery-section">
     <div class="gallery-carousel" id="family-carousel">
       <div class="carousel-wrapper">
         <div class="carousel-track" id="family-track">
           <div class="carousel-slide">
-            <img src="{{ '/assets/family/DCK02961.jpg' | relative_url }}" alt="Family Photo 1" loading="lazy" onerror="this.src='./assets/family/DCK02961.jpg'">
+            <img src="{{ '/assets/family/photo1.jpg' | relative_url }}" alt="Family Photo 1" loading="lazy" onerror="this.src='./assets/family/photo1.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/family/DCK03123.jpg' | relative_url }}" alt="Family Photo 2" loading="lazy" onerror="this.src='./assets/family/DCK03123.jpg'">
+            <img src="{{ '/assets/family/photo2.jpg' | relative_url }}" alt="Family Photo 2" loading="lazy" onerror="this.src='./assets/family/photo2.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/family/DCK03150.jpg' | relative_url }}" alt="Family Photo 3" loading="lazy" onerror="this.src='./assets/family/DCK03150.jpg'">
+            <img src="{{ '/assets/family/photo3.jpg' | relative_url }}" alt="Family Photo 3" loading="lazy" onerror="this.src='./assets/family/photo3.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/family/DCK04077.jpg' | relative_url }}" alt="Family Photo 4" loading="lazy" onerror="this.src='./assets/family/DCK04077.jpg'">
+            <img src="{{ '/assets/family/photo4.jpg' | relative_url }}" alt="Family Photo 4" loading="lazy" onerror="this.src='./assets/family/photo4.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/family/DSCF6319.jpg' | relative_url }}" alt="Family Photo 5" loading="lazy" onerror="this.src='./assets/family/DSCF6319.jpg'">
+            <img src="{{ '/assets/family/photo5.jpg' | relative_url }}" alt="Family Photo 5" loading="lazy" onerror="this.src='./assets/family/photo5.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/family/DSCF6989.jpg' | relative_url }}" alt="Family Photo 6" loading="lazy" onerror="this.src='./assets/family/DSCF6989.jpg'">
+            <img src="{{ '/assets/family/photo6.jpg' | relative_url }}" alt="Family Photo 6" loading="lazy" onerror="this.src='./assets/family/photo6.jpg'">
           </div>
           <div class="carousel-slide">
-            <img src="{{ '/assets/family/DSCF7075.jpg' | relative_url }}" alt="Family Photo 7" loading="lazy" onerror="this.src='./assets/family/DSCF7075.jpg'">
+            <img src="{{ '/assets/family/photo7.jpg' | relative_url }}" alt="Family Photo 7" loading="lazy" onerror="this.src='./assets/family/photo7.jpg'">
           </div>
-        </div>
+        </div>      
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('family', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('family', 1)">›</button>
       </div>
@@ -135,14 +140,18 @@ let galleryCarousels = {
   'family': { currentIndex: 0, totalSlides: 7 }
 };
 
-// Section tab functionality
+// Section tab functionality - FIXED VERSION
 document.addEventListener('DOMContentLoaded', function() {
   const tabs = document.querySelectorAll('.section-tab');
   const sections = document.querySelectorAll('.gallery-section');
   
+  console.log('Found tabs:', tabs.length);
+  console.log('Found sections:', sections.length);
+  
   tabs.forEach(tab => {
     tab.addEventListener('click', function() {
       const sectionId = this.dataset.section;
+      console.log('Clicked tab for section:', sectionId);
       
       // Update active tab
       tabs.forEach(t => t.classList.remove('active'));
@@ -150,14 +159,24 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Update active section
       sections.forEach(s => s.classList.remove('active'));
-      document.getElementById(sectionId + '-section').classList.add('active');
+      const targetSection = document.getElementById(sectionId + '-section');
+      console.log('Target section:', targetSection);
+      
+      if (targetSection) {
+        targetSection.classList.add('active');
+      } else {
+        console.error('Section not found:', sectionId + '-section');
+      }
     });
   });
 });
 
 function navigateGalleryCarousel(sectionId, direction) {
   const carousel = galleryCarousels[sectionId];
-  if (!carousel) return;
+  if (!carousel) {
+    console.error('Carousel not found for section:', sectionId);
+    return;
+  }
   
   let newIndex = carousel.currentIndex + direction;
   
@@ -169,7 +188,10 @@ function navigateGalleryCarousel(sectionId, direction) {
 
 function goToGallerySlide(sectionId, slideIndex) {
   const carousel = galleryCarousels[sectionId];
-  if (!carousel) return;
+  if (!carousel) {
+    console.error('Carousel not found for section:', sectionId);
+    return;
+  }
   
   carousel.currentIndex = slideIndex;
   
@@ -179,6 +201,8 @@ function goToGallerySlide(sectionId, slideIndex) {
   if (track) {
     const translateX = -slideIndex * 100;
     track.style.transform = `translateX(${translateX}%)`;
+  } else {
+    console.error('Track not found:', sectionId + '-track');
   }
   
   // Update indicators

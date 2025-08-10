@@ -7,9 +7,9 @@ def crop_center_square(img):
     bottom = top + min_dim
     return img.crop((left, top, right, bottom))
 
-default_src = 'assets/_engagement/'
-default_tgt = 'assets/engagement/'
-default_size = (1400,1400)
+default_src = 'assets/_varsha-wedding/'
+default_tgt = 'assets/varsha-wedding/'
+default_size = (2000,2000)
 
 import argparse
 parser = argparse.ArgumentParser(
