@@ -176,7 +176,7 @@ custom_css:
 let galleryCarousels = {
   'engagement': { currentIndex: 0, totalSlides: 7 },
   'varsha-wedding': { currentIndex: 0, totalSlides: 4 },
-  'family': { currentIndex: 0, totalSlides: 7 }
+  'family': { currentIndex: 0, totalSlides: 7 },
   'proposal': { currentIndex: 0, totalSlides: 4 }
 };
 
