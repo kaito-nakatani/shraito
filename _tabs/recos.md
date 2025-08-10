@@ -105,7 +105,7 @@ custom_js:
     <div class="qa-item">
         <div class="qa-question" onclick="toggleAnswer(this)">
             <span class="qa-icon">+</span>
-            <strong>🍽️ Food Recommendations</strong>
+            <strong>🍽️ Food Recommendations in Bangalore</strong>
         </div>
         <div class="qa-answer">
             <p>Bangalore has a lot of good food, especially South Indian food. Bangalore also has the best dosas in India [Kishore et. al., 2025]. Here are a few recommendations:</p>
@@ -116,14 +116,6 @@ custom_js:
                 <li><strong>V V Puram</strong> — Street food with multiple vendors. It is definitely an experience!</li>
                 <li><strong>Kappa Chakka Kandhari</strong> — Food from Kerala. Try their cloud pudding.</li>
             </ul>
-        </div>
-    </div>
-    <div class="qa-item">
-        <div class="qa-question" onclick="toggleAnswer(this)">
-            <span class="qa-icon">+</span>
-            <strong>🍺 Microbreweries in Bangalore</strong>
-        </div>
-        <div class="qa-answer">
             <p>There is a new thriving microbrewery scene in Bangalore. Oia and Brahma Brews are two recommendations; use Google to find more!</p>
         </div>
     </div>
