@@ -53,16 +53,4 @@ custom_js:
       <div class="carousel-indicators" id="carouselIndicators"></div>
     </div>
   </div>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Wait a bit for all scripts to load, then initialize
-    setTimeout(function() {
-      if (typeof HomepageCarousel !== 'undefined') {
-        new HomepageCarousel();
-      } else {
-        console.error('HomepageCarousel class not found. Make sure homepage-carousel.js is loaded.');
-      }
-    }, 100);
-  });
-  </script>
 </div>
