@@ -13,7 +13,7 @@ custom_js:
     <div class="qa-item">
         <div class="qa-question" onclick="toggleAnswer(this)">
             <span class="qa-icon">+</span>
-            <strong>🥻 Clothes Recommendations </strong>
+            <strong>🥻 Indian Clothes Shopping Recommendation </strong>
         </div>
         <div class="qa-answer">
             <p> You can wear anything you are comfortable in for any event! There are no rules or colors to avoid, we just want you to be comfortable and have the best time. However, if you would like, there are loads of different types of Indian clothing you could wear.</p>

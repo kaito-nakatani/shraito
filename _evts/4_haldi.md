@@ -1,5 +1,5 @@
 ---
-__name: "Haldi"
+name: "Haldi"
 date: 04 Feb 2026
 timerange: 9:00am -- 11:30pm
 attire: Clothes you don't mind getting wet

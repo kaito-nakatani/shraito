@@ -16,13 +16,12 @@ custom_js:
 
 {% include navbar.html %}
 
-# <span class="shreya"> Shreya </span> & <span class="kaito"> Kaito </span>
-
 <div class="center-content">
   <div class="wedding-announcement">
     <h2>We are Getting Married!</h2>
     <h3><strong>February 3rd - 6th, 2026</strong></h3>
     <h3><strong><a href="https://www.mirayagreens.com/" target="_blank">Miraya Greens</a>, Bangalore, India</strong></h3>
+    <p> After growing up in Bangalore, India and Nagoya, Japan, Shreya Kishore and Kaito Nakatani met at <a href="https://www.haverford.edu/" target="_blank">Haveford College</a> as first years. While growing up at different places, they share the love for Bollywood cultures as well as the love for cricket, RCB, and Virat Kohli. After graduation, Shreya spent four years at Stanford University to obtain her PhD. while Kaito jumped around the world and worked in Tokyo and Hong Kong. After four years of long distance, Shreya and Kaito are finally getting married! </p>
   </div>
 </div>
 
