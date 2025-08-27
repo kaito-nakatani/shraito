@@ -2,7 +2,7 @@
 name: "Chapram Puja"
 date: 29 Jan 2026
 timerange: 7:30am -- 2:00pm
-attire: Indian
+attire: Anything
 title: "Chapram Pooja"
 location: "#557, 9th Cross, 3rd Phase, J P Nagar, Bangalore 560078."
 start: "20260129T020000Z"

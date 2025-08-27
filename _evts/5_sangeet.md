@@ -2,7 +2,7 @@
 name: Sangeet
 date: 04 Feb 2026
 timerange: 5:00pm -- 10:00pm
-attire: Indian or Western
+attire: Anything Blingy
 title: "Sangeet"
 location: "Miraya Greens, S.No. 73, Sakalwara Road, off Bannerghatta Main Road, Bengaluru, Karnataka 560083, India"
 start: "20260204T113000Z"

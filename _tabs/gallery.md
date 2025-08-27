@@ -16,6 +16,8 @@ custom_css:
     <div class="section-tab" data-section="varsha-wedding">📸 Varsha Wedding</div>
     <div class="section-tab" data-section="proposal">💍 Proposal</div>
     <div class="section-tab" data-section="family">👨‍👩‍👧‍👦 Family</div>
+    <div class="section-tab" data-section="postgrad">🏫 postgrad</div>
+    <div class="section-tab" data-section="postgrad">💼 Post-Graduation</div>
   </div>
 
   <!-- ENGAGEMENT SECTION -->
@@ -38,12 +40,6 @@ custom_css:
           <div class="carousel-slide">
             <img src="{{ '/assets/engagement/photo5.jpg' | relative_url }}" alt="Engagement Photo 5" loading="lazy" onerror="this.src='./assets/engagement/photo5.jpg'">
           </div>
-          <div class="carousel-slide">
-            <img src="{{ '/assets/engagement/photo6.jpg' | relative_url }}" alt="Engagement Photo 6" loading="lazy" onerror="this.src='./assets/engagement/photo6.jpg'">
-          </div>
-          <div class="carousel-slide">
-            <img src="{{ '/assets/engagement/photo7.jpg' | relative_url }}" alt="Engagement Photo 7" loading="lazy" onerror="this.src='./assets/engagement/photo7.jpg'">
-          </div>
         </div>
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('engagement', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('engagement', 1)">›</button>
@@ -54,8 +50,6 @@ custom_css:
         <button class="indicator" onclick="goToGallerySlide('engagement', 2)"></button>
         <button class="indicator" onclick="goToGallerySlide('engagement', 3)"></button>
         <button class="indicator" onclick="goToGallerySlide('engagement', 4)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 5)"></button>
-        <button class="indicator" onclick="goToGallerySlide('engagement', 6)"></button>
       </div>
     </div>
   </div>
@@ -145,15 +139,6 @@ custom_css:
           <div class="carousel-slide">
             <img src="{{ '/assets/family/photo4.jpg' | relative_url }}" alt="Family Photo 4" loading="lazy" onerror="this.src='./assets/family/photo4.jpg'">
           </div>
-          <div class="carousel-slide">
-            <img src="{{ '/assets/family/photo5.jpg' | relative_url }}" alt="Family Photo 5" loading="lazy" onerror="this.src='./assets/family/photo5.jpg'">
-          </div>
-          <div class="carousel-slide">
-            <img src="{{ '/assets/family/photo6.jpg' | relative_url }}" alt="Family Photo 6" loading="lazy" onerror="this.src='./assets/family/photo6.jpg'">
-          </div>
-          <div class="carousel-slide">
-            <img src="{{ '/assets/family/photo7.jpg' | relative_url }}" alt="Family Photo 7" loading="lazy" onerror="this.src='./assets/family/photo7.jpg'">
-          </div>
         </div>      
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('family', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('family', 1)">›</button>
@@ -163,9 +148,86 @@ custom_css:
         <button class="indicator" onclick="goToGallerySlide('family', 1)"></button>
         <button class="indicator" onclick="goToGallerySlide('family', 2)"></button>
         <button class="indicator" onclick="goToGallerySlide('family', 3)"></button>
-        <button class="indicator" onclick="goToGallerySlide('family', 4)"></button>
-        <button class="indicator" onclick="goToGallerySlide('family', 5)"></button>
-        <button class="indicator" onclick="goToGallerySlide('family', 6)"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- haverford SECTION -->
+  <div id="haverford-section" class="gallery-section">
+    <div class="gallery-carousel" id="haverford-carousel">
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="haverford-track">
+          <div class="carousel-slide">
+            <img src="{{ '/assets/haverford/photo1.jpg' | relative_url }}" alt="Haverford Photo 1" loading="lazy" onerror="this.src='./assets/haverford/photo1.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/haverford/photo2.jpg' | relative_url }}" alt="Haverford Photo 2" loading="lazy" onerror="this.src='./assets/haverford/photo2.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/haverford/photo3.jpg' | relative_url }}" alt="Haverford Photo 3" loading="lazy" onerror="this.src='./assets/haverford/photo3.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/haverford/photo4.jpg' | relative_url }}" alt="Haverford Photo 4" loading="lazy" onerror="this.src='./assets/haverford/photo4.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/haverford/photo5.jpg' | relative_url }}" alt="Haverford Photo 5" loading="lazy" onerror="this.src='./assets/haverford/photo5.jpg'">
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('haverford', -1)">‹</button>
+        <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('haverford', 1)">›</button>
+      </div>
+      <div class="carousel-indicators" id="haverford-indicators">
+        <button class="indicator active" onclick="goToGallerySlide('haverford', 0)"></button>
+        <button class="indicator" onclick="goToGallerySlide('haverford', 1)"></button>
+        <button class="indicator" onclick="goToGallerySlide('haverford', 2)"></button>
+        <button class="indicator" onclick="goToGallerySlide('haverford', 3)"></button>
+        <button class="indicator" onclick="goToGallerySlide('haverford', 4)"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post-grad SECTION -->
+  <div id="postgrad-section" class="gallery-section">
+    <div class="gallery-carousel" id="postgrad-carousel">
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="postgrad-track">
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo1.jpg' | relative_url }}" alt="Post-grad Photo 1" loading="lazy" onerror="this.src='./assets/postgrad/photo1.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo2.jpg' | relative_url }}" alt="Post-grad Photo 2" loading="lazy" onerror="this.src='./assets/postgrad/photo2.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo3.jpg' | relative_url }}" alt="Post-grad Photo 3" loading="lazy" onerror="this.src='./assets/postgrad/photo3.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo4.jpg' | relative_url }}" alt="Post-grad Photo 4" loading="lazy" onerror="this.src='./assets/postgrad/photo4.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo5.jpg' | relative_url }}" alt="Post-grad Photo 5" loading="lazy" onerror="this.src='./assets/postgrad/photo5.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo6.jpg' | relative_url }}" alt="Post-grad Photo 6" loading="lazy" onerror="this.src='./assets/postgrad/photo6.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo7.jpg' | relative_url }}" alt="Post-grad Photo 7" loading="lazy" onerror="this.src='./assets/postgrad/photo7.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/postgrad/photo8.jpg' | relative_url }}" alt="Post-grad Photo 8" loading="lazy" onerror="this.src='./assets/postgrad/photo8.jpg'">
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('postgrad', -1)">‹</button>
+        <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('postgrad', 1)">›</button>
+      </div>
+      <div class="carousel-indicators" id="postgrad-indicators">
+        <button class="indicator active" onclick="goToGallerySlide('postgrad', 0)"></button>
+        <button class="indicator" onclick="goToGallerySlide('postgrad', 1)"></button>
+        <button class="indicator" onclick="goToGallerySlide('postgrad', 2)"></button>
+        <button class="indicator" onclick="goToGallerySlide('postgrad', 3)"></button>
+        <button class="indicator" onclick="goToGallerySlide('postgrad', 4)"></button>
+        <button class="indicator" onclick="goToGallerySlide('postgrad', 5)"></button>
+        <button class="indicator" onclick="goToGallerySlide('postgrad', 6)"></button>
+        <button class="indicator" onclick="goToGallerySlide('postgrad', 7)"></button>
       </div>
     </div>
   </div>
@@ -174,10 +236,12 @@ custom_css:
 <script>
 // Gallery carousel functionality
 let galleryCarousels = {
-  'engagement': { currentIndex: 0, totalSlides: 7 },
-  'varsha-wedding': { currentIndex: 0, totalSlides: 4 },
-  'family': { currentIndex: 0, totalSlides: 7 },
-  'proposal': { currentIndex: 0, totalSlides: 4 }
+  'engagement': { currentIndex: 0, totalSlides: 5 },
+  'varsha-wedding': { currentIndex: 0, totalSlides: 5 },
+  'family': { currentIndex: 0, totalSlides: 4 },
+  'proposal': { currentIndex: 0, totalSlides: 5 },
+  'haverford': { currentIndex: 0, totalSlides: 5 }
+  'postgrad': { currentIndex: 0, totalSlides: 8 }
 };
 
 // Section tab functionality - FIXED VERSION

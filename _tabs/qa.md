@@ -57,7 +57,7 @@ custom_js:
                 <li>Hotel Greenpark (about $110/night)</li>
                 <li>Lilac Hotel - 3rd Block Jayanagar and 5th Block Jayanagar (about $70/night)</li>
             </ul>
-            <p>There are many more hotels around Church Street. Depending on what kind of rooms you are looking for, you will be able to find hotels that are less or more expensive. The options listed above are fairly basic hotels, and might be good choices if you are going to be out all day exploring the city. If you want to stay in a nicer resort/hotel, there are fancier options. Ask Shreya if you have any specific questions.</p>
+            <p> Note there is not much to sight see around this area. You might want to consider hotels somewhere else if you want to sight see - there are many more hotels around Church Street, which is closer to some other sightseeing sites. Depending on what kind of rooms you are looking for, you will be able to find hotels that are less or more expensive. The options listed above are fairly basic hotels, and might be good choices if you are going to be out all day exploring the city. If you want to stay in a nicer resort/hotel, there are fancier options. Ask Shreya if you have any specific questions.</p>
         </div>
     </div>
     <div class="qa-item">
