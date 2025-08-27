@@ -17,7 +17,7 @@ custom_css:
     <div class="section-tab" data-section="proposal">💍 Proposal</div>
     <div class="section-tab" data-section="family">👨‍👩‍👧‍👦 Family</div>
     <div class="section-tab" data-section="postgrad">🏫 postgrad</div>
-    <div class="section-tab" data-section="postgrad">💼 Post-Graduation</div>
+    <div class="section-tab" data-section="postgrad">💼 PostGraduation</div>
   </div>
 
   <!-- ENGAGEMENT SECTION -->
@@ -231,6 +231,7 @@ custom_css:
       </div>
     </div>
   </div>
+  
 </div>
 
 <script>
@@ -240,7 +241,7 @@ let galleryCarousels = {
   'varsha-wedding': { currentIndex: 0, totalSlides: 5 },
   'family': { currentIndex: 0, totalSlides: 4 },
   'proposal': { currentIndex: 0, totalSlides: 5 },
-  'haverford': { currentIndex: 0, totalSlides: 5 }
+  'haverford': { currentIndex: 0, totalSlides: 5 },
   'postgrad': { currentIndex: 0, totalSlides: 8 }
 };
 
