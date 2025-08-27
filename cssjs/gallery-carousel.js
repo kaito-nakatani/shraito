@@ -6,6 +6,8 @@ class GalleryCarousel {
       'varsha-wedding': 'assets/varsha-wedding/',
       'family': 'assets/family/',
       'proposal': 'assets/proposal/',
+      'haverford': 'assets/haverford/',
+      'postgrad': 'assets/postgrad/',
       'select_photos': 'assets/select_photos/'
     };
     this.currentCarousels = {};

@@ -16,8 +16,8 @@ custom_css:
     <div class="section-tab" data-section="varsha-wedding">📸 Varsha Wedding</div>
     <div class="section-tab" data-section="proposal">💍 Proposal</div>
     <div class="section-tab" data-section="family">👨‍👩‍👧‍👦 Family</div>
-    <div class="section-tab" data-section="postgrad">🏫 postgrad</div>
-    <div class="section-tab" data-section="postgrad">💼 PostGraduation</div>
+    <div class="section-tab" data-section="haverford">🏫 Haverford</div>
+    <div class="section-tab" data-section="postgrad">💼 Post-Graduation</div>
   </div>
 
   <!-- ENGAGEMENT SECTION -->
