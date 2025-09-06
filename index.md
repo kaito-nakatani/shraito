@@ -52,6 +52,12 @@ custom_js:
           <div class="carousel-slide">
             <img src="{{ '/assets/select_photos/photo6.jpg' | relative_url }}" alt="Shreya & Kaito" onerror="this.src='./assets/select_photos/photo6.jpg'">
           </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/select_photos/photo7.jpg' | relative_url }}" alt="Shreya & Kaito" onerror="this.src='./assets/select_photos/photo7.jpg'">
+          </div>
+          <div class="carousel-slide">
+            <img src="{{ '/assets/select_photos/photo8.jpg' | relative_url }}" alt="Shreya & Kaito" onerror="this.src='./assets/select_photos/photo8.jpg'">
+          </div>
         </div>
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('select_photos', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('select_photos', 1)">›</button>
@@ -63,6 +69,8 @@ custom_js:
         <button class="indicator" onclick="goToGallerySlide('select_photos', 3)"></button>
         <button class="indicator" onclick="goToGallerySlide('select_photos', 4)"></button>
         <button class="indicator" onclick="goToGallerySlide('select_photos', 5)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 6)"></button>
+        <button class="indicator" onclick="goToGallerySlide('select_photos', 7)"></button>
       </div>
     </div>
   </div>
@@ -71,7 +79,7 @@ custom_js:
 <script>
 // Gallery carousel functionality
 let galleryCarousels = {
-  'select_photos': { currentIndex: 0, totalSlides: 6 }
+  'select_photos': { currentIndex: 0, totalSlides: 8 }
 };
 
 // Section tab functionality - FIXED VERSION

@@ -7,8 +7,8 @@ def crop_center_square(img):
     bottom = top + min_dim
     return img.crop((left, top, right, bottom))
 
-default_src = 'assets/_postgrad/'
-default_tgt = 'assets/postgrad/'
+default_src = 'assets/_engagement/'
+default_tgt = 'assets/engagement/'
 default_size = (3000,3000)
 
 import argparse
