@@ -21,7 +21,7 @@ custom_css:
   </div>
 
   <!-- haverford SECTION -->
-  <div id="haverford-section" class="gallery-section">
+  <div id="haverford-section" class="gallery-section active">
     <div class="gallery-carousel" id="haverford-carousel">
       <div class="carousel-wrapper">
         <div class="carousel-track" id="haverford-track">
@@ -217,7 +217,7 @@ custom_css:
   </div>
 
   <!-- ENGAGEMENT SECTION -->
-  <div id="engagement-section" class="gallery-section active">
+  <div id="engagement-section" class="gallery-section">
     <div class="gallery-carousel" id="engagement-carousel">
       <div class="carousel-wrapper">
         <div class="carousel-track" id="engagement-track">

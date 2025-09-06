@@ -21,7 +21,7 @@ custom_js:
     <h2>We are Getting Married!</h2>
     <h3><strong>February 3rd - 6th, 2026</strong></h3>
     <h3><strong><a href="https://www.mirayagreens.com/" target="_blank">Miraya Greens</a>, Bangalore, India</strong></h3>
-    <p> <strong> Shreya has been ready to be a bride in a big fat Indian wedding since she was a child, and Kaito has long dreamt of an Indian wedding. After seven wonderful years together, we are thrilled to announce our wedding! </strong></p>
+    <p style="color:black"> <strong> Shreya has been ready to be a bride in a big fat Indian wedding since she was a child, and Kaito has long dreamt of an Indian wedding. After seven wonderful years together, we are thrilled to announce our wedding! </strong></p>
     <p> Shreya grew up in Bangalore, India, and Kaito in Nagoya, Japan. They first met at Haverford College — even before the orientation began. Although they come from different cultures, they quickly discovered their shared love for Bollywood, cricket, RCB, and Virat Kohli. </p>
     <p> After graduation, Shreya pursued her PhD at Stanford University, while Kaito worked in Tokyo and Hong Kong. They navigated four years of long distance, and now, at last, Shreya and Kaito are getting married! </p>
     <p> We would love for you to join us in celebrating this next chapter of our lives!</p>
