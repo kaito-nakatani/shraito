@@ -12,11 +12,11 @@ custom_css:
 
 <div class="sectional-gallery">
   <div class="section-tabs">
-    <div class="section-tab" data-section="haverford">🏫 Haverford</div>
+    <div class="section-tab active" data-section="haverford">🏫 Haverford</div>
     <div class="section-tab" data-section="postgrad">💼 Post-Graduation</div>
     <div class="section-tab" data-section="proposal">💍 Proposal</div>
     <div class="section-tab" data-section="varsha-wedding">📸 Varsha Wedding</div>
-    <div class="section-tab active" data-section="engagement">💕 Engagement</div>
+    <div class="section-tab" data-section="engagement">💕 Engagement</div>
     <div class="section-tab" data-section="family">👨‍👩‍👧‍👦 Family</div>
   </div>
 
