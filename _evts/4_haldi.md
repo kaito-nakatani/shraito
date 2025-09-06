@@ -1,7 +1,7 @@
 ---
 name: "Haldi"
 date: 04 Feb 2026
-timerange: 9:00am -- 11:30pm
+timerange: 9:00am -- 11:30am
 attire: Clothes you don't mind getting wet
 title: "Haldi"
 location: "Miraya Greens, S.No. 73, Sakalwara Road, off Bannerghatta Main Road, Bengaluru, Karnataka 560083, India"

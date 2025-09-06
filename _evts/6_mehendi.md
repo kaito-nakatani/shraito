@@ -1,7 +1,7 @@
 ---
 name: "Mehendi"
 date: 05 Feb 2026
-timerange: 10:30am -- 13:30pm
+timerange: 10:30am -- 1:30pm
 attire: Anything floral or colorful
 title: "Mehendi"
 location: "Miraya Greens, S.No. 73, Sakalwara Road, off Bannerghatta Main Road, Bengaluru, Karnataka 560083, India"
