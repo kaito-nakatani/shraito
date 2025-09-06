@@ -10,7 +10,7 @@ custom_css:
     <div class="cultural-decoration"></div>
     <div class="coming-soon-message">
         <h2>RSVP Form</h2>
-        <p><strong><a href="https://airtable.com/appr8CuLM6GEdKSV2/pagyZ1RvWB5jEHwCK/form" target="_blank">Here is the official RSVP form.</a></strong> Please respond by the end of October if you would like the accomodation during the wedding dates. If you know your flight information already, please let us know as well!</p>
+        <p><strong><a href="https://airtable.com/appr8CuLM6GEdKSV2/pagiLVTcat2DlO6MP/form" target="_blank">Here is the official RSVP form.</a></strong> Please respond by the end of October if you would like the accomodation during the wedding dates. If you know your flight information already, please let us know as well!</p>
         <p>If you'd like, please reach out to us directly with any questions.</p>
         <div class="contact-info">
             <p><strong>Contact:</strong></p>
