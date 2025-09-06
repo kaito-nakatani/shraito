@@ -212,9 +212,6 @@ custom_css:
           <div class="carousel-slide">
             <img src="{{ '/assets/postgrad/photo7.jpg' | relative_url }}" alt="Post-grad Photo 7" loading="lazy" onerror="this.src='./assets/postgrad/photo7.jpg'">
           </div>
-          <div class="carousel-slide">
-            <img src="{{ '/assets/postgrad/photo8.jpg' | relative_url }}" alt="Post-grad Photo 8" loading="lazy" onerror="this.src='./assets/postgrad/photo8.jpg'">
-          </div>
         </div>
         <button class="carousel-btn prev-btn" onclick="navigateGalleryCarousel('postgrad', -1)">‹</button>
         <button class="carousel-btn next-btn" onclick="navigateGalleryCarousel('postgrad', 1)">›</button>
@@ -227,7 +224,6 @@ custom_css:
         <button class="indicator" onclick="goToGallerySlide('postgrad', 4)"></button>
         <button class="indicator" onclick="goToGallerySlide('postgrad', 5)"></button>
         <button class="indicator" onclick="goToGallerySlide('postgrad', 6)"></button>
-        <button class="indicator" onclick="goToGallerySlide('postgrad', 7)"></button>
       </div>
     </div>
   </div>
@@ -242,7 +238,7 @@ let galleryCarousels = {
   'family': { currentIndex: 0, totalSlides: 4 },
   'proposal': { currentIndex: 0, totalSlides: 5 },
   'haverford': { currentIndex: 0, totalSlides: 5 },
-  'postgrad': { currentIndex: 0, totalSlides: 8 }
+  'postgrad': { currentIndex: 0, totalSlides: 7 }
 };
 
 // Section tab functionality - FIXED VERSION
