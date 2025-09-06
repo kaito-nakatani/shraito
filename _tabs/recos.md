@@ -35,11 +35,11 @@ custom_js:
             </ul>
             <p> The links above are just for you to get a sense of the various styles of clothing available. There are more budget friendly options available in person in 4th Block Jayanagar in Bangalore with many options for ethnic and wedding wear. Here are some recommended shops:</p>
             <ul>
-                <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/uZXfdRw" target="_blank">Aarushe</a></strong></li>
-                <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/Reihsv6" target="_blank">Dazzles - Studio</a></strong></li>
-                <li><strong><a href="https://maps.app.goo.gl/g.co/kgs/Mas4zQm" target="_blank">Koskii</a></strong></li>
-                <li><strong><a href="https://maps.app.goo.gl/iwsQXyMr3ub6C3vf8" target="_blank">Manyavar</a></strong></li>
-                <li><strong><a href="https://www.myntra.com/" target="_blank">Myntra</a></strong></li>
+                <li><strong><a href="https://maps.app.goo.gl/GXUGfbfrjYPpFtQz8" target="_blank">Aarushe</a></strong></li>
+                <li><strong><a href="https://maps.app.goo.gl/Lz4bHthkVWerzc6M6" target="_blank">Dazzles - Studio</a></strong></li>
+                <li><strong><a href="https://maps.app.goo.gl/kZhZLRjfvSLdRn9M8" target="_blank">Koskii</a></strong></li>
+                <li><strong><a href="https://maps.app.goo.gl/9bNXrybSFHjbaj1P8" target="_blank">Manyavar</a></strong></li>
+                <li><strong><a href="https://www.myntra.com/" target="_blank">Myntra (Online)</a></strong></li>
             </ul>
             <p>
             These are just a few recommended stores. But the area is lined with many other stores that you can just walk around and check out. Commercial street is another location in Bangalore god for Indian clothes shopping. If the clothes don't fit you properly, you can typically ask them to resize in these shops. However, the stiching might take a few days.
