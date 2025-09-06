@@ -42,14 +42,14 @@ custom_js:
                 <li><strong><a href="https://www.myntra.com/" target="_blank">Myntra (Online)</a></strong></li>
             </ul>
             <p>
-            These are just a few recommended stores. But the area is lined with many other stores that you can just walk around and check out. Commercial street is another location in Bangalore god for Indian clothes shopping. If the clothes don't fit you properly, you can typically ask them to resize in these shops. However, the stiching might take a few days.
+            These are just a few recommended stores. But the area is lined with many other stores that you can just walk around and check out. Commercial street is another location in Bangalore good for Indian clothes shopping. If the clothes don't fit you properly, you can typically ask them to resize in these shops. However, the stiching might take a few days.
             </p>
         </div>
     </div>
     <div class="qa-item">
         <div class="qa-question" onclick="toggleAnswer(this)">
             <span class="qa-icon">+</span>
-            <strong>🌏 Tourist Destinations Across India</strong>
+            <strong>🌏 Tourist Destinations across India</strong>
         </div>
         <div class="qa-answer">
             <p>India is a vast country with many famous destinations outside Bangalore. Here are some highlights by region:</p>
